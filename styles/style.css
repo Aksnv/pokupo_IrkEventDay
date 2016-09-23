@@ -1,0 +1,18 @@
+/* Main layout styles */
+
+/* body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #ffffff;
+  color: #000000;
+} */
+
+.container {
+  width: 1180px;
+  margin: auto;
+}
+
+
+/* --------------- Header --------------- */
