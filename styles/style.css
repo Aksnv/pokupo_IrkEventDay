@@ -109,7 +109,7 @@ body {
   font-family: sans-serif; 
   font-size: 15px;
   font-weight: 400;  
-  line-height: 22px;
+  line-height: 1.2;
   text-align: center;
   background-color: #ffffff;
   color: #333333;
@@ -137,57 +137,210 @@ body {
   float: left;
 }
 
+.page-header__logo {
+  width: 215px;
+  height: 116px; 
+  margin-top: 30px;
+  margin-right: 45px;
+  background-color: #ffffff;
+  /* transform: skew(45deg); */
+}
+
+.page-header__logo a {
+  /* position: absolute; */
+  display: block;
+  width: 150px;
+  height: 75px;
+  margin-left: 28px;
+  margin-top: 18px;
+  background-image: url(../images/logo/logo.png);
+  background-repeat: no-repeat; 
+  background-size: 120px;
+  background-position: 10px 10px;
+  color: transparent;
+}
+
+.page-header__event-name {
+  position: relative;
+  width: 71px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: left;
+  margin-top: 33px;
+  margin-bottom: 28px;
+}
+
+.page-header__event-name::before,
+.page-header__event-name::after {
+  position: absolute;
+  content: '';
+  width: 58px;
+  height: 3px;
+  background-color: #fefefe;
+}
+
+.page-header__event-name::before {
+  top: -3px;
+  left: 0;
+}
+
+.page-header__event-name::after {
+  top: 110px;
+  left: 0;
+}
+
 .page-header__event-date {
   float: right;
+  width: 210px;
+  margin-top: 52px;
+  margin-right: 5px;
+  text-align: left;
+}
+
+.event-date__day {
+  float: left;
+  font-size: 56px;
+  font-weight: 900;
+  margin-right: 15px;
+}
+
+.event-date__month {
+  font-size: 36px;
+}
+
+.event-date__place {
+  font-size: 18px;  
+}
+
+.event-date__month,
+.event-date__place {
+  font-weight: 300;
 }
 
 .page-header__rocket {
+  clear: both;
   width: 58px;
   height: 106px;
   margin: 0 auto;
+  margin-bottom: 62px;
   background-image: url(../images/sprite.png);
   background-position: -6px -283px;
-  clear: both;
 }
 
 .page-header__event-header span {
+  display: inline-block;
   font-weight: 300; 
   text-transform: uppercase;
 }
 
 .page-header__event-header span:nth-of-type(1) {
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .page-header__event-header span:nth-of-type(2) {
-  font-size: 50px;
+  font-size: 44px;
   font-weight: 900;
+  margin-bottom: 24px;
 }
 
 .page-header__event-header span:nth-of-type(3) {
-  font-size: 36px;
+  font-size: 28px;
+  margin-bottom: 61px;
 }
 
 .page-header__social-media {
   width: 400px;
   margin: 0 auto;
+  margin-bottom: 86px;
+}
+
+.page-header__social-media p {
+  font-size: 13px;
+  margin-bottom: 21px;
 }
 
 .page-header__social-media li {
   display: inline-block;
+  vertical-align: top;
+  margin-right: 18px;
+}
+
+.page-header__social-media li:last-child {
+  margin-right: 0;
+}
+
+.page-header__social-media a {
+  display: block;
+  width: 69px;
+  height: 70px;
+  background-image: url(../images/sprite.png);
+  color: transparent;
+}
+
+.page-header__social-media--vk {
+  background-position: 1px -207px;
+}
+
+.page-header__social-media--vk:hover {
+  background-position: -69px -207px;
+}
+
+.page-header__social-media--fb {
+  background-position: 1px 1px;
+}
+
+.page-header__social-media--fb:hover {
+  background-position: -69px 1px;
+}
+
+.page-header__social-media--tw {
+  background-position: 1px -138px;
+}
+
+.page-header__social-media--tw:hover {
+  background-position: -68px -138px;
+}
+
+.page-header__social-media--ok {
+  background-position: 1px -69px;
+}
+
+.page-header__social-media--ok:hover {
+  background-position: -68px -69px;
 }
 
 .page-header__main-menu {
-  
 }
 
 .page-header__main-menu li {
   display: inline-block;
+  vertical-align: top;
+  margin-right: 61px;
+}
+
+.page-header__main-menu li:last-child {
+  margin-right: 0;
+}
+
+.page-header__main-menu a {
+  display: block;
+  height: 31px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent; 
+  color: #fefefe;
+}
+
+.page-header__main-menu a:hover,
+.page-header__main-menu .main-menu__active {
+  border-bottom: 3px solid #fefefe;
+  transition: all 0.3s ease-in-out;
 }
 
 .page-header__line {
   height: 1px;
-  background-color: #666666;
+  background-color: #a4817b;
 }
 
 /* --------------- --------------- Content --------------- --------------- */
