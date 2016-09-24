@@ -42,26 +42,6 @@
 
 /*
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans Narrow Bold", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-image: url(../images/main_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  background-color: #070707;
-}
-
-.container {
-  width: 960px;
-  margin: 0 auto;
-}
-
 h1 {
   font-size: 30px;
 }
@@ -87,10 +67,6 @@ a {
 
 .inline-link {
   text-decoration: underline;
-}
-
-img { 
-  max-width: 100% 
 }
 
 button,
@@ -139,4 +115,61 @@ body {
 }
 
 
-/* --------------- Header --------------- */
+/* --------------- --------------- Header --------------- --------------- */
+
+.page-header {
+  height: 800px;
+  background-image: url(../images/bg_top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* --------------- --------------- Content --------------- --------------- */
+
+/* --------------- Preview --------------- */
+
+.page-content__preview {
+  height: 623px;
+}
+
+/* --------------- Participation --------------- */
+
+.page-content__participation {
+  background-image: url(../images/bg_middle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-content__participation--top {
+  height: 580px;
+}
+
+/* --------------- Schedule --------------- */
+
+.page-content__schedule {
+  height: 961px;
+}
+
+/* --------------- Partners --------------- */
+
+.page-content__partners {
+  height: 420px;
+}
+
+/* --------------- Participation --------------- */
+
+.page-content__participation--bottom {
+  height: 430px;
+}
+
+/* --------------- Address --------------- */
+
+.page-content__address {
+  height: 620px;
+}
+
+/* --------------- --------------- Footer --------------- --------------- */
+
+.page-content__footer {
+  height: 206px;
+}
