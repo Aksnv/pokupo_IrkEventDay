@@ -1,13 +1,137 @@
 /* Main layout styles */
 
-/* body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+@font-face {
+  font-family: "Proxima Nova Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Proxima Nova Light"),
+       url(../fonts/Proxima Nova Light.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Proxima Nova Regular";
+  font-style: normal;
   font-weight: 400;
-  line-height: 20px;
-  background-color: #ffffff;
-  color: #000000;
+  src: local("Proxima Nova Regular"),
+       url(../fonts/Proxima Nova Regular.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Proxima Nova Bold"),
+       url(../fonts/Proxima Nova Bold.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Proxima Nova Extrabold"),
+       url(../fonts/Proxima Nova Extrabold.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Proxima Nova Black";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Proxima Nova Black"),
+       url(../fonts/Proxima Nova Black.otf) format("otf");
+}
+
+/*
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow Bold", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-image: url(../images/main_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-color: #070707;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2, h3 {
+  font-size: 24px;
+}
+
+p {
+  line-height: 24px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.inline-link {
+  text-decoration: underline;
+}
+
+img { 
+  max-width: 100% 
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  font-family: "PT Sans Narrow Bold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.button {
+  display: block;
+  width: 140px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  border-left: 1px solid #100f0f;
+  border-right: 1px solid #100f0f;
+  background-color: #000000;
+}
+
+.button:hover {
+  border-left: 1px solid #6f4923;
+  border-right: 1px solid #6f4923;
+  background-color: #663d15;
 } */
+
+body {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 15px;
+  /* font-weight: 400; */
+  line-height: 22px;
+  background-color: #ffffff;
+  color: #333333;
+} 
 
 .container {
   width: 1180px;
