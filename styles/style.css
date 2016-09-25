@@ -63,8 +63,6 @@ body {
 h2 {
   font-size: 40px;
   font-weight: 300;
-  padding-top: 64px;
-  padding-bottom: 24px;
   color: #000000;
 }
 
@@ -358,6 +356,11 @@ button:focus {
   height: 623px;
 }
 
+.page-content__preview h2 {
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+
 .page-content__preview p {
   padding-bottom: 28px;
 }
@@ -370,6 +373,7 @@ button:focus {
   position: relative;
   width: 393px;
   margin: 0 auto;
+  margin-top: 36px;
   text-align: center;
 }
 
@@ -418,18 +422,135 @@ button:focus {
   color: #fefefe;
 }
 
+.page-content__participation h2 {
+  padding-top: 55px;
+  padding-bottom: 21px;
+  color: #ffffff;
+}
+
+.page-content__participation p {
+  font-size: 20px;
+}
+
 .page-content__participation--top {
   height: 580px;
 }
 
 .event-ticket {
-  width: 200px;
+  position: relative;
+  width: 960px;
+  height: 225px;
   margin: 0 auto;
+  margin-top: 50px;
+  background-color: #efece7;
+}
+
+.event-ticket::after {
+  position: absolute;
+  top: 0;
+  right: 302px;
+  content: '';
+  width: 2px;
+  height: 225px;
+  background-image: url(../images/ticket-line.png);
+  background-position: 0 -5px;
+  background-color: #efece7;
 }
 
 .event-ticket__purchase,
 .event-ticket__price {
+  position: relative;
   float: left;
+  height: inherit;
+}
+
+.event-ticket__purchase {
+  width: 658px;
+}
+
+.event-ticket__price {
+  width: 302px;
+  padding-top: 87px;
+  padding-left: 80px;
+  text-align: left;
+  color: #000000;
+}
+
+.event-ticket__purchase::before,
+.event-ticket__purchase::after,
+.event-ticket__price::before,
+.event-ticket__price::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../images/bg_middle.jpg);
+}
+
+.event-ticket__purchase::before {
+  top: -20px;
+  left: -20px;
+  /* background-position: ; */
+}
+
+.event-ticket__purchase::after {
+  top: 205px;
+  left: -20px;
+  /* background-position: ; */
+}
+
+.event-ticket__price::before {
+  top: -20px;
+  right: -20px;
+  /* background-position: ; */
+}
+
+.event-ticket__price::after {
+  top: 205px;
+  right: -20px;
+  /* background-position: ; */
+}
+
+.event-ticket__purchase a {
+  float: left;
+  display: block;
+  width: 313px;
+  height: 59px;
+  font-size: 27px;
+  font-weight: 800;
+  margin-top: 74px;
+  margin-left: 70px;
+  margin-right: 4px; 
+  padding-top: 16px;
+  background-image: linear-gradient(to top, #f38a1f 0%, #ffa800 100%);
+  background-color: #ffa800;
+  color: #ffffff;
+  border-radius: 1px;
+}
+
+.event-ticket__purchase a:hover {
+  opacity: 0.5;
+}
+
+.purchase-bg {
+  float: left;
+  display: block;
+  width: 250px;
+  height: 225px;
+  background-image: url(../images/sprite.png);
+  background-size: 400px;
+  background-position: -140px -111px;
+}
+
+.event-ticket__price p {
+  font-size: 18px;
+}
+
+.event-ticket__price em {
+  font-size: 40px;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* --------------- Schedule --------------- */
@@ -460,6 +581,8 @@ button:focus {
 
 .page-content__participation--bottom {
   height: 430px;
+  padding-top: 46px;
+  background-position: bottom;
 }
 
 /* --------------- Address --------------- */
