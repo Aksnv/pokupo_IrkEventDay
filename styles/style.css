@@ -45,8 +45,30 @@
   url(../fonts/Proxima Nova Black.woff) format("woff");
 }      
 
-/*
+body {
+  font-family: sans-serif; 
+  font-size: 15px;
+  font-weight: 400;  
+  line-height: 1.2;
+  text-align: center;
+  background-color: #ffffff;
+  color: #333333;
+} 
 
+.container {
+  width: 1180px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 300;
+  padding-top: 64px;
+  padding-bottom: 24px;
+  color: #000000;
+}
+
+/*
 h1 {
   font-size: 30px;
 }
@@ -105,21 +127,6 @@ button:focus {
   background-color: #663d15;
 } */
 
-body {
-  font-family: sans-serif; 
-  font-size: 15px;
-  font-weight: 400;  
-  line-height: 1.2;
-  text-align: center;
-  background-color: #ffffff;
-  color: #333333;
-} 
-
-.container {
-  width: 1180px;
-  margin: auto;
-}
-
 
 /* --------------- --------------- Header --------------- --------------- */
 
@@ -162,7 +169,7 @@ body {
 
 .page-header__event-name {
   position: relative;
-  width: 71px;
+  width: 73px;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.1;
@@ -349,6 +356,56 @@ body {
 
 .page-content__preview {
   height: 623px;
+}
+
+.page-content__preview p {
+  padding-bottom: 28px;
+}
+
+.container--preview {
+  width: 620px;
+}
+
+.event-countdown {
+  position: relative;
+  width: 393px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event-countdown::before {
+  position: absolute;
+  top: -8px;
+  left: 80px;
+  content: '';
+  width: 224px;
+  height: 39px;
+  background-color: #00a651;
+  transform: skew(-30deg);
+  z-index: -1;
+}
+
+.event-countdown::after {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  content: '';
+  width: 393px;
+  height: 110px;
+  background-color: #fea404;
+  transform: skew(-30deg);
+  z-index: -2;
+}
+
+.event-countdown p,
+.event-countdown strong {
+  position: relative;
+  color: #ffffff;
+}
+
+.event-countdown span {
+  font-size: 40px;
+  font-weight: 900;
 }
 
 /* --------------- Participation --------------- */
