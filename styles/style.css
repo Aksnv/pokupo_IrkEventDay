@@ -66,6 +66,17 @@ h2 {
   color: #000000;
 }
 
+.inline-link {
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: underline;
+  color: #41658b;
+}
+
+.inline-link:hover {
+  opacity: 0.5;
+}
+
 /*
 h1 {
   font-size: 30px;
@@ -569,12 +580,22 @@ button:focus {
   height: 420px;
 }
 
+.page-content__partners h2 {
+  padding-top: 83px;
+  padding-bottom: 43px;
+}
+
 .page-content__partners ul {
   display: none;
 }
 
 .page-content__partners li {
   display: inline-block;
+}
+
+.page-content__partners-offer {
+  margin-top: 46px;
+  font-size: 20px;
 }
 
 /* --------------- Participation --------------- */
