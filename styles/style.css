@@ -595,6 +595,9 @@ button:focus {
 
 .page-content__partners-offer {
   margin-top: 46px;
+}
+
+.page-content__partners-offer strong {
   font-size: 20px;
 }
 
@@ -612,6 +615,19 @@ button:focus {
   height: 620px;
 }
 
+.page-content__address h2 {
+  padding-top: 63px;
+  padding-bottom: 24px;
+}
+
+.page-content__address strong {
+  font-size: 20px;
+}
+
+.page-content__address p {
+  padding-top: 8px;
+}
+
 /* --------------- --------------- Footer --------------- --------------- */
 
 .page-content__footer {
@@ -621,5 +637,11 @@ button:focus {
 
 .page-footer__contact-block {
   float: left;
-  width: 33%;
+  width: 300px;
+  margin-top: 54px;
+  margin-bottom: 60px;
+}
+
+.page-footer__contact-block--email {
+  margin-left: 140px;
 }
