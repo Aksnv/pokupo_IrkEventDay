@@ -241,7 +241,7 @@ button:focus {
   margin: 0 auto;
   margin-bottom: 62px;
   background-image: url(../images/sprite.png);
-  background-position: -6px -283px;
+  background-position: -264px 0;
 }
 
 .page-header__event-header span {
@@ -296,35 +296,26 @@ button:focus {
 }
 
 .page-header__social-media--vk {
-  background-position: 1px -207px;
-}
-
-.page-header__social-media--vk:hover {
-  background-position: -69px -207px;
+  background-position: 69px -119px;
 }
 
 .page-header__social-media--fb {
-  background-position: 1px 1px;
-}
-
-.page-header__social-media--fb:hover {
-  background-position: -69px 1px;
+  background-position: 69px -194px;
 }
 
 .page-header__social-media--tw {
-  background-position: 1px -138px;
-}
-
-.page-header__social-media--tw:hover {
-  background-position: -68px -138px;
+  background-position: 69px -349px;
 }
 
 .page-header__social-media--ok {
-  background-position: 1px -69px;
+  background-position: 69px -272px;
 }
 
+.page-header__social-media--vk:hover,
+.page-header__social-media--fb:hover,
+.page-header__social-media--tw:hover,
 .page-header__social-media--ok:hover {
-  background-position: -68px -69px;
+  opacity: 0.5;
 }
 
 .page-header__main-menu {
@@ -550,8 +541,8 @@ button:focus {
   width: 250px;
   height: 225px;
   background-image: url(../images/sprite.png);
-  background-size: 400px;
-  background-position: -140px -111px;
+  background-size: 338px;
+  background-position: -4px -113px;
 }
 
 .event-ticket__price p {
@@ -570,8 +561,31 @@ button:focus {
   height: 961px;
 }
 
+.container--schedule {
+  width: 100%;
+} 
+
+.page-content__schedule h2 {
+  padding-top: 42px;
+  padding-bottom: 63px;
+}
+
+.page-content__schedule h3 {
+  font-size: 20px;
+}
+
 .page-content__schedule table {
+  width: 100%;
   margin: 0 auto;
+}
+
+.page-content__schedule tr:nth-child(even) {
+  background-color: #efece7;
+}
+
+.page-content__schedule td {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* --------------- Partners --------------- */
