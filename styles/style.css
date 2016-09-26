@@ -743,26 +743,36 @@ h3, strong {
   text-align: right;
 }
 
+.schedule__column--center + .schedule__column--right {
+  height: 98px;
+  line-height: 98px;
+}
+
 .schedule__column--right p {
   width: auto;
   font-size: 18px;
 }
 
-
-
-
-
-
 /* --------------- Partners --------------- */
 
 .page-content__partners {
-  height: 420px;
+  min-height: 420px;
 }
 
 .page-content__partners h2 {
   position: relative;
   padding-top: 83px;
   padding-bottom: 43px;
+}
+
+.page-content__partners h2:last-of-type {
+  font-size: 14px;
+  padding-top: 60px;
+  padding-bottom: 22px;
+}
+
+.page-content__partners h2:last-of-type::before {
+  display: none;
 }
 
 .page-content__partners ul {
@@ -774,11 +784,21 @@ h3, strong {
 }
 
 .page-content__partners-offer {
-  margin-top: 46px;
+  margin-top: 66px;
 }
 
 .page-content__partners-offer strong {
   font-size: 20px;
+}
+
+.page-content__partners-offer strong:last-child {
+  display: block;
+  margin-bottom: 74px;
+}
+
+.page-content__partners-offer p {
+  padding-top: 10px;
+  padding-bottom: 8px;
 }
 
 /* --------------- Participation --------------- */
@@ -797,15 +817,16 @@ h3, strong {
 
 .page-content__address h2 {
   padding-top: 63px;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
 }
 
 .page-content__address strong {
+  font-family: 'proxima_nova_thextrabold';
   font-size: 20px;
 }
 
 .page-content__address p {
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 /* .container--map {
@@ -814,22 +835,43 @@ h3, strong {
 
 .event-map {
   margin-top: 36px;
+  height: 400px;
+  background-image: url(../images/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* --------------- --------------- Footer --------------- --------------- */
 
-.page-content__footer {
-  height: 206px;
+.page-footer {
+  min-height: 206px;
   overflow: hidden;
+}
+
+.page-footer a {
+  display: block;
+  margin-bottom: 6px;
 }
 
 .page-footer__contact-block {
   float: left;
   width: 300px;
   margin-top: 54px;
-  margin-bottom: 60px;
 }
 
 .page-footer__contact-block--email {
   margin-left: 140px;
+}
+
+.page-footer__contact-block--email p,
+.page-footer__contact-block--skype p,
+.page-footer__contact-block--phone p {
+  margin-bottom: 9px;
+}
+
+.page-footer__contact-block--phone strong {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'proxima_nova_blblack';
+  font-size: 20px;
 }
