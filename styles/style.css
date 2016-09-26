@@ -38,12 +38,11 @@
        url('../fonts/proxima_nova_black-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-} 
+}
 
 body {
-  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-family: 'proxima_nova_ltlight';  
   font-size: 15px;
-  font-weight: 400;  
   line-height: 1.2;
   text-align: center;
   background-color: #ffffff;
@@ -72,66 +71,6 @@ h2 {
   opacity: 0.5;
 }
 
-/*
-h1 {
-  font-size: 30px;
-}
-
-h2, h3 {
-  font-size: 24px;
-}
-
-p {
-  line-height: 24px;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.inline-link {
-  text-decoration: underline;
-}
-
-button,
-input[type="submit"] {
-  border: none;
-  font-family: "PT Sans Narrow Bold", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-input:focus,
-button:focus {
-  outline: none;
-}
-
-.button {
-  display: block;
-  width: 140px;
-  height: 43px;
-  text-align: center;
-  line-height: 43px;
-  border-left: 1px solid #100f0f;
-  border-right: 1px solid #100f0f;
-  background-color: #000000;
-}
-
-.button:hover {
-  border-left: 1px solid #6f4923;
-  border-right: 1px solid #6f4923;
-  background-color: #663d15;
-} */
-
-
 /* --------------- --------------- Header --------------- --------------- */
 
 .page-header {
@@ -151,7 +90,7 @@ button:focus {
 .page-header__logo {
   position: relative;
   top: 30px;
-  margin-right: 80px;
+  margin-right: 81px;
   z-index: 0;
 }
 
@@ -238,9 +177,7 @@ button:focus {
 .page-header__event-name {
   position: relative;
   width: 73px;
-  /* font-family: "Proxima Nova Extrabold", sans-serif; */
   font-size: 26px;
-  /* font-weight: 900; */
   line-height: 1;
   text-align: left;
   margin-top: 36px;
@@ -257,27 +194,25 @@ button:focus {
 }
 
 .page-header__event-name::before {
-  top: -3px;
+  top: -6px;
   left: 0;
 }
 
 .page-header__event-name::after {
-  top: 110px;
+  top: 107px;
   left: 0;
 }
 
 .page-header__event-date {
   float: right;
-  width: 210px;
-  margin-top: 52px;
-  margin-right: 5px;
+  width: 217px;
+  margin-top: 54px;
   text-align: left;
 }
 
 .event-date__day {
   float: left;
-  font-size: 56px;
-  font-weight: 900;
+  font-size: 62px;
   margin-right: 15px;
 }
 
@@ -287,11 +222,6 @@ button:focus {
 
 .event-date__place {
   font-size: 18px;  
-}
-
-.event-date__month,
-.event-date__place {
-  font-weight: 300;
 }
 
 .page-header__rocket {
