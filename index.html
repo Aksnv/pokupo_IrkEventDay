@@ -61,12 +61,12 @@
       </div>
       <nav class="page-header__main-menu">
         <ul>
-          <li><a class="main-menu__active" href="#">О мероприятии</a></li>
-          <li><a href="#">Купить билет</a></li>
-          <li><a href="#">Расписание</a></li>
-          <li><a href="#">Организаторы и партнеры</a></li>
+          <li><a class="main-menu__active" href="#page-content__preview">О мероприятии</a></li>
+          <li><a href="#page-content__participation--top">Купить билет</a></li>
+          <li><a href="#page-content__schedule">Расписание</a></li>
+          <li><a href="#page-content__partners">Организаторы и партнеры</a></li>
           <li><a href="#">Спонсоры</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#page-content__address">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -77,31 +77,26 @@
   <div class="page-content">
 
       <!-- Preview -->
-      <section class="page-content__preview">
+      <section class="page-content__preview" id="page-content__preview">
         <div class="container container--preview">
-          <h2>Что вас ждет</h2>
+          <h2>Что вас ждёт</h2>
           <p>Мы предлагаем совершить революцию в IT-бизнесе, и кризис &ndash; лучшее для этого время.</p>
           <p>Приглашаем Вас на конференцию <strong>Irk-Event-Day2016:<br> &laquo;Революционные подходы в организации IT-бизнеса в кризис!&raquo;</strong></p>
           <p>Если вы опытный революционер, можете выступить со своим докладом,<br> а также поддержать мероприятие морально или материально.</p>
           <p>А можете просто прийти и послушать,<br> что умные люди говорят.</p>
           <div class="event-countdown">
             <p>До мероприятия осталось</p>
-            <strong>
-              <span class="event-countdown__days">11</span>
-              дней 
-              <span>:</span> 
-              <span class="event-countdown__hours">12</span> 
-              часов 
-              <span>:</span> 
-              <span class="event-countdown__minutes">23</span> 
-              минут
-            </strong>
+            <p>
+              <span class="event-countdown__item event-countdown__item--days">11</span>
+              <span class="event-countdown__item event-countdown__item--hours">12</span>
+              <span class="event-countdown__item event-countdown__item--minutes">23</span>
+            </p>
           </div>
         </div>
       </section>
 
       <!-- Participation -->
-      <section class="page-content__participation page-content__participation--top">
+      <section class="page-content__participation page-content__participation--top" id="page-content__participation--top">
         <div class="container">
           <h2>Принять участие</h2>
           <p>
@@ -122,7 +117,7 @@
       </section>
 
       <!-- Schedule -->
-      <section class="page-content__schedule">
+      <section class="page-content__schedule" id="page-content__schedule">
         <div class="container container--schedule">
           <h2>Расписание</h2>
           <table>
@@ -173,7 +168,7 @@
       </section>
 
       <!-- Partners -->
-      <section class="page-content__partners">
+      <section class="page-content__partners" id="page-content__partners">
         <div class="container">
           <h2>Организаторы и партнеры</h2>
           <ul>
@@ -200,6 +195,7 @@
           <div class="event-ticket">
             <div class="event-ticket__purchase">
               <a href="#">Купить билет</a>
+              <span class="purchase-bg"></span>
             </div>
             <div class="event-ticket__price">
               <p>Стоимость<br><em>600 руб</em></p>
@@ -209,7 +205,7 @@
       </section>
 
       <!-- Address -->
-      <section class="page-content__address">
+      <section class="page-content__address" id="page-content__address">
         <div class="container container--map">
           <h2>Как добраться</h2>
           <strong>г. Иркутск, ул. Лермонтова, 253, зал 203</strong>

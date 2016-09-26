@@ -55,9 +55,14 @@ body {
 }
 
 h2 {
+  font-family: 'proxima_nova_ltlight';
   font-size: 40px;
-  font-weight: 300;
+  padding-right: 1px;
   color: #000000;
+}
+
+strong {
+  font-family: 'proxima_nova_rgbold';
 }
 
 .inline-link {
@@ -253,7 +258,7 @@ h2 {
   margin: 0 auto;
   margin-bottom: 62px;
   background-image: url(../images/sprite.png);
-  background-position: -264px 0;
+  background-position: -263px 0;
 }
 
 .page-header__event-header span {
@@ -264,6 +269,7 @@ h2 {
 .page-header__event-header span:nth-of-type(1) {
   font-family: 'proxima_nova_ltlight';
   font-size: 20px;
+  font-weight: 200;
   margin-bottom: 19px;
   padding-right: 1px;
   letter-spacing: 1px;
@@ -279,6 +285,7 @@ h2 {
 .page-header__event-header span:nth-of-type(3) {
   font-family: 'proxima_nova_ltlight';
   font-size: 36px;
+  font-weight: 200;
   margin-bottom: 61px;
   padding-right: 1px;
   letter-spacing: 2px;
@@ -356,7 +363,7 @@ h2 {
 .page-header__main-menu a {
   display: block;
   height: 30px;
-  font-family: 'proxima_nova_rgbold';
+  font-family: 'proxima_nova_rgbold'; 
   text-transform: uppercase;
   border-bottom: 3px solid transparent; 
   color: #fefefe;
@@ -382,8 +389,8 @@ h2 {
 }
 
 .page-content__preview h2 {
-  padding-top: 64px;
-  padding-bottom: 24px;
+  padding-top: 65px;
+  padding-bottom: 23px;
 }
 
 .page-content__preview p {
@@ -398,7 +405,7 @@ h2 {
   position: relative;
   width: 393px;
   margin: 0 auto;
-  margin-top: 36px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -416,26 +423,77 @@ h2 {
 
 .event-countdown::after {
   position: absolute;
-  top: 10px;
-  left: -20px;
+  top: 5px;
+  left: -13px;
   content: '';
   width: 393px;
   height: 110px;
   background-color: #fea404;
-  transform: skew(-30deg);
+  transform: skew(-33deg);
   z-index: -2;
 }
 
-.event-countdown p,
-.event-countdown strong {
+.event-countdown p {
   position: relative;
   color: #ffffff;
 }
 
-.event-countdown span {
-  font-size: 40px;
-  font-weight: 900;
+.event-countdown p:first-child {
+  font-size: 14px;
+  padding-top: 4px;
+  padding-right: 11px;
+  padding-bottom: 18px;
 }
+
+.event-countdown__item {
+  position: relative;
+  float: left;
+  display: block;
+  font-family: 'proxima_nova_blblack';
+  font-size: 44px;
+}
+
+.event-countdown__item::before {
+  position: absolute;
+  top: 47px;
+  left: 6px;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 14px;
+}
+
+.event-countdown__item:nth-child(1)::before {
+  content: 'дней';
+}
+
+.event-countdown__item:nth-child(2)::before {
+  content: 'часов';
+}
+
+.event-countdown__item:nth-child(3)::before {
+  content: 'минуты';
+}
+
+.event-countdown__item::after {
+  position: absolute;
+  top: 7px;
+  left: 67px;
+  content: ':';
+  font-family: 'proxima_nova_rgbold'; 
+  font-size: 29px;
+}
+
+.event-countdown__item:last-child::after {
+  display: none; 
+}
+
+.event-countdown__item--days {
+  margin: 0 59px;
+}
+
+.event-countdown__item--hours {
+  margin-right: 48px;
+}
+
 
 /* --------------- Participation --------------- */
 
@@ -454,11 +512,16 @@ h2 {
 }
 
 .page-content__participation p {
+  font-family: 'proxima_nova_ltlight';
   font-size: 20px;
 }
 
 .page-content__participation--top {
   height: 580px;
+}
+
+.page-content__participation--top strong {
+  font-family: 'proxima_nova_thextrabold';
 }
 
 .event-ticket {
@@ -495,7 +558,7 @@ h2 {
 
 .event-ticket__price {
   width: 302px;
-  padding-top: 87px;
+  padding-top: 85px;
   padding-left: 80px;
   text-align: left;
   color: #000000;
@@ -516,38 +579,40 @@ h2 {
 .event-ticket__purchase::before {
   top: -20px;
   left: -20px;
-  /* background-position: ; */
+  background-position: -460px -226px;
 }
 
 .event-ticket__purchase::after {
   top: 205px;
   left: -20px;
-  /* background-position: ; */
+  background-position: -460px -451px;
 }
 
 .event-ticket__price::before {
   top: -20px;
   right: -20px;
-  /* background-position: ; */
+  background-position: -1420px -226px;
 }
 
 .event-ticket__price::after {
   top: 205px;
   right: -20px;
-  /* background-position: ; */
+  background-position: -1420px -451px;
 }
 
 .event-ticket__purchase a {
   float: left;
   display: block;
-  width: 313px;
+  width: 309px;
   height: 59px;
-  font-size: 27px;
-  font-weight: 800;
+  font-family: 'proxima_nova_thextrabold';
+  font-size: 30px;
+  letter-spacing: 2px;
   margin-top: 74px;
   margin-left: 70px;
   margin-right: 4px; 
-  padding-top: 16px;
+  padding-top: 17px;
+  padding-left: 4px;
   background-image: linear-gradient(to top, #f38a1f 0%, #ffa800 100%);
   background-color: #ffa800;
   color: #ffffff;
@@ -564,8 +629,8 @@ h2 {
   width: 250px;
   height: 225px;
   background-image: url(../images/sprite.png);
-  background-size: 338px;
-  background-position: -4px -113px;
+  background-size: 490px;
+  background-position: 3px -103px;
 }
 
 .event-ticket__price p {
@@ -573,9 +638,10 @@ h2 {
 }
 
 .event-ticket__price em {
+  display: block;
   font-size: 40px;
-  font-weight: 300;
   font-style: normal;
+  padding-top: 4px;
 }
 
 /* --------------- Schedule --------------- */
