@@ -1,123 +1,47 @@
-/* Main layout styles */
-
-/* @font-face {
-      font-family: "Proxima Nova Light";
-      font-style: normal;
-      font-weight: 300;
-      src: local("Proxima Nova Light"),
-      url(../fonts/Proxima Nova Light.woff2) format("woff2"),
-      url(../fonts/Proxima Nova Light.woff) format("woff");
-    }  
-    
-    @font-face {
-      font-family: "Proxima Nova Regular";
-      font-style: normal;
-      font-weight: 400;
-      src: local("Proxima Nova Regular"),
-      url(../fonts/Proxima Nova Regular.woff2) format("woff2"),
-      url(../fonts/Proxima Nova Regular.woff) format("woff");
-    } 
-    
-    @font-face {
-      font-family: "Proxima Nova Bold";
-      font-style: normal;
-      font-weight: 700;
-      src: local("Proxima Nova Bold"),
-      url(../fonts/Proxima Nova Bold.woff2) format("woff2"),
-      url(../fonts/Proxima Nova Bold.woff) format("woff");
-    }
-    
-    @font-face {
-      font-family: "Proxima Nova Extrabold";
-      font-style: normal;
-      font-weight: 800;
-      src: local("Proxima Nova Extrabold"),
-      url(../fonts/Proxima Nova Extrabold.woff2) format("woff2"),
-      url(../fonts/Proxima Nova Extrabold.woff) format("woff");
-    }  
-    
-    @font-face {
-      font-family: "Proxima Nova Black";
-      font-style: normal;
-      font-weight: 900;
-      src: local("Proxima Nova Black"),
-      url(../fonts/Proxima Nova Black.woff2) format("woff2"),
-      url(../fonts/Proxima Nova Black.woff) format("woff");
-    }   */    
+/* Main layout styles */   
 
 @font-face {
-  font-family: "Proxima Nova Light";
+  font-family: 'proxima_nova_ltlight';
+  src: url('../fonts/proxima_nova_light-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_light-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  /* font-weight: 300; */  
-  src: url(../fonts/Proxima Nova Light.woff2) format("woff2"),
-  url(../fonts/Proxima Nova Light.woff) format("woff");
 }
 
 @font-face {
-  font-family: "Proxima Nova Regular";
+  font-family: 'proxima_nova_rgregular';
+  src: url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_regular-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
-  /* font-weight: 400; */
-  src: url(../fonts/Proxima Nova Regular.woff2) format("woff2"),
-  url(../fonts/Proxima Nova Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('../fonts/proxima_nova_bold-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_thextrabold';
+  src: url('../fonts/proxima_nova_extrabold-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_blblack';
+  src: url('../fonts/proxima_nova_black-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 } 
-    
-@font-face {
-  font-family: "Proxima Nova Bold";
-  font-style: normal;
-  /* font-weight: 700; */
-  src: url(../fonts/Proxima Nova Bold.woff2) format("woff2"),
-  url(../fonts/Proxima Nova Bold.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Proxima Nova Extrabold";
-  font-style: normal;
-  /* font-weight: 800; */
-  src: url(../fonts/Proxima Nova Extrabold.woff2) format("woff2"),
-  url(../fonts/Proxima Nova Extrabold.woff) format("woff");
-}  
-
-@font-face {
-  font-family: "Proxima Nova Black";
-  font-style: normal;
-  /* font-weight: 900; */
-  src: url(../fonts/Proxima Nova Black.woff2) format("woff2"),
-  url(../fonts/Proxima Nova Black.woff) format("woff");
-}
-
-/* .test {
-  clear: both;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  font-size: 26px;
-}
-
-.test p:nth-child(1) {
-  font-family: "Proxima Nova Light";
-  font-weight: 300;
-}
-
-.test p:nth-child(2) {
-  font-family: "Proxima Nova Regular";
-  font-weight: 700;
-}
-
-.test p:nth-child(3) {
-  font-family: "Proxima Nova Bold";
-  font-weight: 700; 
-}
-
-.test p:nth-child(4) {
-  font-family: "Proxima Nova Extrabold";
-}
-
-.test p:nth-child(5) {
-  font-family: "Proxima Nova Black";
-  font-weight: 900;
-} */
 
 body {
-  /* font-family: "Proxima Nova Regular", sans-serif;  */
+  font-family: 'proxima_nova_rgregular', sans-serif;
   font-size: 15px;
   font-weight: 400;  
   line-height: 1.2;
