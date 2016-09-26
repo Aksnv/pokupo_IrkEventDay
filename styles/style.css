@@ -1,52 +1,123 @@
 /* Main layout styles */
 
+/* @font-face {
+      font-family: "Proxima Nova Light";
+      font-style: normal;
+      font-weight: 300;
+      src: local("Proxima Nova Light"),
+      url(../fonts/Proxima Nova Light.woff2) format("woff2"),
+      url(../fonts/Proxima Nova Light.woff) format("woff");
+    }  
+    
+    @font-face {
+      font-family: "Proxima Nova Regular";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Proxima Nova Regular"),
+      url(../fonts/Proxima Nova Regular.woff2) format("woff2"),
+      url(../fonts/Proxima Nova Regular.woff) format("woff");
+    } 
+    
+    @font-face {
+      font-family: "Proxima Nova Bold";
+      font-style: normal;
+      font-weight: 700;
+      src: local("Proxima Nova Bold"),
+      url(../fonts/Proxima Nova Bold.woff2) format("woff2"),
+      url(../fonts/Proxima Nova Bold.woff) format("woff");
+    }
+    
+    @font-face {
+      font-family: "Proxima Nova Extrabold";
+      font-style: normal;
+      font-weight: 800;
+      src: local("Proxima Nova Extrabold"),
+      url(../fonts/Proxima Nova Extrabold.woff2) format("woff2"),
+      url(../fonts/Proxima Nova Extrabold.woff) format("woff");
+    }  
+    
+    @font-face {
+      font-family: "Proxima Nova Black";
+      font-style: normal;
+      font-weight: 900;
+      src: local("Proxima Nova Black"),
+      url(../fonts/Proxima Nova Black.woff2) format("woff2"),
+      url(../fonts/Proxima Nova Black.woff) format("woff");
+    }   */    
+
 @font-face {
   font-family: "Proxima Nova Light";
   font-style: normal;
-  font-weight: 300;
-  src: local("Proxima Nova Light"),
-  url(../fonts/Proxima Nova Light.woff2) format("woff2"),
+  /* font-weight: 300; */  
+  src: url(../fonts/Proxima Nova Light.woff2) format("woff2"),
   url(../fonts/Proxima Nova Light.woff) format("woff");
-}  
+}
 
 @font-face {
   font-family: "Proxima Nova Regular";
   font-style: normal;
-  font-weight: 400;
-  src: local("Proxima Nova Regular"),
-  url(../fonts/Proxima Nova Regular.woff2) format("woff2"),
+  /* font-weight: 400; */
+  src: url(../fonts/Proxima Nova Regular.woff2) format("woff2"),
   url(../fonts/Proxima Nova Regular.woff) format("woff");
 } 
-
+    
 @font-face {
   font-family: "Proxima Nova Bold";
   font-style: normal;
-  font-weight: 700;
-  src: local("Proxima Nova Bold"),
-  url(../fonts/Proxima Nova Bold.woff2) format("woff2"),
+  /* font-weight: 700; */
+  src: url(../fonts/Proxima Nova Bold.woff2) format("woff2"),
   url(../fonts/Proxima Nova Bold.woff) format("woff");
 }
 
 @font-face {
   font-family: "Proxima Nova Extrabold";
   font-style: normal;
-  font-weight: 800;
-  src: local("Proxima Nova Extrabold"),
-  url(../fonts/Proxima Nova Extrabold.woff2) format("woff2"),
+  /* font-weight: 800; */
+  src: url(../fonts/Proxima Nova Extrabold.woff2) format("woff2"),
   url(../fonts/Proxima Nova Extrabold.woff) format("woff");
 }  
 
 @font-face {
   font-family: "Proxima Nova Black";
   font-style: normal;
-  font-weight: 900;
-  src: local("Proxima Nova Black"),
-  url(../fonts/Proxima Nova Black.woff2) format("woff2"),
+  /* font-weight: 900; */
+  src: url(../fonts/Proxima Nova Black.woff2) format("woff2"),
   url(../fonts/Proxima Nova Black.woff) format("woff");
-}      
+}
+
+/* .test {
+  clear: both;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 26px;
+}
+
+.test p:nth-child(1) {
+  font-family: "Proxima Nova Light";
+  font-weight: 300;
+}
+
+.test p:nth-child(2) {
+  font-family: "Proxima Nova Regular";
+  font-weight: 700;
+}
+
+.test p:nth-child(3) {
+  font-family: "Proxima Nova Bold";
+  font-weight: 700; 
+}
+
+.test p:nth-child(4) {
+  font-family: "Proxima Nova Extrabold";
+}
+
+.test p:nth-child(5) {
+  font-family: "Proxima Nova Black";
+  font-weight: 900;
+} */
 
 body {
-  font-family: sans-serif; 
+  /* font-family: "Proxima Nova Regular", sans-serif;  */
   font-size: 15px;
   font-weight: 400;  
   line-height: 1.2;
@@ -154,16 +225,38 @@ button:focus {
 }
 
 .page-header__logo {
-  width: 215px;
-  height: 116px; 
-  margin-top: 30px;
-  margin-right: 45px;
+  position: relative;
+  top: 30px;
+  margin-right: 80px;
+  z-index: 0;
+}
+
+.page-header__logo::before {
+  position: absolute;
+  top: -30px;
+  left: -58px;
+  content: '';
+  width: 140px;
+  height: 30px;
+  background-color: #d7d7d7;
+  transform: skew(-33deg);
+  z-index: -3;
+}
+
+.page-header__logo::after {
+  position: absolute;
+  top: 0px;
+  left: -35px;
+  content: '';
+  width: 176px;
+  height: 116px;
   background-color: #ffffff;
-  /* transform: skew(45deg); */
+  transform: skew(30deg);
+  z-index: -1;
 }
 
 .page-header__logo a {
-  /* position: absolute; */
+  position: relative;
   display: block;
   width: 150px;
   height: 75px;
@@ -176,14 +269,57 @@ button:focus {
   color: transparent;
 }
 
+.page-header__logo a::before {
+  position: absolute;
+  top: -18px;
+  left: -87px;
+  content: '';
+  width: 140px;
+  height: 30px;
+  background-color: transparent;
+  box-shadow: 5px 0 15px #999999;
+  transform: skew(30deg);
+  z-index: -2;
+}
+
+.page-header__logo a::after {
+  position: absolute;
+  top: 40px;
+  left: 93px;
+  content: '';
+  width: 73px;
+  height: 58px;
+  background-color: #ffffff;
+  transform: skew(-35deg);
+  z-index: -1;
+} 
+
+.page-header__logo span {
+  position: relative;
+  display: block;
+}
+
+.page-header__logo span::before {
+  position: absolute;
+  top: -18px;
+  left: 92px;
+  content: '';
+  width: 74px;
+  height: 58px;
+  background-color: #ffffff;
+  transform: skew(35deg);
+  z-index: -1; 
+}
+
 .page-header__event-name {
   position: relative;
   width: 73px;
+  /* font-family: "Proxima Nova Extrabold", sans-serif; */
   font-size: 26px;
-  font-weight: 700;
-  line-height: 1.1;
+  /* font-weight: 900; */
+  line-height: 1;
   text-align: left;
-  margin-top: 33px;
+  margin-top: 36px;
   margin-bottom: 28px;
 }
 
@@ -562,7 +698,7 @@ button:focus {
 }
 
 .container--schedule {
-  width: 100%;
+  width: 1920px;
 } 
 
 .page-content__schedule h2 {
@@ -575,7 +711,7 @@ button:focus {
 }
 
 .page-content__schedule table {
-  width: 100%;
+  width: 1920px;
   margin: 0 auto;
 }
 
@@ -640,6 +776,14 @@ button:focus {
 
 .page-content__address p {
   padding-top: 8px;
+}
+
+.container--map {
+  width: 1920px;
+}
+
+.event-map {
+  margin-top: 36px;
 }
 
 /* --------------- --------------- Footer --------------- --------------- */
