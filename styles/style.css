@@ -61,7 +61,7 @@ h2 {
   color: #000000;
 }
 
-strong {
+h3, strong {
   font-family: 'proxima_nova_rgbold';
 }
 
@@ -647,35 +647,111 @@ strong {
 /* --------------- Schedule --------------- */
 
 .page-content__schedule {
-  height: 961px;
+  min-height: 961px;
 }
 
 .container--schedule {
-  width: 1920px;
-} 
-
-.page-content__schedule h2 {
-  padding-top: 42px;
-  padding-bottom: 63px;
-}
-
-.page-content__schedule h3 {
-  font-size: 20px;
-}
-
-.page-content__schedule table {
-  width: 1920px;
+  width: 940px;
   margin: 0 auto;
 }
 
-.page-content__schedule tr:nth-child(even) {
+.page-content__schedule h2 {
+  position: relative;
+  padding-top: 42px;
+  padding-bottom: 51px;
+}
+
+.schedule__row {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.schedule__row:nth-child(odd) {
   background-color: #efece7;
 }
 
-.page-content__schedule td {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.page-content__schedule h2::after,
+.page-content__partners h2::before {
+  position: absolute;
+  content: '';
+  width: 85px;
+  height: 8px;
+  background-image: url(../images/sprite.png);
+  background-position: -8px -478px;
 }
+
+.page-content__partners h2::before {
+  top: 30px;
+  left: 547px;
+}
+
+.page-content__schedule h2::after {
+  top: 113px;
+  left: 546px;
+}
+
+.schedule__column--photo, 
+.schedule__column img {
+  width: 98px;
+  height: 98px;
+}
+
+.schedule__column--photo {
+  display: block;
+  background-image: url(../images/sprite.png);
+  background-position: -334px -113px;
+}
+
+.schedule__row:nth-of-type(3) .schedule__column--photo {
+  background-position: -334px -7px;
+}
+
+.schedule__column--left,
+.schedule__column--center {
+  float: left;
+}
+
+.schedule__column h3,
+.schedule__column--left strong {
+  font-family: 'proxima_nova_thextrabold';
+  font-size: 21px;
+}
+
+.schedule__column h3 {
+  margin-top: 19px;
+  margin-bottom: 5px;
+}
+
+.schedule__column p {
+  width: 330px;
+  font-size: 14px;
+}
+
+.schedule__column--center {
+  margin-left: 64px;
+  margin-top: -14px;
+  text-align: left;
+}
+
+.schedule__column--center em {
+  font-size: 13px;
+}
+
+.schedule__column--right {
+  float: right;
+  text-align: right;
+}
+
+.schedule__column--right p {
+  width: auto;
+  font-size: 18px;
+}
+
+
+
+
+
 
 /* --------------- Partners --------------- */
 
@@ -684,6 +760,7 @@ strong {
 }
 
 .page-content__partners h2 {
+  position: relative;
   padding-top: 83px;
   padding-bottom: 43px;
 }
@@ -731,9 +808,9 @@ strong {
   padding-top: 8px;
 }
 
-.container--map {
+/* .container--map {
   width: 1920px;
-}
+} */
 
 .event-map {
   margin-top: 36px;
