@@ -287,7 +287,7 @@ h3, strong {
 
 .page-header__event-date {
   float: right;
-  width: 220px;
+  width: 221px;
   margin-top: 54px;
   margin-right: -3px;
   text-align: left;
@@ -735,7 +735,7 @@ h3, strong {
 }
 
 .event-ticket__sale span:nth-of-type(1) {
-  padding-left: 40px;
+  padding-left: 38px;
 }
 
 .event-ticket__sale span:nth-of-type(3) {
