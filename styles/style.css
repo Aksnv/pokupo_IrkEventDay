@@ -558,10 +558,29 @@ h3, strong {
 
 .event-ticket__price {
   width: 302px;
-  padding-top: 85px;
+  padding-top: 52px;
   padding-left: 80px;
   text-align: left;
   color: #000000;
+}
+
+.event-ticket__price p {
+  font-size: 18px;
+}
+
+.event-ticket__price span {
+  display: block;
+  font-size: 24px;
+  text-decoration: line-through;
+  padding-top: 4px;
+  color: #bfbdb8;
+}
+
+.event-ticket__price em {
+  display: block;
+  font-size: 40px;
+  font-style: normal;
+  margin-top: -2px;
 }
 
 .event-ticket__purchase::before,
@@ -633,15 +652,63 @@ h3, strong {
   background-position: 3px -103px;
 }
 
-.event-ticket__price p {
-  font-size: 18px;
+.event-ticket__sale {
+  position: absolute;
+  top: 191px;
+  right: 95px;
+  width: 140px;
+  height: 70px;
+  z-index: 1;
 }
 
-.event-ticket__price em {
+.event-ticket__sale span {
   display: block;
-  font-size: 40px;
-  font-style: normal;
-  padding-top: 4px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.event-ticket__sale span:nth-of-type(1) {
+  padding-left: 40px;
+}
+
+.event-ticket__sale span:nth-of-type(3) {
+  padding-right: 10px;
+}
+
+.event-ticket__sale::before {
+  position: absolute;
+  top: -12px;
+  left: 186px;
+  content: '';
+  border: 25px solid transparent;
+  border-top-width: 38px;
+  border-top-color: #efece7;
+}
+
+.event-ticket__sale::after {
+  position: absolute;
+  top: -12px;
+  left: -36px;
+  content: '';
+  width: 240px;
+  height: 90px;
+  background-image: linear-gradient(to top, #f38a1f 0%, #ffa800 100%);
+  background-color: #ffa800;
+  transform: skew(-33deg);
+  z-index: -1;
+}
+
+.event-ticket__sale p::after {
+  position: absolute;
+  top: 34px;
+  left: -79px;
+  content: '';
+  width: 56px;
+  height: 44px;
+  background-image: linear-gradient(to bottom, #a19f9c 0%, #d9d7d3 30%);
+  background-color: #d9d7d3;
+  transform: skew(33deg);
+  z-index: -2;
 }
 
 /* --------------- Schedule --------------- */
