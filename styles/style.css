@@ -570,6 +570,10 @@ h3, strong {
   color: #fefefe;
 }
 
+.page-content__participation--top {
+  min-height: 580px;
+}
+
 .page-content__participation h2 {
   padding-top: 55px;
   padding-bottom: 21px;
@@ -581,11 +585,7 @@ h3, strong {
   font-size: 20px;
 }
 
-.page-content__participation--top {
-  min-height: 580px;
-}
-
-.page-content__participation--top strong {
+.page-content__participation strong {
   font-family: 'proxima_nova_thextrabold';
 }
 
@@ -614,7 +614,7 @@ h3, strong {
 .event-ticket__price {
   position: relative;
   float: left;
-  height: inherit;
+  /* height: inherit; */
 }
 
 .event-ticket__purchase {
@@ -630,6 +630,7 @@ h3, strong {
 }
 
 .event-ticket__price p {
+  font-family: 'proxima_nova_rgregular';
   font-size: 18px;
 }
 
@@ -638,11 +639,12 @@ h3, strong {
   font-size: 24px;
   text-decoration: line-through;
   padding-top: 4px;
-  color: #bfbdb8;
+  color: #a7a5a1;
 }
 
 .event-ticket__price em {
   display: block;
+  font-family: 'proxima_nova_ltlight';
   font-size: 40px;
   font-style: normal;
   margin-top: -2px;
@@ -686,7 +688,7 @@ h3, strong {
 
 .event-ticket__purchase a {
   float: left;
-  display: block;
+  /* display: block; */
   width: 309px;
   height: 59px;
   font-family: 'proxima_nova_thextrabold';
