@@ -148,7 +148,7 @@ h3, strong {
 /* --------------- --------------- Header --------------- --------------- */
 
 .page-header {
-  height: 800px;
+  min-height: 800px;
   background-image: url(../images/bg_top.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -251,12 +251,15 @@ h3, strong {
 .page-header__event-name {
   position: relative;
   width: 73px;
-  font-family: 'proxima_nova_thextrabold';
   font-size: 26px;
   line-height: 1;
   text-align: left;
   margin-top: 36px;
   margin-bottom: 30px;
+}
+
+.page-header__event-name strong {
+  font-family: 'proxima_nova_thextrabold';
 }
 
 .page-header__event-name span {
@@ -332,6 +335,7 @@ h3, strong {
 
 .page-header__event-header span {
   display: inline-block;
+  vertical-align: top;
   text-transform: uppercase;
 }
 
@@ -340,7 +344,6 @@ h3, strong {
   font-size: 20px;
   font-weight: 200;
   margin-bottom: 19px;
-  padding-right: 1px;
   letter-spacing: 1px;
 }
 
@@ -356,7 +359,6 @@ h3, strong {
   font-size: 36px;
   font-weight: 200;
   margin-bottom: 61px;
-  padding-right: 1px;
   letter-spacing: 2px;
   text-transform: none;
 }
@@ -368,6 +370,7 @@ h3, strong {
 .page-header__social-media p {
   font-size: 13px;
   margin-bottom: 21px;
+  color: #ffffff;
 }
 
 .page-header__social-media li {
@@ -416,9 +419,6 @@ h3, strong {
   opacity: 0.5;
 }
 
-.page-header__main-menu {
-}
-
 .page-header__main-menu li {
   display: inline-block;
   vertical-align: top;
@@ -434,7 +434,6 @@ h3, strong {
   height: 30px;
   font-family: 'proxima_nova_rgbold'; 
   text-transform: uppercase;
-  border-bottom: 3px solid transparent; 
   color: #fefefe;
   /* transition: all 0.3s ease-in-out; */
 }
@@ -457,7 +456,7 @@ h3, strong {
 /* --------------- Preview --------------- */
 
 .page-content__preview {
-  height: 623px;
+  min-height: 623px;
 }
 
 .page-content__preview h2 {
@@ -567,7 +566,6 @@ h3, strong {
   margin-right: 48px;
 }
 
-
 /* --------------- Participation --------------- */
 
 .page-content__participation {
@@ -590,7 +588,7 @@ h3, strong {
 }
 
 .page-content__participation--top {
-  height: 580px;
+  min-height: 580px;
 }
 
 .page-content__participation--top strong {
@@ -922,6 +920,7 @@ h3, strong {
 
 .page-content__partners li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .page-content__partners-offer {
@@ -945,7 +944,7 @@ h3, strong {
 /* --------------- Participation --------------- */
 
 .page-content__participation--bottom {
-  height: 430px;
+  min-height: 430px;
   padding-top: 46px;
   background-position: bottom;
 }
@@ -953,7 +952,7 @@ h3, strong {
 /* --------------- Address --------------- */
 
 .page-content__address {
-  height: 620px;
+  min-height: 620px;
 }
 
 .page-content__address h2 {
