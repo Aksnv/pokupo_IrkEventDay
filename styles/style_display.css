@@ -1,0 +1,43 @@
+/* Diffrent display layout styles */
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+    /* position: static; */
+    /* max-width: 750px; */
+    /* width: 730px; */
+  }
+
+  /* ---------------  Header --------------- */
+
+
+
+  /* -------------  Main content  ------------- */
+
+
+  /* --------------- Footer --------------- */
+
+}
+
+
+@media screen and (max-width: 749px) {
+
+  .container {
+    /* position: static; */ 
+    /* max-width: 360px;
+    min-width: 360px; */
+    /* width: 360px; */
+  }
+
+  /* ---------------  Header --------------- */
+
+
+
+  /* -------------  Main content  ------------- */
+
+
+
+  /* --------------- Footer --------------- */
+
+  
+}

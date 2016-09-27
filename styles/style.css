@@ -829,16 +829,12 @@ h3, strong {
   padding-top: 10px;
 }
 
-/* .container--map {
-  width: 1920px;
-} */
-
 .event-map {
   margin-top: 36px;
-  height: 400px;
+  /* height: 400px;
   background-image: url(../images/map.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
 /* --------------- --------------- Footer --------------- --------------- */
