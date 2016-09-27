@@ -469,16 +469,11 @@ h3, strong {
   line-height: 22px;
 }
 
-.container--preview {
-  width: 620px;
-}
-
 .event-countdown {
   position: relative;
   width: 393px;
   margin: 0 auto;
   margin-top: 40px;
-  text-align: center;
 }
 
 .event-countdown::before {
@@ -490,7 +485,6 @@ h3, strong {
   height: 39px;
   background-color: #00a651;
   transform: skew(-30deg);
-  z-index: -1;
 }
 
 .event-countdown::after {
@@ -502,7 +496,7 @@ h3, strong {
   height: 110px;
   background-color: #fea404;
   transform: skew(-33deg);
-  z-index: -2;
+  z-index: -1;
 }
 
 .event-countdown p {
@@ -520,7 +514,7 @@ h3, strong {
 .event-countdown__item {
   position: relative;
   float: left;
-  display: block;
+  /* display: block; */
   font-family: 'proxima_nova_blblack';
   font-size: 44px;
 }
