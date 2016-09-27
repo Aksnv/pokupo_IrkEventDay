@@ -57,7 +57,6 @@ body {
 h2 {
   font-family: 'proxima_nova_ltlight';
   font-size: 40px;
-  padding-right: 1px;
   color: #000000;
 }
 
@@ -66,8 +65,8 @@ h3, strong {
 }
 
 .inline-link {
+  font-family: 'proxima_nova_thextrabold';
   font-size: 20px;
-  font-weight: 900;
   text-decoration: underline;
   color: #41658b;
 }
@@ -113,7 +112,6 @@ h3, strong {
   margin-top: -5px;
   background-color: #efece7;
   border-radius: 50%;
-  border: none;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -800,14 +798,14 @@ h3, strong {
 
 .page-content__schedule h2 {
   position: relative;
-  padding-top: 42px;
-  padding-bottom: 51px;
+  padding-top: 44px;
+  padding-bottom: 48px;
 }
 
 .schedule__row {
   position: relative;
   overflow: hidden;
-  padding: 30px 0;
+  padding: 28px 0;
 }
 
 .schedule__row:nth-child(odd) {
@@ -873,7 +871,6 @@ h3, strong {
 
 .schedule__column--center {
   margin-left: 64px;
-  margin-top: -14px;
   text-align: left;
 }
 
@@ -894,6 +891,7 @@ h3, strong {
 .schedule__column--right p {
   width: auto;
   font-size: 18px;
+  padding-top: 3px;
 }
 
 /* --------------- Partners --------------- */
