@@ -905,7 +905,7 @@ h3, strong {
 }
 
 .page-content__partners h2:last-of-type {
-  font-size: 14px;
+  font-size: 15px;
   padding-top: 60px;
   padding-bottom: 22px;
 }
@@ -928,7 +928,9 @@ h3, strong {
 }
 
 .page-content__partners-offer strong {
+  font-family: 'proxima_nova_thextrabold';
   font-size: 20px;
+  color: #000000;
 }
 
 .page-content__partners-offer strong:last-child {
@@ -939,6 +941,7 @@ h3, strong {
 .page-content__partners-offer p {
   padding-top: 10px;
   padding-bottom: 8px;
+  color: #000000;
 }
 
 /* --------------- Participation --------------- */
