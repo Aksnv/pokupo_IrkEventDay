@@ -46,7 +46,7 @@ body {
   line-height: 1.2;
   text-align: center;
   background-color: #ffffff;
-  color: #333333;
+  color: #000000;
 } 
 
 .container {
@@ -57,7 +57,6 @@ body {
 h2 {
   font-family: 'proxima_nova_ltlight';
   font-size: 40px;
-  color: #000000;
 }
 
 h3, strong {
@@ -467,6 +466,7 @@ h3, strong {
 .page-content__preview p {
   padding-bottom: 21px;
   line-height: 22px;
+  color: #333333;
 }
 
 .event-countdown {
@@ -843,7 +843,6 @@ h3, strong {
 .schedule__column--left strong {
   font-family: 'proxima_nova_thextrabold';
   font-size: 20px;
-  color: #000000;
 }
 
 .schedule__column h3 {
@@ -854,7 +853,6 @@ h3, strong {
 .schedule__column p {
   width: 330px;
   font-size: 14px;
-  color: #000000;
 }
 
 .schedule__column--left,
@@ -869,7 +867,6 @@ h3, strong {
 
 .schedule__column--center em {
   font-size: 13px;
-  color: #000000;
 }
 
 .schedule__column--right {
@@ -930,7 +927,6 @@ h3, strong {
 .page-content__partners-offer strong {
   font-family: 'proxima_nova_thextrabold';
   font-size: 20px;
-  color: #000000;
 }
 
 .page-content__partners-offer strong:last-child {
@@ -941,7 +937,6 @@ h3, strong {
 .page-content__partners-offer p {
   padding-top: 10px;
   padding-bottom: 8px;
-  color: #000000;
 }
 
 /* --------------- Participation --------------- */
@@ -966,12 +961,10 @@ h3, strong {
 .page-content__address strong {
   font-family: 'proxima_nova_thextrabold';
   font-size: 20px;
-  color: #000000;
 }
 
 .page-content__address p {
   padding-top: 10px;
-  color: #000000;
 }
 
 .event-map {
@@ -1007,7 +1000,6 @@ h3, strong {
 .page-footer__contact-block--skype p,
 .page-footer__contact-block--phone p {
   margin-bottom: 9px;
-  color: #000000;
 }
 
 .page-footer__contact-block--phone strong {
@@ -1015,5 +1007,4 @@ h3, strong {
   font-family: 'proxima_nova_blblack';
   font-size: 20px;
   margin-bottom: 10px;
-  color: #000000;
 }
