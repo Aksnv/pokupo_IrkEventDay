@@ -966,10 +966,12 @@ h3, strong {
 .page-content__address strong {
   font-family: 'proxima_nova_thextrabold';
   font-size: 20px;
+  color: #000000;
 }
 
 .page-content__address p {
   padding-top: 10px;
+  color: #000000;
 }
 
 .event-map {
