@@ -147,8 +147,6 @@ h3, strong {
   transform: rotate(-45deg);
 }
 
-
-
 /* --------------- --------------- Header --------------- --------------- */
 
 .page-header {
@@ -466,11 +464,12 @@ h3, strong {
 
 .page-content__preview h2 {
   padding-top: 65px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 }
 
 .page-content__preview p {
-  padding-bottom: 28px;
+  padding-bottom: 21px;
+  line-height: 22px;
 }
 
 .container--preview {
@@ -516,9 +515,9 @@ h3, strong {
 
 .event-countdown p:first-child {
   font-size: 14px;
-  padding-top: 4px;
-  padding-right: 11px;
-  padding-bottom: 18px;
+  padding-top: 1px;
+  padding-right: 13px;
+  padding-bottom: 31px;
 }
 
 .event-countdown__item {
@@ -531,8 +530,8 @@ h3, strong {
 
 .event-countdown__item::before {
   position: absolute;
-  top: 47px;
-  left: 6px;
+  top: 29px;
+  left: 5px;
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
 }
@@ -551,7 +550,7 @@ h3, strong {
 
 .event-countdown__item::after {
   position: absolute;
-  top: 7px;
+  top: -1px;
   left: 67px;
   content: ':';
   font-family: 'proxima_nova_rgbold'; 
@@ -796,6 +795,7 @@ h3, strong {
 .container--schedule {
   width: 940px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .page-content__schedule h2 {
@@ -974,10 +974,10 @@ h3, strong {
 
 .event-map {
   margin-top: 36px;
-  /* height: 400px;
+  height: 400px;
   background-image: url(../images/map.jpg);
   background-repeat: no-repeat;
-  background-position: center; */
+  background-position: center; 
 }
 
 /* --------------- --------------- Footer --------------- --------------- */
