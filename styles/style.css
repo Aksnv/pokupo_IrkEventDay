@@ -423,6 +423,10 @@ h3, strong {
   opacity: 0.5;
 }
 
+.page-header__menu-hamburger {
+  display: none;
+}
+
 .page-header__main-menu li {
   display: inline-block;
   vertical-align: top;
@@ -992,13 +996,10 @@ h3, strong {
 }
 
 .page-footer__contact-block {
-  float: left;
-  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  width: 296px;
   margin-top: 54px;
-}
-
-.page-footer__contact-block--email {
-  margin-left: 140px;
 }
 
 .page-footer__contact-block--email p,
