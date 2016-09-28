@@ -50,7 +50,7 @@ body {
 } 
 
 .container {
-  width: 1180px;
+  max-width: 1180px;
   margin: auto;
 }
 
@@ -146,6 +146,10 @@ h3, strong {
 
 /* --------------- --------------- Header --------------- --------------- */
 
+.container--page-header {
+  max-width: 1380px;
+}
+
 .page-header {
   min-height: 800px;
   background-image: url(../images/bg_top.jpg);
@@ -163,6 +167,7 @@ h3, strong {
 .page-header__logo {
   position: relative;
   top: 30px;
+  margin-left: 100px;
   margin-right: 82px;
   z-index: 0;
 }
@@ -287,9 +292,9 @@ h3, strong {
 
 .page-header__event-date {
   float: right;
-  width: 221px;
+  width: 220px;
   margin-top: 54px;
-  margin-right: -3px;
+  margin-right: 97px;
   text-align: left;
 }
 

@@ -1,16 +1,48 @@
 /* Diffrent display layout styles */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1179px) {
 
   .container {
-    /* position: static; */
-    /* max-width: 750px; */
-    /* width: 730px; */
+    /* max-width: 940px; */
+    width: 940px;
   }
 
   /* ---------------  Header --------------- */
 
+  .page-header__logo {
+    margin-right: 67px;
+  }
 
+  .page-header__logo a {
+    margin-left: 0;
+    background-position: -3px 10px;
+  }
+
+  .page-header__logo::before {
+    display: none;
+  }
+
+  .page-header__logo::after {
+    left: -43px;
+    width: 166px;
+    transform: none;
+  }
+
+  .page-header__logo a::before {
+    display: none;
+  }
+
+  .page-header__logo a::after {
+    left: 79px;
+  }
+
+  .page-header__logo span::before {
+    left: 78px;
+  }
+
+  .page-header__main-menu li {
+    margin-right: 37px;
+  }
 
   /* -------------  Main content  ------------- */
 
