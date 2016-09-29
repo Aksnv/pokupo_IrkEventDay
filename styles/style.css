@@ -147,6 +147,7 @@ h3, strong {
 /* --------------- --------------- Header --------------- --------------- */
 
 .container--page-header {
+  position: relative;
   max-width: 1380px;
 }
 
@@ -157,6 +158,10 @@ h3, strong {
   background-position: center;
   background-color: #171c1f;
   color: #fefefe;
+}
+
+.page-header__menu-hamburger button {
+  display: none;
 }
 
 .page-header__logo,
@@ -421,10 +426,6 @@ h3, strong {
 .page-header__social-media--ok:hover,
 .page-header__social-media--gp:hover {
   opacity: 0.5;
-}
-
-.page-header__menu-hamburger button {
-  display: none;
 }
 
 .page-header__main-menu li {

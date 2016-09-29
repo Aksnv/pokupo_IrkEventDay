@@ -91,6 +91,18 @@
 
   /* ---------------  Header --------------- */
 
+  .page-header__menu-hamburger button {
+    position: absolute;
+    top: 30px;
+    right: 2px;
+    display: block;
+    width: 20px;
+    height: 14px;
+    border: none;
+    background-image: url(../images/sprite.png);
+    background-position: -104px -477px;
+  }
+
   .page-header__logo {
     margin-right: 156px;
   }
@@ -103,7 +115,7 @@
     float: none;
     position: absolute;
     top: 793px;
-    left: 362px;
+    left: 225px;
     color: #000000;
   }
 
@@ -163,26 +175,86 @@
     background-position: -336px -272px;
   }
 
-  .page-header__menu-hamburger button {
-    position: absolute;
-    top: 30px;
-    right: 138px;
-    display: block;
-    width: 20px;
-    height: 14px;
-    border: none;
-    background-image: url(../images/sprite.png);
-    background-position: -104px -477px;
-  }
-
-  .page-header__menu-hamburger button:hover + .page-header__main-menu {
-    display: block;
-  }
-
   .page-header__main-menu,
   .page-header__line {
     display: none;
   }
+
+  /* Выпадающее меню */
+
+  .page-header__menu-hamburger:hover {
+    position: absolute;
+    top: 0;
+    left: -29px;
+    width: 750px;
+    height: 1080px;
+    background-color: #3d3d3d;
+    z-index: 1;
+  }
+
+  .page-header__menu-hamburger:hover button {
+    right: 38px; 
+    background-position: -133px -477px;
+    z-index: 1;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__logo {
+    visibility: hidden;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__event-name {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    z-index: 1;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__main-menu .main-menu__active {
+    border-bottom: none;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__main-menu {
+    position: absolute;
+    top: 304px;
+    left: 198px;
+    display: block;
+    width: 300px;
+    z-index: 1;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__main-menu li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__main-menu li:last-child {
+    margin-right: 0;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__main-menu a {
+    display: inline;
+    font-size: 20px;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__main-menu a:hover {
+    border-bottom: 3px solid #ffa800;
+    color: #ffa800;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__event-header {
+    margin-bottom: 85px;
+  }
+
+  .page-header__menu-hamburger:hover ~ .page-header__social-media {
+    position: absolute;
+    top: 941px;
+    left: 195px;
+    z-index: 1;
+  }
+
+  /* END - Выпадающее меню */
+
 
   /* -------------  Main content  ------------- */
 
