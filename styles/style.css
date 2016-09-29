@@ -423,7 +423,7 @@ h3, strong {
   opacity: 0.5;
 }
 
-.page-header__menu-hamburger {
+.page-header__menu-hamburger button {
   display: none;
 }
 
@@ -580,6 +580,7 @@ h3, strong {
 }
 
 .page-content__participation--top {
+  position: relative;
   min-height: 580px;
 }
 
@@ -622,15 +623,16 @@ h3, strong {
 .event-ticket__purchase,
 .event-ticket__price {
   position: relative;
-  float: left;
   /* height: inherit; */
 }
 
 .event-ticket__purchase {
+  float: left;
   width: 658px;
 }
 
 .event-ticket__price {
+  float: right;
   width: 302px;
   padding-top: 52px;
   padding-left: 80px;
@@ -794,6 +796,7 @@ h3, strong {
 }
 
 .container--schedule {
+  display: table;
   width: 940px;
   margin: 0 auto;
   overflow: hidden;
@@ -848,6 +851,11 @@ h3, strong {
   background-position: -334px -7px;
 }
 
+.schedule__column {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .schedule__column h3,
 .schedule__column--left strong {
   font-family: 'proxima_nova_thextrabold';
@@ -864,9 +872,18 @@ h3, strong {
   font-size: 14px;
 }
 
-.schedule__column--left,
+.schedule__column--left {
+  width: 140px;
+  text-align: left;
+}
+
+/* .schedule__column--left,
 .schedule__column--center {
   float: left;
+} */
+
+.schedule__row--action .schedule__column--left {
+  width: auto;
 }
 
 .schedule__column--center {
@@ -878,9 +895,12 @@ h3, strong {
   font-size: 13px;
 }
 
-.schedule__column--right {
+/* .schedule__column--right {
   float: right;
-  /* text-align: right; */
+} */
+
+.schedule__column--right {
+  text-align: right;
 }
 
 .schedule__column--center + .schedule__column--right {
@@ -927,6 +947,10 @@ h3, strong {
 .page-content__partners li {
   display: inline-block;
   vertical-align: top;
+}
+
+.partners--small {
+  display: none;
 }
 
 .page-content__partners-offer {

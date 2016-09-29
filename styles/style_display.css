@@ -103,7 +103,7 @@
     float: none;
     position: absolute;
     top: 793px;
-    left: 374px;
+    left: 362px;
     color: #000000;
   }
 
@@ -163,15 +163,20 @@
     background-position: -336px -272px;
   }
 
-  .page-header__menu-hamburger {
+  .page-header__menu-hamburger button {
     position: absolute;
     top: 30px;
-    right: 151px;
+    right: 138px;
     display: block;
     width: 20px;
     height: 14px;
+    border: none;
     background-image: url(../images/sprite.png);
     background-position: -104px -477px;
+  }
+
+  .page-header__menu-hamburger button:hover + .page-header__main-menu {
+    display: block;
   }
 
   .page-header__main-menu,
@@ -181,13 +186,269 @@
 
   /* -------------  Main content  ------------- */
 
+  /* --------------- Preview --------------- */
+  
+  .page-content__preview {
+    min-height: 569px;
+  }
 
+  .page-content__preview h2 {
+    padding-top: 61px;
+  }
+
+  .page-content__preview p:nth-child(n) {
+    margin: 0 auto;
+  }
+
+  .page-content__preview p:nth-child(2) {
+    width: 378px;
+  }
+
+  .page-content__preview p:nth-child(3) {
+    width: 378px;
+  }
+
+  .event-countdown {
+    margin-top: 38px;
+  }
+
+  .event-countdown::before {
+    left: 87px;
+    transform: skew(-33deg);
+  }
+
+  .event-countdown::after {
+    display: none;
+  }
+
+  .event-countdown p:first-child {
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  /* --------------- Participation --------------- */
+
+  .page-content__participation {
+    background-image: url(../images/bg_middle_750.jpg);
+  }
+
+  .page-content__participation--top {
+    min-height: 640px;
+  }
+
+  .page-content__participation--top::before {
+    position: absolute;
+    top: -110px;
+    left: 0;
+    content: '';
+    width: 100%; 
+    height: 110px;
+    background-color: #fea404;
+    z-index: -1;
+  }
+
+  .page-content__participation h2 {
+    padding-top: 61px;
+  }
+
+  .event-ticket,
+  .event-ticket__purchase,
+  .event-ticket__price {
+    width: 300px;
+  }
+
+  .event-ticket {
+    height: 281px;
+    margin-top: 97px;
+  }
+
+  .event-ticket::after {
+    height: 300px;
+    top: 15px;
+    right: 149px;
+    transform: rotate(90deg);
+  }
+
+  .event-ticket__purchase,
+  .event-ticket__price {
+    float: none;
+  }
+
+  .event-ticket__price {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 45px;
+  }
+
+  .event-ticket__purchase::before,
+  .event-ticket__purchase::after,
+  .event-ticket__price::before,
+  .event-ticket__price::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .event-ticket__purchase::before {
+    top: -154px;
+    left: -12px;
+  }
+
+  .event-ticket__purchase::after {
+    top: 128px;
+    left: -12px;
+  }
+
+  .event-ticket__price::before {
+    top: -11px;
+    right: -8px;
+  }
+
+  .event-ticket__price::after {
+    top: 271px;
+    right: -8px;
+  }
+
+  .event-ticket__purchase a {
+    width: 256px;
+    margin-left: 20px;
+    margin-top: 42px;
+  }
+
+  .purchase-bg {
+    display: none;
+  }
+
+  .event-ticket__sale {
+    width: 200px;
+    top: -35px;
+    right: 51px;
+  }
+
+  .event-ticket__sale span {
+    display: inline;
+  }
+
+  .event-ticket__sale span:nth-of-type(1) {
+    padding-left: 0;
+  }
+
+  .event-ticket__sale span:nth-of-type(3) {
+    padding-right: 0;
+  }
+
+  .event-ticket__sale::before {
+    top: -9px;
+    left: 38px;
+    width: 168px;
+    height: 70px;
+    border: none;
+    background-image: linear-gradient(to top, #f38a1f 0%, #ffa800 100%);
+    background-color: #ffa800;
+    transform: skew(-33deg);
+    z-index: -1;
+  }
+
+  .event-ticket__sale::after {
+    top: -9px;
+    left: -8px;
+    width: 168px;
+    height: 70px;
+    transform: skew(33deg);
+  }
+
+  .event-ticket__sale p::after {
+    top: -9px;
+    left: -31px;
+    width: 260px;
+    height: 44px;
+    background-image: linear-gradient(to top, #9e9d9a 0%, #dcd4c4 30%);
+    transform: none;
+  }
+
+  /* --------------- Schedule --------------- */
+
+  .container--schedule {
+    /* display: table; */
+    width: 670px;
+  }
+
+  .page-content__schedule h2::after {
+    left: 291px;
+  }
+
+  /* .schedule__column {
+    display: table-cell;
+    vertical-align: middle;
+  } */
+
+  /* .schedule__column--left,
+  .schedule__column--center,
+  .schedule__column--right {
+    float: none;
+  } */
+
+  .schedule__column--left {
+    width: 121px;
+    /* text-align: left; */
+  }
+
+ /*  .schedule__row--action .schedule__column--left {
+   width: auto;
+ } */
+
+  .schedule__column--center {
+    width: 320px;
+  }
+
+  .schedule__column--center em {
+    font-size: 16px;
+  }
+
+  /* .schedule__column--right {
+    text-align: right;
+  } */
+
+  /* --------------- Partners --------------- */
+
+  .page-content__partners h2::before {
+    left: 291px;
+  }
+
+  .partners--big {
+    display: none;
+  }
+
+  .partners--small {
+    display: inline;
+  }
+
+  /* --------------- Participation --------------- */
+
+  .page-content__participation--bottom {
+    min-height: 640px;
+  }
+
+  /* --------------- Address --------------- */
+
+  .page-content__address {
+    min-height: 660px;
+  }
+
+  .event-map {
+    background-position: -511px -35px;
+  }
 
   /* --------------- Footer --------------- */
+
+  .page-footer {
+    min-height: 343px;
+  }
 
   .page-footer__contact-block {
     width: 100%;
     display: block;
+    margin-top: 28px;
+    padding-right: 10px;
   }
 
 }
