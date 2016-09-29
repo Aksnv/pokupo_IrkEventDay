@@ -981,6 +981,11 @@ h3, strong {
   background-position: bottom;
 }
 
+.page-content__participation--bottom h2,
+.page-content__participation--bottom p:first-of-type {
+  display: none;
+}
+
 /* --------------- Address --------------- */
 
 .page-content__address {
