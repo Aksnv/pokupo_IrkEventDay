@@ -986,6 +986,10 @@ h3, strong {
   display: none;
 }
 
+.event-ticket p:first-of-type {
+  display: block;
+}
+
 /* --------------- Address --------------- */
 
 .page-content__address {
@@ -1040,7 +1044,8 @@ h3, strong {
 
 .page-footer__contact-block--phone strong {
   display: block;
-  font-family: 'proxima_nova_blblack';
+  /* font-family: 'proxima_nova_blblack'; */
+  font-family: 'proxima_nova_thextrabold';
   font-size: 20px;
   margin-bottom: 10px;
 }

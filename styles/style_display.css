@@ -185,7 +185,7 @@
   .page-header__menu-hamburger:hover {
     position: absolute;
     top: 0;
-    left: -29px;
+    left: -43px;
     width: 750px;
     height: 1080px;
     background-color: #3d3d3d;
@@ -198,14 +198,14 @@
     z-index: 1;
   }
 
-  .page-header__menu-hamburger:hover ~ .page-header__logo {
-    visibility: hidden;
-  }
+/*   .page-header__menu-hamburger:hover ~ .page-header__logo {
+  visibility: hidden;
+} */
 
   .page-header__menu-hamburger:hover ~ .page-header__event-name {
     position: absolute;
     top: 0;
-    left: 12px;
+    left: -1px;
     z-index: 1;
   }
 
@@ -216,7 +216,7 @@
   .page-header__menu-hamburger:hover ~ .page-header__main-menu {
     position: absolute;
     top: 304px;
-    left: 198px;
+    left: 185px;
     display: block;
     width: 300px;
     z-index: 1;
@@ -249,7 +249,7 @@
   .page-header__menu-hamburger:hover ~ .page-header__social-media {
     position: absolute;
     top: 941px;
-    left: 195px;
+    left: 183px;
     z-index: 1;
   }
 
@@ -583,13 +583,34 @@
 
   /* ---------------  Header --------------- */
 
+  .page-header__menu-hamburger button {
+   right: 59px;
+  }
 
+  .page-header__logo {
+    display: none;
+  }
+
+  .page-header__event-name {
+    margin-bottom: 30px;
+  }
+
+  .page-header__event-date {
+    left: 53px;
+  }
 
   /* -------------  Main content  ------------- */
 
+  /* --------------- Preview --------------- */
 
+  .event-countdown {
+    margin-top: -5px;
+  }
 
   /* --------------- Footer --------------- */
 
+  .upstairs-block {
+    display: none;
+  }
   
 }
