@@ -583,8 +583,12 @@
 
   /* ---------------  Header --------------- */
 
+  .page-header {
+    min-height: 640px;
+  }
+
   .page-header__menu-hamburger button {
-   right: 59px;
+   right: 31px;
   }
 
   .page-header__logo {
@@ -592,19 +596,142 @@
   }
 
   .page-header__event-name {
+    margin-left: 29px;
     margin-bottom: 30px;
   }
 
   .page-header__event-date {
-    left: 53px;
+    top: 623px;
+    left: 71px;
   }
 
   /* -------------  Main content  ------------- */
 
   /* --------------- Preview --------------- */
 
+  .page-content__preview {
+    min-height: 639px;
+  }
+
+  .container--page-content__preview {
+    width: 300px;
+  }
+
+  .page-content__preview h2 {
+    padding-top: 51px;
+  }
+
+  .page-content__preview p:nth-child(2),
+  .page-content__preview p:nth-child(3) {
+    width: auto;
+  }
+
   .event-countdown {
-    margin-top: -5px;
+    width: 300px;
+    margin-top: 30px;
+  }
+
+  .event-countdown::before {
+    left: 42px;
+  }
+
+  .event-countdown__item--days {
+    margin: 0 24px;
+  }
+
+  .event-countdown__item--hours {
+    margin-left: 34px;
+  }
+
+  /* --------------- Participation --------------- */
+
+  .page-content__participation--top::before {
+    top: -110px;
+  }
+
+  /* --------------- Schedule --------------- */
+
+  .container--schedule {
+    display: block;
+    width: 300px;
+    /* text-align: center; */
+    /* margin: 0 300px; */
+  }
+
+  .page-content__schedule h2::after {
+    left: 137px;
+  }
+
+  .schedule__row {
+    padding: 21px 0;
+  }
+
+  .schedule__row--action {
+    padding: 24px 0;
+  }
+
+  .schedule__column {
+    display: table;
+  }
+
+  .schedule__column h3 {
+    margin-top: 17px;
+    /* margin-bottom: 30px; */
+  }
+
+  .schedule__column p {
+    width: 300px;
+  }
+
+  .schedule__row--action .schedule__column--left,
+  .schedule__column--center,
+  .schedule__column--right {
+    width: 300px;
+    text-align: center;
+  }
+
+  .schedule__column--left {
+    width: 98px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+
+  .schedule__row--action .schedule__column--left {
+    margin-bottom: 0;
+  }
+
+  .schedule__column--center {
+    margin-left: 0;
+  }
+
+  .schedule__column--center em {
+    padding-top: 0;
+  }
+
+  .schedule__column--right {
+    position: absolute;
+    top: 115px;
+    left: 0;
+  }
+
+  .schedule__column--right p {
+    line-height: 18px;
+  }
+
+  .schedule__column--photo {
+    background-position: -334px -113px;
+  }
+
+  /* --------------- Partners --------------- */
+
+  .page-content__partners h2::before {
+    left: 137px;
+  }
+
+  /* --------------- Address --------------- */
+
+  .page-content__address strong {
+    width: auto;
   }
 
   /* --------------- Footer --------------- */

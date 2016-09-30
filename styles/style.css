@@ -57,6 +57,7 @@ body {
 h2 {
   font-family: 'proxima_nova_ltlight';
   font-size: 40px;
+  font-weight: 300;
 }
 
 h3, strong {
@@ -546,7 +547,7 @@ h3, strong {
 }
 
 .event-countdown__item:nth-child(3)::before {
-  content: 'минуты';
+  content: 'минут';
 }
 
 .event-countdown__item::after {
@@ -797,6 +798,7 @@ h3, strong {
 }
 
 .container--schedule {
+  position: relative;
   display: table;
   width: 940px;
   margin: 0 auto;
@@ -904,10 +906,10 @@ h3, strong {
   text-align: right;
 }
 
-.schedule__column--center + .schedule__column--right {
+/* .schedule__column--center + .schedule__column--right {
   height: 98px;
   line-height: 98px;
-}
+} */
 
 .schedule__column--right p {
   width: auto;
