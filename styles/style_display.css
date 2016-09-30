@@ -280,6 +280,20 @@
     width: 378px;
   }
 
+  /* Правки */
+
+  .preview-aside::before,
+  .preview-aside::after {
+    display: none;
+  }
+
+  .preview-list ul {
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  /* END - Правки */
+
   .event-countdown {
     margin-top: 38px;
   }
@@ -301,7 +315,7 @@
   /* --------------- Participation --------------- */
 
   .page-content__participation {
-    background-image: url(../images/bg_middle_750.jpg);
+    background-image: url(../images/bg_middle.jpg);
   }
 
   .page-content__participation--top {
@@ -310,7 +324,7 @@
 
   .page-content__participation--top::before {
     position: absolute;
-    top: -110px;
+    top: -190px;
     left: 0;
     content: '';
     width: 100%; 
@@ -695,7 +709,7 @@
   /* --------------- Participation --------------- */
 
   .page-content__participation--top::before {
-    top: -110px;
+    top: -190px;
   }
 
   /* --------------- Schedule --------------- */
