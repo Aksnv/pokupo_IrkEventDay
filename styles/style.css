@@ -469,6 +469,10 @@ h3, strong {
   min-height: 623px;
 }
 
+.container--page-content__preview {
+  width: 860px;
+}
+
 .page-content__preview h2 {
   padding-top: 65px;
   padding-bottom: 22px;
@@ -480,11 +484,116 @@ h3, strong {
   color: #333333;
 }
 
+/* Статья */
+
+.preview-article h2 {
+  padding-top: 65px;
+  padding-bottom: 22px;
+}
+
+.preview-article p {
+  font-size: 20px;
+  line-height: 29px;
+  padding-bottom: 21px;
+  color: #000000;
+}
+
+.preview-article i {
+  color: #333333;
+  opacity: 0.6; 
+}
+
+.preview-article span {
+  display: block;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 34px;
+  transform: rotate(90deg);
+}
+
+.preview-aside {
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 95px;
+}
+
+.preview-aside::before,
+.preview-aside::after {
+  position: absolute;
+  content: '';
+  width: 85px;
+  height: 8px;
+  background-image: url(../images/sprite.png);
+  background-position: -8px -478px;
+}
+
+.preview-aside::before {
+  left: 387px;
+  top: -31px;
+}
+
+.preview-aside::after {
+  left: 387px;
+  top: 201px;
+}
+
+.preview-aside p {
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 0;
+  color: #333333;
+}
+
+.preview-aside p:nth-child(3) {
+  padding-top: 22px;
+}
+
+.preview-list h3 {
+  font-family: 'proxima_nova_rgregular';
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 27px;
+  padding-bottom: 40px;
+}
+
+.preview-list ul {
+  width: 475px;
+  text-align: left;
+  margin-left: 227px;
+  margin-bottom: 95px;
+}
+
+.preview-list li {
+  position: relative;
+  margin-bottom: 83px;
+}
+
+.preview-list li:last-child {
+  margin-bottom: 0;
+}
+
+.preview-list li::before {
+  position: absolute;
+  top: -15px;
+  left: -80px;
+  content: '';
+  width: 74px;
+  height: 67px;
+  background-image: url(../images/sprite.png);
+  background-position: -392px -424px;
+}
+
+/* END - Статья */
+
 .event-countdown {
   position: relative;
   width: 393px;
   margin: 0 auto;
   margin-top: 40px;
+  /* margin-bottom: 133px; */
 }
 
 .event-countdown::before {
@@ -518,7 +627,7 @@ h3, strong {
 .event-countdown p:first-child {
   font-size: 14px;
   padding-top: 1px;
-  padding-right: 13px;
+  padding-right: 9px;
   padding-bottom: 31px;
 }
 
@@ -533,7 +642,7 @@ h3, strong {
 .event-countdown__item::before {
   position: absolute;
   top: 29px;
-  left: 5px;
+  left: 7px;
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
 }
@@ -1050,4 +1159,8 @@ h3, strong {
   font-family: 'proxima_nova_thextrabold';
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+.page-footer__contact-block--phone a {
+  color: #000000;
 }
