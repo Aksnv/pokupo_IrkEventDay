@@ -41,7 +41,7 @@
   }
 
   .page-header__event-date {
-    margin-right: -3px; 
+    margin-right: -13px;
   }
 
   .page-header__main-menu li {
@@ -55,21 +55,6 @@
   .container--page-content__participation {
     width: 960px;
   }
-
-    /* Если сделать для ширины 1017px, а не для 1000px, то стили ниже можно убрать и не менять ширину билета
-  (при этом добавить класс .container--page-content__participation с шириной 960px = начальной ширине билета) */
-
-/*   .event-ticket {
-  width: 940px;
-}
-
-.event-ticket__purchase {
-  width: 648px;
-}
-
-.event-ticket__price {
-  width: 292px;
-} */
 
   /* --------------- Schedule --------------- */
   /* --------------- Partners --------------- */
