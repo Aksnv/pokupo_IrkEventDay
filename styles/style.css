@@ -147,11 +147,6 @@ h3, strong {
 
 /* --------------- --------------- Header --------------- --------------- */
 
-.container--page-header {
-  position: relative;
-  max-width: 1380px;
-}
-
 .page-header {
   min-height: 800px;
   background-image: url(../images/bg_top.jpg);
@@ -159,6 +154,11 @@ h3, strong {
   background-position: center;
   background-color: #171c1f;
   color: #fefefe;
+}
+
+.container--page-header {
+  position: relative;
+  max-width: 1380px;
 }
 
 .page-header__menu-hamburger button {
@@ -298,9 +298,9 @@ h3, strong {
 
 .page-header__event-date {
   float: right;
-  width: 220px;
+  width: 230px;
   margin-top: 54px;
-  margin-right: 97px;
+  margin-right: 87px;
   text-align: left;
 }
 
@@ -473,6 +473,8 @@ h3, strong {
   width: 860px;
 }
 
+/* Убрать после включения статьи */
+
 .page-content__preview h2 {
   padding-top: 65px;
   padding-bottom: 22px;
@@ -483,6 +485,8 @@ h3, strong {
   line-height: 22px;
   color: #333333;
 }
+
+/* END - Убрать после включения статьи */
 
 /* Статья */
 
@@ -593,7 +597,8 @@ h3, strong {
   width: 393px;
   margin: 0 auto;
   margin-top: 40px;
-  margin-bottom: 133px; 
+  /* Добавить после включения статьи */
+  /* margin-bottom: 133px;  */
 }
 
 .event-countdown::before {
@@ -685,7 +690,7 @@ h3, strong {
 .page-content__participation {
   background-image: url(../images/bg_middle.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -4px;
   background-color: #171c1f;
   color: #fefefe;
 }
@@ -734,7 +739,6 @@ h3, strong {
 .event-ticket__purchase,
 .event-ticket__price {
   position: relative;
-  /* height: inherit; */
 }
 
 .event-ticket__purchase {
@@ -787,25 +791,25 @@ h3, strong {
 .event-ticket__purchase::before {
   top: -20px;
   left: -20px;
-  background-position: -460px -226px;
+  background-position: -460px -230px;
 }
 
 .event-ticket__purchase::after {
   top: 205px;
   left: -20px;
-  background-position: -460px -451px;
+  background-position: -460px -455px;
 }
 
 .event-ticket__price::before {
   top: -20px;
   right: -20px;
-  background-position: -1420px -226px;
+  background-position: -1420px -230px;
 }
 
 .event-ticket__price::after {
   top: 205px;
   right: -20px;
-  background-position: -1420px -451px;
+  background-position: -1420px -455px;
 }
 
 .event-ticket__purchase a {
@@ -844,8 +848,8 @@ h3, strong {
 .event-ticket__sale {
   position: absolute;
   top: 191px;
-  right: 85px;
-  width: 150px;
+  right: 65px;
+  width: 170px;
   height: 70px;
   z-index: 1;
 }
@@ -857,11 +861,15 @@ h3, strong {
 }
 
 .event-ticket__sale span:nth-of-type(1) {
-  padding-left: 38px;
+  padding-left: 10px;
+}
+
+.event-ticket__sale span:nth-of-type(2) {
+  padding-right: 10px;
 }
 
 .event-ticket__sale span:nth-of-type(3) {
-  padding-right: 10px;
+  padding-right: 41px;
 }
 
 .event-ticket__sale::before {
@@ -920,16 +928,8 @@ h3, strong {
   padding-bottom: 49px;
 }
 
-.schedule__row {
-  padding: 31px 0; 
-}
-
 .schedule__row:nth-child(odd) {
   background-color: #efece7;
-}
-
-.schedule__row--action {
-  padding: 28px 0;
 }
 
 .page-content__schedule h2::after,
@@ -945,22 +945,6 @@ h3, strong {
 .page-content__schedule h2::after {
   top: 113px;
   left: 546px;
-}
-
-.schedule__column--photo, 
-.schedule__column img {
-  width: 98px;
-  height: 98px;
-}
-
-.schedule__column--photo {
-  display: block;
-  background-image: url(../images/sprite.png);
-  background-position: -334px -113px;
-}
-
-.schedule__row:nth-of-type(3) .schedule__column--photo {
-  background-position: -334px -7px;
 }
 
 .schedule__column {
@@ -982,43 +966,51 @@ h3, strong {
 .schedule__column p {
   width: 330px;
   font-size: 14px;
+  line-height: 18px;
+}
+
+.schedule__column--photo, 
+.schedule__column img {
+  display: block;
+  width: 98px;
+  height: 98px;
+  margin: 31px 0;
 }
 
 .schedule__column--left {
-  width: 162px;
   text-align: left;
 }
 
-/* .schedule__column--left,
-.schedule__column--center {
-  float: left;
-} */
+.schedule__column--photo {
+  background-image: url(../images/sprite.png);
+}
 
-.schedule__row--action .schedule__column--left {
-  width: auto;
+.schedule__column--photo-male {
+  background-position: -334px -113px;
+}
+
+.schedule__column--photo-female {
+  background-position: -334px -7px;
+}
+
+.schedule__column--action {
+  padding: 28px 0;
 }
 
 .schedule__column--center {
-  margin-left: 64px;
+  width: 612px;
   text-align: left;
+  vertical-align: top;
+  padding: 31px 0;
 }
 
 .schedule__column--center em {
   font-size: 13px;
 }
 
-/* .schedule__column--right {
-  float: right;
-} */
-
 .schedule__column--right {
   text-align: right;
 }
-
-/* .schedule__column--center + .schedule__column--right {
-  height: 98px;
-  line-height: 98px;
-} */
 
 .schedule__column--right p {
   width: auto;
@@ -1033,7 +1025,7 @@ h3, strong {
 
 .page-content__partners h2 {
   position: relative;
-  padding-top: 83px;
+  padding-top: 82px;
   padding-bottom: 43px;
 }
 
@@ -1089,7 +1081,7 @@ h3, strong {
 .page-content__participation--bottom {
   min-height: 430px;
   padding-top: 46px;
-  background-position: center -150px;
+  background-position: center -155px;
 }
 
 .page-content__participation--bottom h2,
@@ -1123,13 +1115,10 @@ h3, strong {
 
 .event-map {
   margin-top: 36px;
-  /* width: 1920px; */
   height: 400px;
-  /* margin: 0 auto; */
   background-image: url(../images/map.jpg);
   background-repeat: no-repeat; 
-  background-position: center -179px;  
-  /* background-position: -249px -179px;  */
+  background-position: center -179px;
 }
 
 /* --------------- --------------- Footer --------------- --------------- */
@@ -1147,7 +1136,7 @@ h3, strong {
   display: inline-block;
   vertical-align: top;
   width: 296px;
-  margin-top: 54px;
+  margin-top: 53px;
 }
 
 .page-footer__contact-block--email p,
