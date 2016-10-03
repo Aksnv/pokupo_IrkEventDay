@@ -475,7 +475,7 @@ h3, strong {
 
 /* Убрать после включения статьи */
 
-.page-content__preview h2 {
+/* .page-content__preview h2 {
   padding-top: 65px;
   padding-bottom: 22px;
 }
@@ -484,7 +484,7 @@ h3, strong {
   padding-bottom: 21px;
   line-height: 22px;
   color: #333333;
-}
+} */
 
 /* END - Убрать после включения статьи */
 
@@ -592,13 +592,23 @@ h3, strong {
 
 /* END - Статья */
 
-.event-countdown {
+/* Убрать после включения статьи */
+
+/* .event-countdown {
   position: relative;
   width: 393px;
   margin: 0 auto;
   margin-top: 40px;
-  /* Добавить после включения статьи */
-  /* margin-bottom: 133px;  */
+} */
+
+/* END - Убрать после включения статьи */
+
+.event-countdown {
+  position: relative;
+  width: 393px;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 167px; 
 }
 
 .event-countdown::before {
@@ -629,11 +639,22 @@ h3, strong {
   color: #ffffff;
 }
 
-.event-countdown p:first-child {
+/* Убрать после включения статьи */
+
+/* .event-countdown p:first-child {
   font-size: 14px;
   padding-top: 1px;
   padding-right: 9px;
   padding-bottom: 31px;
+} */
+
+/* END - Убрать после включения статьи */
+
+.event-countdown p:first-child {
+  font-size: 14px;
+  padding-top: 3px;
+  padding-right: 9px;
+  padding-bottom: 18px;
 }
 
 .event-countdown__item {
@@ -644,9 +665,21 @@ h3, strong {
   font-size: 44px;
 }
 
-.event-countdown__item::before {
+/* Убрать после включения статьи */
+
+/* .event-countdown__item::before {
   position: absolute;
   top: 29px;
+  left: 7px;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 14px;
+} */
+
+/* END - Убрать после включения статьи */
+
+.event-countdown__item::before {
+  position: absolute;
+  top: 47px;
   left: 7px;
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
