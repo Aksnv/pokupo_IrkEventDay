@@ -576,6 +576,7 @@
 
   .page-header {
     min-height: 640px;
+    background-position: center top;
   }
 
   .page-header__menu-hamburger button {
@@ -686,29 +687,34 @@
   /* --------------- Participation --------------- */
 
   .page-content__participation--top::before {
-    top: -190px;
+    top: -110px;
   }
+
+  /* Статья */
+
+  /* .page-content__participation--top::before {
+    top: -190px;
+  } */
+
+  /* END - Статья */
 
   /* --------------- Schedule --------------- */
 
   .container--schedule {
-    display: block;
     width: 300px;
-    /* text-align: center; */
-    /* margin: 0 300px; */
   }
 
   .page-content__schedule h2::after {
     left: 137px;
   }
 
-  .schedule__row {
+  /* .schedule__row {
     padding: 21px 0;
-  }
+  }  */
 
-  .schedule__row--action {
+  /* .schedule__row--action {
     padding: 24px 0;
-  }
+  } */
 
   .schedule__column {
     display: table;
@@ -723,7 +729,7 @@
     width: 300px;
   }
 
-  .schedule__row--action .schedule__column--left,
+  .schedule__column--action,
   .schedule__column--center,
   .schedule__column--right {
     width: 300px;
@@ -733,12 +739,21 @@
   .schedule__column--left {
     width: 98px;
     margin: 0 auto;
-    margin-bottom: 58px;
+    /* margin-bottom: 58px; */
   }
 
-  .schedule__row--action .schedule__column--left {
-    margin-bottom: 0;
+  /* .schedule__column--photo {
+    background-position: -334px -113px;
+  } */
+
+  .schedule__column--photo,
+  .schedule__column img {
+    margin: 27px 0;
   }
+
+  .schedule__column--action {
+    margin-bottom: 0;
+  } 
 
   .schedule__column--center {
     margin-left: 0;
@@ -754,12 +769,12 @@
     left: 0;
   }
 
+  .schedule__column--action + .schedule__column--right {
+    top: 55px;
+  } 
+
   .schedule__column--right p {
     line-height: 18px;
-  }
-
-  .schedule__column--photo {
-    background-position: -334px -113px;
   }
 
   /* --------------- Partners --------------- */
@@ -772,6 +787,10 @@
 
   .page-content__address strong {
     width: auto;
+  }
+
+  .event-map {
+    background-position: -633px -178px;
   }
 
   /* --------------- Footer --------------- */
@@ -797,6 +816,7 @@
 
   .page-header__event-date {
     width: 230px;
+    left: 51px;
   }
 
   .page-header__event-header span:nth-of-type(2) {
@@ -809,6 +829,21 @@
     width: 320px;
   }
 
+  .page-header__menu-hamburger--active ~ .page-header__main-menu,
+  .page-header__menu-hamburger--active ~ .page-header__social-media {
+    left: 10px;
+  }
+
   /* END - Выпадающее меню на JS */
+
+  /* -------------  Main content  ------------- */
+
+  /* --------------- Schedule --------------- */
+  /* --------------- Partners --------------- */
+
+  .page-content__schedule h2::after,
+  .page-content__partners h2::before {
+    left: 117px;
+  }
 
 }
