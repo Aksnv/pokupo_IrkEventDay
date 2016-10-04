@@ -134,7 +134,7 @@
   }
 
   .page-header__event-header {
-    width: 320px;
+    width: 330px;
     margin: 0 auto;
   }
 
@@ -536,7 +536,7 @@
 
   .page-content__partners-offer strong {
     display: block;
-    width: 240px;
+    width: 260px;
     margin: 0 auto;
     line-height: 27px;
   }
@@ -564,7 +564,7 @@
   /* --------------- Address --------------- */
 
   .container--page-content__address {
-    width: 300px;
+    width: 320px;
   }
 
   .page-content__address {
@@ -577,7 +577,7 @@
 
   .page-content__address strong {
     display: block;
-    width: 300px;
+    width: 320px;
     line-height: 23px;
   }
 
@@ -622,7 +622,7 @@
   }
 
   .page-header__event-name {
-    width: 75px;
+    width: 80px;
     margin-left: 29px;
     margin-bottom: 30px;
   }
@@ -884,10 +884,35 @@
   
   /* --------------- Preview --------------- */
 
+  /* Статья */
+
+  .preview-article p {
+    width: 290px;
+  }
+
+  .preview-article i {
+    width: 250px;
+  }
+
   .preview-aside::before,
   .preview-aside::after {
     left: 118px;
   }
+
+  .preview-aside::after {
+    top: 425px;
+  }
+
+  .preview-aside p {
+    width: 250px;
+  }
+
+  .preview-list ul {
+    width: 190px;
+    margin-left: 100px;
+  }
+
+  /* END - Статья */
 
   /* --------------- Schedule --------------- */
   /* --------------- Partners --------------- */
