@@ -473,21 +473,6 @@ h3, strong {
   width: 860px;
 }
 
-/* Убрать после включения статьи */
-
-/* .page-content__preview h2 {
-  padding-top: 65px;
-  padding-bottom: 22px;
-}
-
-.page-content__preview p {
-  padding-bottom: 21px;
-  line-height: 22px;
-  color: #333333;
-}  */
-
-/* END - Убрать после включения статьи */
-
 /* Статья */
 
 .preview-article h2 {
@@ -592,17 +577,6 @@ h3, strong {
 
 /* END - Статья */
 
-/* Убрать после включения статьи */
-
-/* .event-countdown {
-  position: relative;
-  width: 393px;
-  margin: 0 auto;
-  margin-top: 40px;
-}  */
-
-/* END - Убрать после включения статьи */
-
 .event-countdown {
   position: relative;
   width: 393px;
@@ -639,17 +613,6 @@ h3, strong {
   color: #ffffff;
 }
 
-/* Убрать после включения статьи */
-
-/* .event-countdown p:first-child {
-  font-size: 14px;
-  padding-top: 1px;
-  padding-right: 9px;
-  padding-bottom: 31px;
-}  */
-
-/* END - Убрать после включения статьи */
-
 .event-countdown p:first-child {
   font-size: 14px;
   padding-top: 3px;
@@ -664,18 +627,6 @@ h3, strong {
   font-family: 'proxima_nova_blblack';
   font-size: 44px;
 }
-
-/* Убрать после включения статьи */
-
-/* .event-countdown__item::before {
-  position: absolute;
-  top: 29px;
-  left: 7px;
-  font-family: 'proxima_nova_rgregular';
-  font-size: 14px;
-}  */
-
-/* END - Убрать после включения статьи */
 
 .event-countdown__item::before {
   position: absolute;
