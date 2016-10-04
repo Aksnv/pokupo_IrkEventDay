@@ -50,6 +50,31 @@
 
   /* -------------  Main content  ------------- */
 
+  /* --------------- Preview --------------- */
+  
+  /* Статья */
+
+  .page-content__preview p {
+    width: 860px;
+    margin: 0 auto;
+  }
+
+  .preview-aside p {
+    width: 860px;
+    margin: 0 auto;
+  }
+
+  .event-countdown p {
+    width: auto;
+  }
+
+  .preview-aside::before,
+  .preview-aside::after {
+    left: 428px;
+  }
+
+  /* END - Статья */
+
   /* --------------- Participation --------------- */
 
   .container--page-content__participation {
@@ -249,29 +274,61 @@
     padding-top: 61px;
   }
 
-  .page-content__preview p:nth-child(n) {
+  /* Убрать после включения статьи */
+
+  /* .page-content__preview p:nth-child(n) {
     margin: 0 auto;
   }
-
+  
   .page-content__preview p:nth-child(2) {
     width: 378px;
   }
-
+  
   .page-content__preview p:nth-child(3) {
     width: 378px;
-  }
+  } */
+
+  /* END - Убрать после включения статьи */
 
   /* Статья */
 
-  /* .preview-aside::before,
+  .page-content__preview p {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .preview-aside::before,
   .preview-aside::after {
-    display: none;
+    left: 293px;
+  }
+
+  .preview-aside::after {
+    top: 267px;
+  }
+
+  .preview-aside p {
+    width: 585px;
+    margin: 0 auto;
   }
   
   .preview-list ul {
-    width: 300px;
-    margin-left: 30px;
-  } */
+    width: 475px;
+    margin-left: 140px;
+  }
+
+  .event-countdown {
+    margin-bottom: 76px;
+  }
+
+  .event-countdown p {
+    width: auto;
+  }
+
+  .event-countdown p:first-child {
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
 
   /* END - Статья */
 
@@ -288,10 +345,14 @@
     display: none;
   }
 
-  .event-countdown p:first-child {
+  /* Убрать после включения статьи */
+
+  /* .event-countdown p:first-child {
     padding-top: 0;
     padding-right: 0;
-  }
+  } */
+
+  /* END - Убрать после включения статьи */
 
   /* --------------- Participation --------------- */
 
@@ -305,19 +366,6 @@
 
   /* Статья */
 
-  /* .page-content__participation--top::before {
-    position: absolute;
-    top: -190px;
-    left: 0;
-    content: '';
-    width: 100%; 
-    height: 110px;
-    background-color: #fea404;
-    z-index: -1;
-  } */
-
-  /* END - Статья */
-
   .page-content__participation--top::before {
     position: absolute;
     top: -110px;
@@ -327,7 +375,24 @@
     height: 110px;
     background-color: #fea404;
     z-index: -1;
-  }
+  } 
+
+  /* END - Статья */
+
+  /* Убрать после включения статьи */
+
+  /* .page-content__participation--top::before {
+    position: absolute;
+    top: -110px;
+    left: 0;
+    content: '';
+    width: 100%; 
+    height: 110px;
+    background-color: #fea404;
+    z-index: -1;
+  } */
+
+  /* END - Убрать после включения статьи */
 
   .page-content__participation h2 {
     padding-top: 61px;
@@ -667,6 +732,43 @@
     width: auto;
   }
 
+  /* Статья */
+
+  .page-content__preview h2 {
+    font-size: 30px;
+  }
+
+  .preview-article p {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .preview-aside::before,
+  .preview-aside::after {
+    left: 108px;
+  }
+
+  .preview-aside::after {
+    top: 399px;
+  }
+
+  .preview-aside p {
+    width: 290px;
+    font-size: 14px;
+  }
+
+  .preview-list ul {
+    width: 200px;
+    margin-left: 80px;
+    margin-bottom: 45px;
+  }
+
+  .preview-list li {
+    margin-bottom: 33px;
+  }
+
+  /* END - Статья */
+
   .event-countdown {
     width: 300px;
     margin-top: 30px;
@@ -690,17 +792,21 @@
 
   /* --------------- Participation --------------- */
 
+  /* Статья */
+
   .page-content__participation--top::before {
     top: -110px;
   }
 
-  /* Статья */
+  /* END - Статья */
+
+  /* Убрать после включения статьи */
 
   /* .page-content__participation--top::before {
     top: -190px;
-  } */
+  }  */
 
-  /* END - Статья */
+  /* END - Убрать после включения статьи */
 
   /* --------------- Schedule --------------- */
 
