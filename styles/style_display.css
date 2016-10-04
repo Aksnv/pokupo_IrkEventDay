@@ -865,6 +865,7 @@
 
   .page-header__event-header span:nth-of-type(2) {
     font-size: 31px;
+    padding-right: 16px;
   }
 
   /* Выпадающее меню на JS */
