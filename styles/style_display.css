@@ -886,25 +886,13 @@
 
   /* Статья */
 
-  .preview-article p {
-    width: 290px;
-  }
-
-  .preview-article i {
-    width: 250px;
-  }
-
   .preview-aside::before,
   .preview-aside::after {
     left: 118px;
   }
 
   .preview-aside::after {
-    top: 425px;
-  }
-
-  .preview-aside p {
-    width: 250px;
+    top: 397px;
   }
 
   .preview-list ul {
