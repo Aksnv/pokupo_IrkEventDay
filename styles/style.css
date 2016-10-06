@@ -1097,13 +1097,28 @@ h3, strong {
   padding-top: 10px;
 }
 
-.event-map {
+/* Карта */
+
+/* .event-map {
   margin-top: 36px;
   height: 400px;
   background-image: url(../images/map.jpg);
   background-repeat: no-repeat; 
   background-position: center -179px;
+} */
+
+.event-map {
+  width: auto;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 36px;
 }
+
+.no-touch .dg-customization__marker_type_mushroom {
+  background-image: url(http://maps.api.2gis.ru/2.0/img/DGCustomization__markerHover.png);
+}
+
+/* END - Карта */
 
 /* --------------- --------------- Footer --------------- --------------- */
 

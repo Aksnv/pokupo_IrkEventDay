@@ -29,6 +29,23 @@
   <![endif]-->
 
   <!-- <script src="..."></script> -->
+
+  <!-- Карта -->
+  <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <script type="text/javascript">
+      var map;
+
+      DG.then(function () {
+          map = DG.map('map', {
+              center: [52.25105620192095, 104.26772846450807],
+              zoom: 17
+          });
+
+          DG.marker([52.25145620192095, 104.26782846450807]).addTo(map).bindPopup('Иркутская областная государственная универсальная научная библиотека имени И.И. Молчанова-Сибирского');
+      });
+  </script>
+  <!-- END - Карта -->
+
 </head>
 <body>
   
@@ -411,7 +428,9 @@
           <strong>г. Иркутск, ул.&nbsp;Лермонтова,&nbsp;253,&nbsp;зал&nbsp;203</strong>
           <p>Иркутская областная государственная универсальная научная библиотека имени И.И.&nbsp;Молчанова-Сибирского</p>
         </div>
-        <div class="event-map"></div>
+        <!-- Карта -->
+        <div id="map" class="event-map"></div>
+        <!-- END - Карта -->
       </section>
   </div>
 

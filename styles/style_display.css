@@ -581,9 +581,15 @@
     line-height: 23px;
   }
 
-  .event-map {
+  /* --------------- Address --------------- */
+
+  /* Карта */
+
+  /* .event-map {
     background-position: center -176px;
-  }
+  } */
+
+  /* END - Карта */
 
   /* --------------- Footer --------------- */
 
@@ -834,9 +840,13 @@
     width: auto;
   }
 
-  .event-map {
+  /* Карта */
+
+  /* .event-map {
     background-position: center -178px;
-  }
+  } */
+
+  /* END - Карта */
 
   /* --------------- Footer --------------- */
 
