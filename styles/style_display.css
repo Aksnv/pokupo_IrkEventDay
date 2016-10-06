@@ -581,16 +581,6 @@
     line-height: 23px;
   }
 
-  /* --------------- Address --------------- */
-
-  /* Карта */
-
-  /* .event-map {
-    background-position: center -176px;
-  } */
-
-  /* END - Карта */
-
   /* --------------- Footer --------------- */
 
   .page-footer {
@@ -839,14 +829,6 @@
   .page-content__address strong {
     width: auto;
   }
-
-  /* Карта */
-
-  /* .event-map {
-    background-position: center -178px;
-  } */
-
-  /* END - Карта */
 
   /* --------------- Footer --------------- */
 
