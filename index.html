@@ -81,17 +81,18 @@
       <div class="page-header__social-media">
         <p>Поделитесь новостью с друзьями</p>
         <ul>
-          <li><a class="page-header__social-media--vk" href="#">Вконтакте</a></li>
+          <li><a class="page-header__social-media--vk" href="https://pokupo.ru/irkeventday#" onclick="share.vk();return false;">Вконтакте</a></li>
           <li><a class="page-header__social-media--fb" href="#">Фейсбук</a></li>
-          <li><a class="page-header__social-media--tw" href="#">Твиттер</a></li>
+          <li><a class="page-header__social-media--tw" href="https://pokupo.ru/irkeventday#" onclick="share.tw();return false;">Твиттер</a></li>
           <li><a class="page-header__social-media--ok" href="#">Одноклассники</a></li>
-          <li><a class="page-header__social-media--gp" href="#">Гугл+</a></li>
+          <li><a class="page-header__social-media--gp" href="https://pokupo.ru/irkeventday#" onclick="share.google();return false;">Гугл+</a></li>
         </ul>
       </div>
       <nav class="page-header__main-menu">
         <ul>
           <li><a class="main-menu__active" href="#page-content__preview">О мероприятии</a></li>
-          <li><a href="#page-content__participation--top">Купить билет</a></li>
+          <!-- <li><a href="#page-content__participation--top">Купить билет</a></li> -->
+          <li><a href="#page-content__participation--top" class="popbutton" data-window="1">Купить билет</a></li>
           <li><a href="#page-content__schedule">Расписание</a></li>
           <li><a href="#page-content__partners">Организаторы и партнеры</a></li>
           <li><a href="#">Спонсоры</a></li>
@@ -137,10 +138,15 @@
           </article>
           <div class="event-countdown">
             <p>До мероприятия осталось</p>
-            <p>
+            <!-- <p>
               <span class="event-countdown__item event-countdown__item--days">11</span>
               <span class="event-countdown__item event-countdown__item--hours">12</span>
               <span class="event-countdown__item event-countdown__item--minutes">23</span>
+            </p> -->
+            <p id="date__">
+              <span class="event-countdown__item event-countdown__item--days event-countdown__item--days1">43</span>
+              <span class="event-countdown__item event-countdown__item--hours event-countdown__item--hours2">13</span>
+              <span class="event-countdown__item event-countdown__item--minutes event-countdown__item--minutes1">54</span>
             </p>
           </div>
         </div>
@@ -175,6 +181,7 @@
         <div class="container">
           <h2>Расписание</h2>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action">
@@ -185,6 +192,7 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action">
@@ -195,21 +203,23 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
-              <div class="schedule__column--photo schedule__column--photo-female"></div>
+              <img src="images/s_safonova.png" alt="Светлана Сафонова. Менеджер Pokupo.ru">
             </div>
             <div class="schedule__column schedule__column--center">
               <em>Светлана Сафонова. Менеджер&nbsp;Pokupo.ru</em>
               <h3>Тема уточняется...</h3>
-              <p>Как проактивное мышление помогает справляться с жизненными трудностями</p>
+              <p></p>
             </div>
             <div class="schedule__column schedule__column--right">
               <p>10:15 &ndash; 10:45</p>
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -218,13 +228,14 @@
             <div class="schedule__column schedule__column--center">
               <em>Александр Стрелов. Разработчик&nbsp;и&nbsp;основатель&nbsp;Pokupo.ru</em>
               <h3>Навыки высокоэффективных людей&nbsp;в&nbsp;бизнесе</h3>
-              <p>Как проактивное мышление помогает справляться с жизненными трудностями</p>
+              <p>Принципы для успешного предпринимателя в информационный век</p>
             </div>
             <div class="schedule__column schedule__column--right">
               <p>10:45 &ndash; 11:20</p>
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -240,6 +251,7 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action">
@@ -250,14 +262,15 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
-              <div class="schedule__column--photo schedule__column--photo-male"></div>
+              <img src="images/v_popov.png" alt="Владимир Попов. SMM-специалист Pokupo.ru">
             </div>
             <div class="schedule__column schedule__column--center">
-              <em>Докладчик уточняется...</em>
-              <h3>Тема уточняется...</h3>
+              <em>Владимир Попов. SMM-специалист Pokupo.ru</em>
+              <h3>Мифы электронной коммерции: положительные и отрицательные</h3>
               <p></p>
             </div>
             <div class="schedule__column schedule__column--right">
@@ -265,10 +278,11 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
-              <div class="schedule__column--photo schedule__column--photo-male"></div>
+              <div class="schedule__column--photo schedule__column--photo-female"></div>
             </div>
             <div class="schedule__column schedule__column--center">
               <em>Докладчик уточняется...</em>
@@ -280,21 +294,23 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
-              <div class="schedule__column--photo schedule__column--photo-male"></div>
+              <img src="images/a_strelov.png" alt="Александр Стрелов. Разработчик и основатель Pokupo.ru">
             </div>
             <div class="schedule__column schedule__column--center">
-              <em>Докладчик уточняется...</em>
-              <h3>Тема уточняется...</h3>
-              <p></p>
+              <em>Александр Стрелов. Разработчик&nbsp;и&nbsp;основатель&nbsp;Pokupo.ru</em>
+              <h3>Синергетические организации будущего в настоящем</h3>
+              <p>Революционная методология организации бизнеса в современных условиях</p>
             </div>
             <div class="schedule__column schedule__column--right">
               <p>13:30 &ndash; 14:00</p>
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action">
@@ -305,14 +321,15 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
-              <div class="schedule__column--photo schedule__column--photo-male"></div>
+              <img src="images/v_popov.png" alt="Владимир Попов. SMM-специалист Pokupo.ru">
             </div>
             <div class="schedule__column schedule__column--center">
-              <em>Докладчик уточняется...</em>
-              <h3>Тема уточняется...</h3>
+              <em>Владимир Попов. SMM-специалист Pokupo.ru</em>
+              <h3>Юристы для IT: что нужно знать и что лучше не делать самому</h3>
               <p></p>
             </div>
             <div class="schedule__column schedule__column--right">
@@ -320,14 +337,15 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
-              <div class="schedule__column--photo schedule__column--photo-male"></div>
+              <img src="images/a_zuenok.png" alt="Артём Зуенок. Специалист cлужбы поддержки Pokupo.ru">
             </div>
             <div class="schedule__column schedule__column--center">
-              <em>Докладчик уточняется...</em>
-              <h3>Тема уточняется...</h3>
+              <em>Артём Зуенок. Специалист cлужбы поддержки Pokupo.ru</em>
+              <h3>Инструментарий службы технической поддержки</h3>
               <p></p>
             </div>
             <div class="schedule__column schedule__column--right">
@@ -335,6 +353,7 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -350,6 +369,7 @@
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -357,14 +377,15 @@
             </div>
             <div class="schedule__column schedule__column--center">
               <em>Анна Аюшеева. Маркетолог Pokupo.ru</em>
-              <h3>Мастер класс. Тема уточняется...</h3>
-              <p></p>
+              <h3>Мастер-класс "Тепло ваших рук каждому клиенту"</h3>
+              <p>Завоевываем любовь клиентов с удовольствием!</p>
             </div>
             <div class="schedule__column schedule__column--right">
               <p>16:30 &ndash; 17:00</p>
             </div>
           </div>
         </div>
+
         <div class="schedule__row">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action">
@@ -468,6 +489,61 @@
     <a class="upstairs-block__purchase" href="#">Купить билет</a>
     <a class="upstairs-block__button" href="#"></a>
   </div>
+
+  <!-- Всплывающие окна -->
+  <div id="1" class="popwindow box_window_in hidden" data-title="">
+
+    <div id="popup1" class="popup1">
+      <div class="bw_close"><a href="https://pokupo.ru/irkeventday#"></a></div>
+      <h3 class="popup1_text">Покупка билета</h3>
+      <form action="https://pokupo.ru/" class="">
+        <label class="popup1_form_text">* Как вас зовут? (обязательное поле)
+          <span id="fio_error" class="float_right popup1_red_text hidden">Минимум 4 символа</span>
+          <br>
+          <input class="popup1_form_input popup1_form_input_margin fio" type="text" name="name" required="" placeholder="ФИО">
+        </label>
+        <br>
+        <label class="popup1_form_text">* Ваш e-mail (обязательное поле)
+          <span id="email_error" class="float_right popup1_red_text hidden">Строка не является адресом электронной почты</span>
+          <br>
+          <input class="popup1_form_input popup1_form_input_margin popup1_input_margin_bottom email" type="email" required="" placeholder="Ваш email">
+        </label>
+        <br>
+        <label class="popup1_form_text">Ваш телефон (по желанию)
+          <input class="popup1_form_input popup1_input_margin_bottom phone" type="tel" name="tel" placeholder="Номер телефона">
+        </label>
+        <br>
+        <label class="popup1_form_text">Если у вас есть сайт или магазин (по желанию)
+          <input class="popup1_form_input popup1_input_margin_bottom site" type="text" name="sait" placeholder="Название сайта или магазина, которые вы будете представлять">
+        </label>
+
+        <div id="errors" class="float show_popup2"></div>
+        <div class="float show_popup2">
+          <input type="submit" class="button_on_popup_text button_in_popup popbutton" id="submit_btn" data-window="1" value="Купить">
+        </div>
+
+        <input class="webinar_id" type="hidden" value="">
+        <br>
+        <span class="error_submit hidden">Произошла ошибка. Попробуйте позже.</span>
+      </form>
+    </div>
+
+    <div id="popup2" class="hidden popup2">
+      <div class="bw_close"><a href="https://pokupo.ru/irkeventday#"></a></div>
+      <p class="popup2_big_text">Поздравляем!</p>
+      <p class="popup2_small_text">
+        Вы успешно записались на практический семинар <br>
+        <br>
+        Ссылка для оплаты будет продублирована <br>
+        на указанный вами адрес электронной почты.
+      </p>
+      <p class="popup2_small_text line">Стоимость участия в семинаре</p>
+      <p class="popup2_price">480 руб</p>
+      <a id="link_pay" href="javascript:;" class="button_on_popup_text button_in_popup2 popbutton" data-window="1">ОПЛАТИТЬ УЧАСТИЕ</a>
+    </div>
+    
+  </div>
+  <!-- END - Всплывающие окна -->
   
   <script src="scripts/script.js"></script>
 </body>
