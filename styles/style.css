@@ -503,6 +503,30 @@ h3, strong {
   transform: rotate(90deg);
 }
 
+/* Новые стили */
+
+/* .preview-article i {
+  color: #333333 ;
+  opacity: 0.6;
+  width: 100%;
+  display: block;
+}
+
+.preview-article span {
+  display: inline-block;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 40px;
+  font-weight: 300;
+  transform: rotate(90deg);
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.preview-article p:first-child {
+  margin-top: 36px;
+} */
+
 .preview-aside {
   position: relative;
   margin-top: 70px;
@@ -647,6 +671,38 @@ h3, strong {
 .event-countdown__item:nth-child(3)::before {
   content: 'минут';
 }
+
+/* Новые стили */
+
+/* .event-countdown__item--days0::before {
+  content: 'день';
+}
+.event-countdown__item--days1::before {
+  content: 'дня';
+}
+.event-countdown__item--days2::before {
+  content: 'дней';
+}
+
+.event-countdown__item--hours0::before {
+  content: 'час';
+}
+.event-countdown__item--hours1::before {
+  content: 'часа';
+}
+.event-countdown__item--hours2::before {
+  content: 'часов';
+}
+
+.event-countdown__item--minutes0::before {
+  content: 'минута';
+}
+.event-countdown__item--minutes1::before {
+  content: 'минуты';
+}
+.event-countdown__item--minutes2::before {
+  content: 'минут';
+} */
 
 .event-countdown__item::after {
   position: absolute;
