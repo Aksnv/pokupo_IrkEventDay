@@ -581,6 +581,12 @@
     line-height: 23px;
   }
 
+  /* Новый код */
+
+  /* .event-map {
+    background-position: center -176px;
+  } */
+
   /* --------------- Footer --------------- */
 
   .page-footer {
@@ -829,6 +835,12 @@
   .page-content__address strong {
     width: auto;
   }
+
+  /* Новый код */
+
+  /* .event-map {
+    background-position: center -178px;
+  } */
 
   /* --------------- Footer --------------- */
 
