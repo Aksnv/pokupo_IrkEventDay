@@ -119,6 +119,8 @@ function new_webinar_order()
 }
 time();
 
+/* Счетчик обратного отсчета до мероприятия + правильные окончания у слов "день", "час", "минута" */
+
 function time() {
     timeend= new Date(2016, 11-1, 24);
 
@@ -171,6 +173,8 @@ function time() {
         .appendTo('#date__');
 }
 
+/* END - Счетчик обратного отсчета до мероприятия + правильные окончания у слов "день", "час", "минута" */
+
 
 share = {
     fb: function() {
@@ -215,13 +219,13 @@ share = {
 };
 
 
-
 function declOfNum(number)
 {
     cases = [2, 0, 1, 1, 1, 2];
     return (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5];
 }
 
+/* Открытие/закрытие выпадающего меню-гамбургера */
 
 var menu_hamburger = document.querySelector(".page-header__menu-hamburger");
 var button = document.querySelector(".page-header__menu-hamburger button");
@@ -230,3 +234,5 @@ button.addEventListener("click", function(event) {
     event.preventDefault();
     menu_hamburger.classList.toggle("page-header__menu-hamburger--active");
 });
+
+/* END - Открытие/закрытие выпадающего меню-гамбургера */

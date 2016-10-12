@@ -219,7 +219,9 @@ textarea {
     display: inline-block;
     vertical-align: baseline;
     margin-top: 7px;
-    background:url("/bundles/pokupopromo/images/webinar.png") -120px -10px no-repeat;
+    /* background:url("/bundles/pokupopromo/images/webinar.png") -120px -10px no-repeat; */
+    background-image: url(../images/sprite.png);
+    background-position: -159px -476px;
 }
 
 a.button_buy {
