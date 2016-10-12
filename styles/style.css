@@ -488,9 +488,9 @@ h3, strong {
 }
 
 .preview-article i {
-  color: #333333;
-  opacity: 0.6; 
-}
+  color: #333333 ;
+  opacity: 0.6;
+} 
 
 .preview-article span {
   display: block;
@@ -502,30 +502,6 @@ h3, strong {
   margin-bottom: 34px;
   transform: rotate(90deg);
 }
-
-/* Новые стили */
-
-/* .preview-article i {
-  color: #333333 ;
-  opacity: 0.6;
-  width: 100%;
-  display: block;
-}
-
-.preview-article span {
-  display: inline-block;
-  font-family: 'proxima_nova_ltlight';
-  font-size: 40px;
-  font-weight: 300;
-  transform: rotate(90deg);
-  position: relative;
-  width: 50px;
-  height: 50px;
-}
-
-.preview-article p:first-child {
-  margin-top: 36px;
-} */
 
 .preview-aside {
   position: relative;
@@ -647,6 +623,7 @@ h3, strong {
 .event-countdown__item {
   position: relative;
   float: left;
+  width: 60px;
   /* display: block; */
   font-family: 'proxima_nova_blblack';
   font-size: 44px;
@@ -655,26 +632,13 @@ h3, strong {
 .event-countdown__item::before {
   position: absolute;
   top: 47px;
-  left: 7px;
+  width: 55px;
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
-} 
-
-.event-countdown__item:nth-child(1)::before {
-  content: 'дней';
+  text-align: center;
 }
 
-.event-countdown__item:nth-child(2)::before {
-  content: 'часов';
-}
-
-.event-countdown__item:nth-child(3)::before {
-  content: 'минут';
-}
-
-/* Новые стили */
-
-/* .event-countdown__item--days0::before {
+.event-countdown__item--days0::before {
   content: 'день';
 }
 .event-countdown__item--days1::before {
@@ -702,12 +666,12 @@ h3, strong {
 }
 .event-countdown__item--minutes2::before {
   content: 'минут';
-} */
+} 
 
 .event-countdown__item::after {
   position: absolute;
-  top: -1px;
-  left: 67px;
+  top: 9px;
+  left: 76px;
   content: ':';
   font-family: 'proxima_nova_rgbold'; 
   font-size: 29px;
@@ -718,11 +682,12 @@ h3, strong {
 }
 
 .event-countdown__item--days {
-  margin: 0 59px;
+  margin-left: 51px;
 }
 
-.event-countdown__item--hours {
-  margin-right: 48px;
+.event-countdown__item--hours,
+.event-countdown__item--days {
+  margin-right: 42px;
 }
 
 /* --------------- Participation --------------- */

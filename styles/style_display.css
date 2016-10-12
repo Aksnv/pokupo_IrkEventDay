@@ -334,6 +334,10 @@
     display: none;
   }
 
+  .event-countdown__item--days {
+    margin-left: 60px;
+  }
+
   /* --------------- Participation --------------- */
 
   .page-content__participation {
@@ -581,12 +585,6 @@
     line-height: 23px;
   }
 
-  /* Новый код */
-
-  /* .event-map {
-    background-position: center -176px;
-  } */
-
   /* --------------- Footer --------------- */
 
   .page-footer {
@@ -754,11 +752,7 @@
   }
 
   .event-countdown__item--days {
-    margin: 0 24px;
-  }
-
-  .event-countdown__item--hours {
-    margin-left: 34px;
+    margin-left: 14px;
   }
 
   /* --------------- Participation --------------- */
@@ -835,12 +829,6 @@
   .page-content__address strong {
     width: auto;
   }
-
-  /* Новый код */
-
-  /* .event-map {
-    background-position: center -178px;
-  } */
 
   /* --------------- Footer --------------- */
 
