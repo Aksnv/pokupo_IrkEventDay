@@ -139,10 +139,10 @@ function time() {
     {
         thour = '0'+thour;
     }
-    if(tmin < 10)
+    /*if(tmin < 10)
     {
         tmin = '0'+tmin;
-    }
+    }*/
     if(today < 10)
     {
         today = '0'+today;

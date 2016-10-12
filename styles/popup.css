@@ -1,3 +1,5 @@
+/* Всплывающее окно (popup) */
+
 .button_in_popup {
     height: 60px;
     width: 251px;
@@ -258,3 +260,5 @@ a.button_buy_text {
 .hidden {
     display: none;
 }
+
+/* END - Всплывающее окно (popup) */
