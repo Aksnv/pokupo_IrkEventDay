@@ -835,6 +835,39 @@
   .upstairs-block {
     display: none;
   }
+
+  /* Всплывающие окна (popup) */
+
+  .popup1,
+  .popup2 {
+    max-width: 340px;
+  }
+
+  .popup1 {
+    padding: 20px 20px;
+  }
+
+  .popup2 {
+    padding: 40px 20px;
+  }
+
+  .popup1_form_text {
+    margin-left: 0;
+  }
+
+  input.popup1_form_input {
+    width: 280px;
+  }
+
+  .popup1_red_text {
+    float: left;
+  }
+
+  .popup2_small_text {
+    width: 230px;
+  }
+
+  /* END - Всплывающие окна (popup) */
   
 }
 
@@ -913,5 +946,19 @@
   .page-content__partners h2::before {
     left: 117px;
   }
+
+  /* Всплывающие окна (popup) */
+
+  .popup1,
+  .popup2 {
+    max-width: 320px;
+    min-width: 320px;
+  }
+
+  input.popup1_form_input {
+    width: 260px;
+  }
+
+  /* END - Всплывающие окна (popup) */
 
 }

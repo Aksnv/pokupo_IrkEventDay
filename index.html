@@ -476,9 +476,10 @@
     <a class="upstairs-block__button" href="#"></a>
   </div>
 
-  <!-- Всплывающее окно -->
+  <!-- Всплывающие окна -->
   <div id="1" class="popwindow box_window_in hidden" data-title="">
-
+    
+    <!-- Всплывающее окно "Покупка билета" -->
     <div id="popup1" class="popup1">
       <div class="bw_close"><a href="https://pokupo.ru/irkeventday#"></a></div>
       <h3 class="popup1_text">Покупка билета</h3>
@@ -492,15 +493,15 @@
         <label class="popup1_form_text">* Ваш e-mail (обязательное поле)
           <span id="email_error" class="float_right popup1_red_text hidden">Строка не является адресом электронной почты</span>
           <br>
-          <input class="popup1_form_input popup1_form_input_margin popup1_input_margin_bottom email" type="email" required="" placeholder="Ваш email">
+          <input class="popup1_form_input popup1_form_input_margin email" type="email" required="" placeholder="Ваш email">
         </label>
         <br>
         <label class="popup1_form_text">Ваш телефон (по желанию)
-          <input class="popup1_form_input popup1_input_margin_bottom phone" type="tel" name="tel" placeholder="Номер телефона">
+          <input class="popup1_form_input popup1_form_input_margin phone" type="tel" name="tel" placeholder="Номер телефона">
         </label>
         <br>
         <label class="popup1_form_text">Если у вас есть сайт или магазин (по желанию)
-          <input class="popup1_form_input popup1_input_margin_bottom site" type="text" name="sait" placeholder="Название сайта или магазина, которые вы будете представлять">
+          <input class="popup1_form_input popup1_form_input_margin popup1_input_margin_bottom site" type="text" name="sait" placeholder="Название сайта или магазина, которые вы будете представлять">
         </label>
 
         <div id="errors" class="float show_popup2"></div>
@@ -510,11 +511,13 @@
 
         <input class="webinar_id" type="hidden" value="">
         <br>
-        <span class="error_submit hidden">Произошла ошибка. Попробуйте позже.</span>
+        <span class="error_submit popup1_red_text hidden">Произошла ошибка. Попробуйте&nbsp;позже.</span>
       </form>
     </div>
+    <!-- END - Всплывающее окно "Покупка билета" -->
 
-    <div id="popup2" class="hidden popup2">
+    <!-- Всплывающее окно "Успешная запись на семинар" -->
+    <div id="popup2" class="popup2 hidden">
       <div class="bw_close"><a href="https://pokupo.ru/irkeventday#"></a></div>
       <p class="popup2_big_text">Поздравляем!</p>
       <p class="popup2_small_text">
@@ -525,11 +528,12 @@
       </p>
       <p class="popup2_small_text line">Стоимость участия в семинаре</p>
       <p class="popup2_price">480 руб</p>
-      <a id="link_pay" href="javascript:;" class="button_on_popup_text button_in_popup2 popbutton" data-window="1">ОПЛАТИТЬ УЧАСТИЕ</a>
+      <a id="link_pay" href="javascript:;" class="button_on_popup_text button_in_popup2 popbutton" data-window="1">Оплатить участие</a>
     </div>
+    <!-- END - Всплывающее окно "Успешная запись на семинар" -->
 
   </div>
-  <!-- END - Всплывающее окно -->
+  <!-- END - Всплывающие окна -->
   
   <script src="scripts/jquery.js"></script>
   <script src="scripts/sys.js"></script>
