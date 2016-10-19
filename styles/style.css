@@ -456,6 +456,29 @@ h3, strong {
   border-bottom: 3px solid #fefefe;
 }
 
+/* Меню при скролле страницы */
+
+.main-menu__scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 73px;
+  padding-top: 30px;
+  background-image: url(../images/bg_top.jpg);
+  background-position: bottom center;
+  box-shadow: 0 10px 50px #bababa;
+  /* transition: all 2s ease-in-out;
+  transition: background-position 0s; */
+  z-index: 5;
+}
+
+.main-menu__scroll a {
+  height: 40px;
+}
+
+/* END - Меню при скролле страницы */
+
 .page-header__line {
   height: 1px;
   background-color: #a4817b;
@@ -587,7 +610,11 @@ h3, strong {
   width: 393px;
   margin: 0 auto;
   margin-top: 45px;
-  margin-bottom: 171px; 
+  
+  /* Изменение стилей для меню при скролле */
+  /* margin-bottom: 171px; */
+  padding-bottom: 171px;
+  /* END - Изменение стилей для меню при скролле */
 } 
 
 .event-countdown::before {
@@ -711,9 +738,13 @@ h3, strong {
 }
 
 .page-content__participation h2 {
-  padding-top: 55px;
   padding-bottom: 21px;
   color: #ffffff;
+
+  /* Изменение стилей для меню при скролле */
+  /* padding-top: 55px; */
+  padding-top: 65px;
+  /* END - Изменение стилей для меню при скролле */
 }
 
 .page-content__participation p {
@@ -934,8 +965,12 @@ h3, strong {
 
 .page-content__schedule h2 {
   position: relative;
-  padding-top: 44px;
   padding-bottom: 49px;
+
+  /* Изменение стилей для меню при скролле */
+  /* padding-top: 44px; */
+  padding-top: 65px;
+  /* END - Изменение стилей для меню при скролле */
 }
 
 .schedule__row:nth-child(odd) {
@@ -953,8 +988,12 @@ h3, strong {
 }
 
 .page-content__schedule h2::after {
-  top: 113px;
   left: 546px;
+
+  /* Изменение стилей для меню при скролле */
+  /* top: 113px; */
+  top: 134px;
+  /* END - Изменение стилей для меню при скролле */
 }
 
 .schedule__column {
@@ -1035,13 +1074,21 @@ h3, strong {
 
 .page-content__partners h2 {
   position: relative;
-  padding-top: 82px;
   padding-bottom: 43px;
+
+  /* Изменение стилей для меню при скролле */
+  /* padding-top: 82px; */
+  padding-top: 65px;
+  /* END - Изменение стилей для меню при скролле */
 }
 
 .page-content__partners h2::before {
-  top: 30px;
   left: 547px;
+
+  /* Изменение стилей для меню при скролле */
+  /* top: 30px; */
+  top: 13px;
+  /* END - Изменение стилей для меню при скролле */
 }
 
 .page-content__partners h2:last-of-type {
@@ -1110,8 +1157,12 @@ h3, strong {
 }
 
 .page-content__address h2 {
-  padding-top: 63px;
   padding-bottom: 21px;
+
+  /* Изменение стилей для меню при скролле */
+  /* padding-top: 63px; */
+  padding-top: 65px;
+  /* END - Изменение стилей для меню при скролле */
 }
 
 .page-content__address strong {
