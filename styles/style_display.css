@@ -307,6 +307,9 @@
 
   .event-countdown {
     margin-bottom: 76px;
+    /* Изменение стилей для меню при скролле */
+    padding-bottom: 0;
+    /* END - Изменение стилей для меню при скролле */
   }
 
   .event-countdown p {
