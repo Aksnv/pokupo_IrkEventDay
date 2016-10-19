@@ -1,6 +1,6 @@
 /* Открытие/закрытие выпадающего меню-гамбургера */
 
-/*(function () {
+(function () {
   var menu_hamburger = document.querySelector(".page-header__menu-hamburger");
   var button = document.querySelector(".page-header__menu-hamburger button");
 
@@ -8,7 +8,7 @@
     event.preventDefault();
     menu_hamburger.classList.toggle("page-header__menu-hamburger--active");
   });
-}());*/
+}());
 
 /* END - Открытие/закрытие выпадающего меню-гамбургера */
 
