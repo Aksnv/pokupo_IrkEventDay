@@ -953,6 +953,7 @@ h3, strong {
 
 .page-content__schedule {
   min-height: 961px;
+  padding-bottom: 36px;
 }
 
 .container--schedule {
@@ -1127,6 +1128,10 @@ h3, strong {
   min-height: 420px;
 }
 
+.container--page-content__partners {
+  width: 960px;
+}
+
 .page-content__partners h2 {
   position: relative;
   padding-bottom: 43px;
@@ -1138,7 +1143,7 @@ h3, strong {
 }
 
 .page-content__partners h2::before {
-  left: 547px;
+  left: 437px;
 
   /* Изменение стилей для меню при скролле */
   /* top: 30px; */
@@ -1146,18 +1151,8 @@ h3, strong {
   /* END - Изменение стилей для меню при скролле */
 }
 
-.page-content__partners h2:last-of-type {
-  font-size: 15px;
-  padding-top: 60px;
-  padding-bottom: 22px;
-}
-
-.page-content__partners h2:last-of-type::before {
-  display: none;
-}
-
 .page-content__partners ul {
-  display: none;
+  text-align: left;
 }
 
 .page-content__partners li {
@@ -1165,12 +1160,61 @@ h3, strong {
   vertical-align: top;
 }
 
-.partners--small {
-  display: none;
+.partners--top {
+  margin-bottom: 35px;
+  margin-left: 11px;
+}
+
+.partners--top li:nth-child(1) {
+  margin-top: 6px;
+  margin-right: 24px;
+}
+
+.partners--top li:nth-child(2) {
+  margin-right: 31px;
+}
+
+.partners--top li:nth-child(3) {
+  margin-right: 14px;
+}
+
+.partners--top li:nth-child(4) {
+  margin-top: 8px;
+  margin-right: 17px;
+}
+
+.partners--top li:nth-child(5) {
+  margin-right: 11px;
+}
+
+.partners--bottom {
+  margin-left: 243px;
+}
+
+.partners--bottom li:nth-child(1) {
+  margin-top: 9px;
+  margin-right: 51px;
+}
+
+.partners--bottom li:nth-child(2) {
+  margin-right: 40px;
+}
+
+.partners--bottom li:nth-child(3) {
+  margin-top: 3px;
+  margin-right: 27px;
+}
+
+.partners--bottom li:nth-child(4) {
+  margin-right: 28px;
+}
+
+.partners--bottom li:nth-child(5) {
+  margin-top: 4px;
 }
 
 .page-content__partners-offer {
-  margin-top: 66px;
+  margin-top: 71px;
 }
 
 .page-content__partners-offer strong {

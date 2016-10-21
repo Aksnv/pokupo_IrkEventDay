@@ -521,20 +521,8 @@
     padding-bottom: 26px;
   }
 
-  .page-content__partners h2:last-of-type {
-    padding-top: 21px;
-  }
-
   .page-content__partners h2::before {
     left: 291px;
-  }
-
-  .partners--big {
-    display: none;
-  }
-
-  .partners--small {
-    display: inline;
   }
 
   .page-content__partners-offer {
