@@ -1044,6 +1044,7 @@ h3, strong {
 }
 
 .schedule__column--action {
+  max-width: 534px;
   padding: 28px 0;
   padding-left: 162px;
 }
