@@ -1044,6 +1044,61 @@ h3, strong {
 
 .schedule__column--action {
   padding: 28px 0;
+  padding-left: 162px;
+}
+
+.schedule__column--action::before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/sprite.png);
+}
+
+.schedule__column--registration::before {
+  top: 11px;
+  left: 24px;
+  width: 48px;
+  height: 39px;
+  background-position: -439px -8px;
+}
+
+.schedule__column--opening::before {
+  top: 14px;
+  left: 34px;
+  width: 29px;
+  height: 54px;
+  background-position: -441px -57px;
+}
+
+.schedule__column--coffee-break::before {
+  top: 13px;
+  left: 33px;
+  width: 30px;
+  height: 49px;
+  background-position: -441px -120px;
+}
+
+.schedule__column--dinner::before {
+  top: 19px;
+  left: 25px;
+  width: 46px;
+  height: 41px;
+  background-position: -440px -180px;
+}
+
+.schedule__column--round-table::before {
+  top: 22px;
+  left: 24px;
+  width: 49px;
+  height: 33px;
+  background-position: -440px -231px;
+}
+
+.schedule__column--closing::before {
+  top: 22px;
+  left: 33px;
+  width: 30px;
+  height: 33px;
+  background-position: -439px -273px;
 }
 
 .schedule__column--center {
