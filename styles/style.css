@@ -1056,7 +1056,7 @@ h3, strong {
 }
 
 .schedule__column--registration::before {
-  top: 11px;
+  top: 15px;
   left: 24px;
   width: 48px;
   height: 39px;
