@@ -879,8 +879,16 @@
     margin-left: 0;
   }
 
+  .partners--top li:nth-child(1) {
+    margin-left: 30px;
+  }
+
   .partners--top li:nth-child(3) {
     margin-bottom: 35px;
+  }
+
+  .partners--top li:nth-child(6) {
+    margin-right: 10px;
   }
 
   .partners--bottom li:nth-child(1) {
@@ -1009,6 +1017,10 @@
   .page-content__schedule h2::after,
   .page-content__partners h2::before {
     left: 117px;
+  }
+
+  .partners--top li:nth-child(2) {
+    margin-left: 18px;
   }
 
   .partners--top li:nth-child(4) {

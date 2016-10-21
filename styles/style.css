@@ -1307,6 +1307,10 @@ h3, strong {
   margin-top: 53px;
 }
 
+.page-footer__contact-block--phone {
+  padding-bottom: 10px;
+}
+
 .page-footer__contact-block--email p,
 .page-footer__contact-block--skype p,
 .page-footer__contact-block--phone p {
