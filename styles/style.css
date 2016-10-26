@@ -955,10 +955,90 @@ h3, strong {
   width: 940px;
 }
 
+.page-content__seminar h2 {
+  padding-top: 65px;
+  padding-bottom: 23px;
+}
+
+.page-content__seminar h3 {
+  font-family: 'proxima_nova_thextrabold';
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.page-content__seminar-top,
+.page-content__seminar-middle {
+  overflow: hidden;
+}
+
+.page-content__seminar-top,
+.page-content__seminar-bottom {
+  background-color: #ffa800;
+}
+
+.seminar-top__block--top {
+  line-height: 21px;
+  margin-bottom: 149px;
+  color: #333333;
+}
+
+.seminar-top__block--top strong {
+  display: block;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 25px;
+  font-weight: 400;
+  padding-top: 27px;
+  color: #000000;
+}
+
 .seminar-top__block--left,
 .seminar-top__block--right {
   float: left;
-  width: 50%;
+  position: relative;
+  line-height: 22px;
+}
+
+.seminar-top__block--left {
+  width: 400px;
+  margin-left: 54px;
+  margin-right: 83px;
+}
+
+.seminar-top__block--left p {
+  padding-left: 8px;
+  padding-right: 20px;
+  padding-bottom: 47px;
+}
+
+.seminar-top__block--right {
+  width: 300px;
+}
+
+.seminar-top__block--right p {
+  padding: 0 28px;
+  padding-bottom: 47px;
+}
+
+.seminar-top__block--left::before,
+.seminar-top__block--right::before {
+  position: absolute;
+  top: -96px;
+  display: block;
+  height: 74px;
+  content: '';
+  background-image: url(../images/sprite.png);
+}
+
+.seminar-top__block--left::before {
+  left: 179px;
+  width: 30px;
+  background-position: -399px -224px;
+}
+
+.seminar-top__block--right::before {
+  left: 101px;
+  width: 98px;
+  background-position: -392px -312px;
 }
 
 .page-content__seminar-middle,
@@ -966,9 +1046,91 @@ h3, strong {
   clear: both;
 }
 
+.page-content__seminar-middle {
+  background-color: #f4c05d;
+}
+
+.page-content__seminar-middle h3 {
+  padding-top: 23px;
+  padding-bottom: 100px;
+  line-height: 25px;
+}
+
+.page-content__seminar-middle span {
+  display: block;
+  font-family: 'proxima_nova_rgregular';
+}
+
 .seminar-middle__block {
   float: left;
-  width: 25%;
+  position: relative;
+  width: 220px;
+  text-align: left;
+  line-height: 21px;
+  padding-bottom: 50px;
+  z-index: 0;
+}
+
+.seminar-middle__block::before {
+  position: absolute;
+  top: -15px;
+  display: block;
+  font-family: 'proxima_nova_thextrabold';
+  font-size: 150px;
+  color: #ffa800;
+  z-index: -1;
+}
+
+.seminar-middle__block--1::before {
+  left: -20px;
+  content: '1';
+}
+
+.seminar-middle__block--2 {
+  padding-right: 8px;
+}
+
+.seminar-middle__block--2::before {
+  left: -23px;
+  content: '2';
+}
+
+.seminar-middle__block--3 {
+  width: 231px;
+  padding-left: 29px;
+}
+
+.seminar-middle__block--3::before {
+  left: 7px;
+  content: '3';
+}
+
+.seminar-middle__block--4 {
+  width: 265px;
+  padding-left: 54px;
+}
+
+.seminar-middle__block--4::before {
+  left: 34px;
+  content: '4';
+}
+
+.page-content__seminar-bottom {
+  padding-bottom: 67px;
+  color: #ffffff;
+}
+
+.seminar-bottom__block {
+  padding: 0 110px;
+}
+
+.seminar-bottom__block h3 {
+  font-family: 'proxima_nova_rgregular';
+  padding-top: 60px;
+}
+
+.seminar-bottom__block p {
+  line-height: 21px;
 }
 
 /* --------------- Schedule --------------- */
