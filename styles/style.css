@@ -145,6 +145,10 @@ h3, strong {
   transform: rotate(-45deg);
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 /* --------------- --------------- Header --------------- --------------- */
 
 .page-header {

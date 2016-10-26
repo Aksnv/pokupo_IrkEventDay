@@ -875,25 +875,37 @@
     padding-bottom: 75px;
   }
 
+  .seminar-middle__wrapper {
+    padding-left: 88px;
+  }
+
   .seminar-middle__block {
     float: none;
     width: 100%;
     padding-bottom: 75px;
   }
 
-  .seminar-middle__wrapper {
-    padding-left: 85px;
+  .seminar-middle__block:last-child {
+    padding-bottom: 50px;
   }
   
   .seminar-middle__block--1, 
   .seminar-middle__block--2, 
   .seminar-middle__block--3, 
   .seminar-middle__block--4 {
-    padding-right: 60px;
+    padding-right: 50px;
+  }
+
+  .page-content__seminar-bottom {
+    padding-bottom: 40px;
   }
 
   .seminar-bottom__block {
-    padding: 0 30px;
+    padding: 0 45px;
+  }
+
+  .seminar-bottom__block h3 {
+    padding-top: 40px;
   }
 
   /* --------------- Schedule --------------- */
@@ -1124,6 +1136,32 @@
   }
 
   /* END - Статья */
+  
+  /* --------------- Seminar --------------- */
+
+  .seminar-top__block--left, 
+  .seminar-top__block--right {
+    width: 300px;
+  }
+
+  .seminar-top__block--left::before {
+    left: 135px;
+  }
+
+  .seminar-top__block--right::before {
+    left: 100px;
+  }
+
+  .seminar-middle__wrapper {
+    padding-left: 68px;
+  }
+
+  .seminar-middle__block--1, 
+  .seminar-middle__block--2, 
+  .seminar-middle__block--3, 
+  .seminar-middle__block--4  {
+    padding-right: 40px;
+  }
 
   /* --------------- Schedule --------------- */
   /* --------------- Partners --------------- */
