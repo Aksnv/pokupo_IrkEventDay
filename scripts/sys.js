@@ -245,6 +245,7 @@ button.addEventListener("click", function(event) {
 
   var pageContentPreviewItem = document.querySelector(".main-menu__item--preview");
   var pageContentParticipationItem = document.querySelector(".main-menu__item--participation");
+  var pageContentSeminarItem = document.querySelector(".main-menu__item--seminar");
   var pageContentScheduleItem = document.querySelector(".main-menu__item--schedule");
   var pageContentPartnersItem = document.querySelector(".main-menu__item--partners");
   var pageContentAddressItem = document.querySelector(".main-menu__item--address");
@@ -252,6 +253,7 @@ button.addEventListener("click", function(event) {
   var pageHeader = document.querySelector(".page-header");
   var pageContentPreview = document.querySelector(".page-content__preview");
   var pageContentParticipation = document.querySelector(".page-content__participation--top");
+  var pageContentSeminar = document.querySelector(".page-content__seminar");
   var pageContentSchedule = document.querySelector(".page-content__schedule");
   var pageContentPartners = document.querySelector(".page-content__partners");
   var pageContentAddress = document.querySelector(".page-content__address");
@@ -261,6 +263,7 @@ button.addEventListener("click", function(event) {
     var pageHeaderCoordinates = pageHeader.getBoundingClientRect();
     var pageContentPreviewCoordinates = pageContentPreview.getBoundingClientRect();
     var pageContentParticipationCoordinates = pageContentParticipation.getBoundingClientRect();
+    var pageContentSeminarCoordinates = pageContentSeminar.getBoundingClientRect();
     var pageContentScheduleCoordinates = pageContentSchedule.getBoundingClientRect();
     var pageContentPartnersCoordinates = pageContentPartners.getBoundingClientRect();
     var pageContentAddressCoordinates = pageContentAddress.getBoundingClientRect();
@@ -284,6 +287,13 @@ button.addEventListener("click", function(event) {
       pageContentParticipationItem.classList.add("main-menu__active");
     } else {
       pageContentParticipationItem.classList.remove("main-menu__active");
+    }
+
+    if ((pageContentSeminarCoordinates.top < 10) 
+      && (pageContentSeminarCoordinates.top > -pageContentSeminarCoordinates.height)) {
+      pageContentSeminarItem.classList.add("main-menu__active");
+    } else {
+      pageContentSeminarItem.classList.remove("main-menu__active");
     }
 
     if ((pageContentScheduleCoordinates.top < 10) 
