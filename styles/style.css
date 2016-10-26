@@ -949,6 +949,28 @@ h3, strong {
   z-index: -2;
 }
 
+/* --------------- Participation --------------- */
+
+.container--page-content__seminar {
+  width: 940px;
+}
+
+.seminar-top__block--left,
+.seminar-top__block--right {
+  float: left;
+  width: 50%;
+}
+
+.page-content__seminar-middle,
+.page-content__seminar-bottom {
+  clear: both;
+}
+
+.seminar-middle__block {
+  float: left;
+  width: 25%;
+}
+
 /* --------------- Schedule --------------- */
 
 .page-content__schedule {
