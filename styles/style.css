@@ -521,7 +521,7 @@ h3, strong {
   opacity: 0.6;
 } 
 
-.preview-article span {
+.preview-article .smile {
   display: inline-block;
   vertical-align: top;
   width: 50px;
@@ -1090,9 +1090,9 @@ h3, strong {
   content: '1';
 }
 
-.seminar-middle__block--2 {
+/* .seminar-middle__block--2 {
   padding-right: 8px;
-}
+} */
 
 .seminar-middle__block--2::before {
   left: -23px;
@@ -1100,22 +1100,22 @@ h3, strong {
 }
 
 .seminar-middle__block--3 {
-  width: 231px;
-  padding-left: 29px;
+  width: 260px;
+  padding-left: 25px;
 }
 
 .seminar-middle__block--3::before {
-  left: 7px;
+  left: 2px;
   content: '3';
 }
 
 .seminar-middle__block--4 {
-  width: 265px;
-  padding-left: 54px;
+  width: 240px;
+  padding-left: 30px;
 }
 
 .seminar-middle__block--4::before {
-  left: 34px;
+  left: 8px;
   content: '4';
 }
 

@@ -45,7 +45,7 @@
   }
 
   .page-header__main-menu li {
-    margin-right: 36px;
+    margin-right: 35px;
   } 
 
   /* -------------  Main content  ------------- */
@@ -544,7 +544,7 @@
   }
 
   .seminar-middle__wrapper {
-    padding-left: 125px;
+    padding-left: 115px;
   }
 
   .seminar-middle__block {
@@ -557,7 +557,7 @@
   .seminar-middle__block--3,
   .seminar-middle__block--4 {
     padding-left: 0;
-    padding-right: 50px;
+    padding-right: 40px;
   }
 
   .seminar-middle__block--1::before,
@@ -889,12 +889,12 @@
     padding-bottom: 50px;
   }
   
-  .seminar-middle__block--1, 
+  /* .seminar-middle__block--1, 
   .seminar-middle__block--2, 
   .seminar-middle__block--3, 
   .seminar-middle__block--4 {
-    padding-right: 50px;
-  }
+    padding-right: 40px;
+  }   */
 
   .page-content__seminar-bottom {
     padding-bottom: 40px;
@@ -1153,14 +1153,14 @@
   }
 
   .seminar-middle__wrapper {
-    padding-left: 68px;
+    padding-left: 58px;
   }
 
   .seminar-middle__block--1, 
   .seminar-middle__block--2, 
   .seminar-middle__block--3, 
   .seminar-middle__block--4  {
-    padding-right: 40px;
+    padding-right: 30px;
   }
 
   /* --------------- Schedule --------------- */
