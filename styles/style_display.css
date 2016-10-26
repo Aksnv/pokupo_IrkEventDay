@@ -501,6 +501,74 @@
     transform: none;
   }
 
+  /* --------------- Seminar --------------- */
+
+  .seminar-top__block--top {
+    margin-bottom: 130px;
+    padding: 0 30px;
+  }
+
+  .seminar-top__block--left,
+  .seminar-top__block--right {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .seminar-top__block--left {
+    padding-bottom: 130px;
+  }
+
+  .seminar-top__block--left::before {
+    left: 185px;
+  }
+
+  .seminar-top__block--right {
+    width: 400px;
+  }
+
+  .seminar-top__block--right::before {
+    left: 150px;
+  }
+
+  .seminar-top__block--left p,
+  .seminar-top__block--right p {
+    padding: 0 15px;
+  }
+
+  .seminar-top__block--right p {
+    padding-bottom: 47px;
+  }
+
+  .page-content__seminar-middle h3 {
+    padding-bottom: 90px;
+  }
+
+  .seminar-middle__wrapper {
+    padding-left: 125px;
+  }
+
+  .seminar-middle__block {
+    width: 50%;
+    padding-bottom: 65px;
+  }
+
+  .seminar-middle__block--1,
+  .seminar-middle__block--2,
+  .seminar-middle__block--3,
+  .seminar-middle__block--4 {
+    padding-left: 0;
+    padding-right: 50px;
+  }
+
+  .seminar-middle__block--1::before,
+  .seminar-middle__block--2::before,
+  .seminar-middle__block--3::before,
+  .seminar-middle__block--4::before {
+    left: -20px;
+  }
+
+
+
   /* --------------- Schedule --------------- */
 
   .container--schedule {
