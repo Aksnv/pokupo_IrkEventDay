@@ -977,7 +977,8 @@ h3, strong {
 
 .page-content__seminar-top,
 .page-content__seminar-bottom {
-  background-color: #ffa800;
+  /* background-color: #ffa800; */
+  background-color: #ffcb67;
 }
 
 .seminar-top__block--top {
@@ -1050,9 +1051,9 @@ h3, strong {
   clear: both;
 }
 
-.page-content__seminar-middle {
+/* .page-content__seminar-middle {
   background-color: #f4c05d;
-}
+} */
 
 .page-content__seminar-middle h3 {
   padding-top: 23px;
@@ -1121,7 +1122,7 @@ h3, strong {
 
 .page-content__seminar-bottom {
   padding-bottom: 67px;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .seminar-bottom__block {
