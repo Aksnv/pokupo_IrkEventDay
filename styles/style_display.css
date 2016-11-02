@@ -94,7 +94,8 @@
   }
 
   .partners--bottom {
-    margin-left: 232px;
+    /* margin-left: 232px; */
+    margin-left: 180px;
   }
 
   /* --------------- Footer --------------- */
@@ -610,14 +611,27 @@
     left: 291px;
   }
 
-  .partners--top,
-  .partners--bottom {
+  .partners--top/* ,
+  .partners--bottom */ {
     margin-left: 100px;
   }
 
   .partners--top li:nth-child(1) {
     margin-left: 15px;
     margin-bottom: 45px;
+  }
+
+  /* .partners--top, */
+  .partners--bottom {
+    margin-left: 150px;
+  }
+
+  .partners--bottom li:nth-child(1) {
+    margin-bottom: 45px;
+  }
+
+  .partners--bottom li:nth-child(5) {
+    margin-left: 90px;
   }
 
   .page-content__partners-offer {
@@ -1028,6 +1042,10 @@
     margin-bottom: 35px;
   }
 
+  .partners--bottom li:nth-child(5) {
+    margin-left: 0;
+  }
+
   /* --------------- Address --------------- */
 
   .page-content__address strong {
@@ -1185,6 +1203,11 @@
   }
 
   .partners--top li:nth-child(4) {
+    margin-bottom: 35px;
+  }
+
+  .partners--bottom li:nth-child(3) {
+    margin-left: 18px;
     margin-bottom: 35px;
   }
 
