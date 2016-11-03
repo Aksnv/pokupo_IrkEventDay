@@ -98,3 +98,20 @@
 }());
 
 /* END - Меню при скролле страницы */
+
+
+/* Выпадающие блоки с информацией в расписании */
+
+/*(function () {
+
+  var scheduleDetails = document.querySelector(".schedule__row--details");
+  var scheduleDetailsLink = document.querySelectorAll(".schedule-details__link");
+  
+  scheduleDetailsLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleDetails.classList.toggle("schedule__row--invisible");
+  });
+
+}());*/
+
+/* END - Выпадающие блоки с информацией в расписании */

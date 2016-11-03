@@ -1248,9 +1248,21 @@ h3, strong {
   /* END - Изменение стилей для меню при скролле */
 }
 
-.schedule__row:nth-child(odd) {
+.schedule__row--grey {
   background-color: #efece7;
 }
+
+.schedule__row--white {
+  background-color: #ffffff;
+}
+
+/* .schedule__row--visible {
+  display: block;
+} */
+
+.schedule__row--invisible {
+  /* display: none; */
+} 
 
 .page-content__schedule h2::after,
 .page-content__partners h2::before {
@@ -1291,6 +1303,16 @@ h3, strong {
   width: 330px;
   font-size: 14px;
   line-height: 18px;
+}
+
+.schedule-details__link {
+  border-bottom: 1px dashed #000000;
+}
+
+.schedule-details__link:hover {
+  cursor: pointer;
+  color: #ffa800;
+  border-bottom: 1px dashed #ffa800;
 }
 
 .schedule__column--photo, 
@@ -1395,6 +1417,38 @@ h3, strong {
 .schedule__column--right p {
   width: auto;
   font-size: 18px;
+}
+
+.schedule-details__content {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+  word-spacing: 4px;
+  padding-left: 162px;
+  padding-right: 191px;
+}
+
+.schedule-details__content h4 {
+  color: #ffa800;
+}
+
+.schedule-details__content h4,
+.schedule-details__content-speaker {
+  font-style: italic;
+}
+
+.schedule-details__content-speaker,
+.schedule-details__content-header {
+  margin-bottom: 20px;
+}
+
+.schedule-details__content-header p {
+  font-size: 18px;
+  word-spacing: 4px;
+}
+
+.schedule-details__content-report p {
+  margin-bottom: 20px;
 }
 
 /* --------------- Partners --------------- */
