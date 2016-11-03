@@ -1141,6 +1141,88 @@ h3, strong {
   line-height: 21px;
 }
 
+/* --------------- Lottery --------------- */
+
+.page-content__lottery {
+  padding-top: 267px;
+  background-color: #00a651;
+}
+
+.container--page-content__lottery {
+  width: 670px;
+}
+
+.lottery-header {
+  position: relative;
+}
+
+.lottery-header::before {
+  position: absolute;
+  top: -217px;
+  left: 260px;
+  content: '';
+  display: block;
+  width: 150px;
+  height: 171px;
+  background-image: url(../images/sprite.png);
+  background-position: 0 -492px;
+}
+
+.lottery-header strong {
+  display: block;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 40px;
+  font-weight: 400;
+  word-spacing: 4px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.lottery-header span {
+  font-size: 25px;
+  line-height: 28px;
+}
+
+.lottery-list {
+  padding: 69px 0; 
+}
+
+.lottery-list ul {
+  width: 410px;
+  text-align: left;
+  margin-left: 203px;
+}
+
+.lottery-list li {
+  position: relative;
+  line-height: 20px;
+  word-spacing: 1px;
+}
+
+.lottery-list li:first-child {
+  margin-bottom: 98px;
+}
+
+.lottery-list li:last-child {
+  margin-top: 86px;
+  margin-bottom: 0;
+}
+
+.lottery-list li::before {
+  position: absolute;
+  top: -28px;
+  left: -80px;
+  content: '';
+  width: 74px;
+  height: 67px;
+  background-image: url(../images/sprite.png);
+  background-position: -392px -424px;
+}
+
+.lottery-list li:last-child::before {
+  top: -15px;
+}
+
 /* --------------- Schedule --------------- */
 
 .page-content__schedule {
