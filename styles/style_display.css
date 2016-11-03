@@ -81,6 +81,12 @@
     width: 960px;
   }
 
+  /* --------------- Lottery --------------- */
+
+  .container--page-content__lottery {
+    width: 670px;
+  }
+
   /* --------------- Schedule --------------- */
   /* --------------- Partners --------------- */
 
@@ -571,6 +577,12 @@
     left: -20px;
   }
 
+  /* --------------- Lottery --------------- */
+
+  .lottery-list ul {
+    margin-left: 180px;
+  }
+
   /* --------------- Schedule --------------- */
 
   .container--schedule {
@@ -928,6 +940,26 @@
     padding-top: 40px;
   }
 
+  /* --------------- Lottery --------------- */
+
+  .lottery-header::before {
+    left: 105px;
+  }
+
+  .lottery-list {
+    padding-bottom: 33px;
+  }
+
+  .lottery-list ul {
+    width: 200px;
+    margin-left: 115px;
+    margin-bottom: 45px;
+  }
+
+  .lottery-list li:last-child::before {
+    top: -28px;
+  }
+
   /* --------------- Schedule --------------- */
 
   .container--schedule {
@@ -1188,6 +1220,28 @@
   .seminar-middle__block--3, 
   .seminar-middle__block--4  {
     padding-right: 30px;
+  }
+
+  /* --------------- Lottery --------------- */
+  
+  .lottery-header::before {
+    left: 85px;
+  }
+
+  .lottery-header p {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .lottery-header strong,
+  .lottery-header span {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .lottery-list ul {
+    width: 190px;
+    /* margin-left: 125px; */
   }
 
   /* --------------- Schedule --------------- */
