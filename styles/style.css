@@ -1437,15 +1437,15 @@ h3, strong {
   font-style: italic;
 }
 
-.schedule-details__content-speaker,
-.schedule-details__content-header {
+.schedule-details__content-speaker/* ,
+.schedule-details__content-header */ {
   margin-bottom: 20px;
 }
 
-.schedule-details__content-header p {
+/* .schedule-details__content-header p {
   font-size: 18px;
   word-spacing: 4px;
-}
+} */
 
 .schedule-details__content-report p {
   margin-bottom: 20px;
@@ -1566,6 +1566,93 @@ h3, strong {
 .page-content__partners-offer p {
   padding-top: 10px;
   padding-bottom: 8px;
+}
+
+/* --------------- Social media --------------- */
+
+.page-content__social-media {
+  min-height: 480px;
+  background-color: #efece7;
+}
+
+.page-content__social-media h2 {
+  padding-top: 61px;
+  padding-bottom: 20px;
+}
+
+.page-content__social-media strong {
+  display: block;
+  font-family: 'proxima_nova_thextrabold';
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.page-content__social-media p {
+  padding-bottom: 55px;
+}
+
+.social-media__hashtag {
+  position: relative;
+  width: 500px;
+  height: 132px;
+  margin: 0 auto;
+  background-image: linear-gradient(to top, #f59019, #ffa800);
+  -webkit-background-clip: text;
+  border: 2px solid #ffa800;
+  color: transparent;
+}
+
+.social-media__hashtag h3 {
+  font-family: 'proxima_nova_blblack';
+  font-size: 40px;
+  line-height: 118px;
+}
+
+.social-media__links {
+  position: absolute;
+  top: 104px;
+  left: 140px;
+  padding: 12px 18px;
+  background-color: #00a651;
+}
+
+.social-media__links li {
+  float: left;
+}
+
+.social-media__links a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0 3px;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.social-media__links a:hover {
+  opacity: 0.5;
+}
+
+.social-media__links--vk {
+  background-position: -166px -497px;
+}
+
+.social-media__links--fb {
+
+  background-position: -166px -529px;
+}
+
+.social-media__links--tw {
+  background-position: -168px -561px;
+}
+
+.social-media__links--ok {
+  background-position: -167px -593px;
+}
+
+.social-media__links--gp {
+  background-position: -172px -622px;
 }
 
 /* --------------- Participation --------------- */
