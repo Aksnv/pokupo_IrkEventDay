@@ -1437,15 +1437,9 @@ h3, strong {
   font-style: italic;
 }
 
-.schedule-details__content-speaker/* ,
-.schedule-details__content-header */ {
+.schedule-details__content-speaker {
   margin-bottom: 20px;
 }
-
-/* .schedule-details__content-header p {
-  font-size: 18px;
-  word-spacing: 4px;
-} */
 
 .schedule-details__content-report p {
   margin-bottom: 20px;
