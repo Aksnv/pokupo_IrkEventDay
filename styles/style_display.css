@@ -608,6 +608,11 @@
     padding-top: 10px;
   }
 
+  .schedule-details__content {
+    padding-left: 120px;
+    padding-right: 124px;
+  }
+
   /* --------------- Partners --------------- */
 
   .container--page-content__partners {
@@ -1042,6 +1047,12 @@
     padding-bottom: 20px;
   }
 
+  .schedule-details__content {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   /* --------------- Partners --------------- */
 
   .page-content__partners h2::before {
@@ -1292,6 +1303,7 @@
   .page-content__social-media p,
   .social-media__hashtag {
     width: 300px;
+    margin: 0 auto;
   }
 
   /* .page-content__social-media {
