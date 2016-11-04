@@ -1078,6 +1078,24 @@
     margin-left: 0;
   }
 
+  /* --------------- Social media --------------- */
+
+  .page-content__social-media {
+    min-height: 550px;
+  }
+
+  .social-media__hashtag {
+    width: 360px;
+  }
+
+  .social-media__hashtag h3 {
+    font-size: 36px;
+  }
+
+  .social-media__links {
+    left: 72px;
+  }
+
   /* --------------- Address --------------- */
 
   .page-content__address strong {
@@ -1264,6 +1282,29 @@
     margin-left: 18px;
     margin-bottom: 35px;
   }
+
+  /* --------------- Social media --------------- */
+
+  .container--page-content__social-media {
+    width: 320px;
+  }
+
+  .page-content__social-media p,
+  .social-media__hashtag {
+    width: 300px;
+  }
+
+  /* .page-content__social-media {
+    min-height: 550px;
+  } */
+  
+  .social-media__hashtag h3 {
+    font-size: 28px;
+  }
+  
+  .social-media__links {
+    left: 42px;
+  } 
 
   /* Всплывающие окна (popup) */
 
