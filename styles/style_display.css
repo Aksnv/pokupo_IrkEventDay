@@ -101,7 +101,8 @@
 
   .partners--bottom {
     /* margin-left: 232px; */
-    margin-left: 180px;
+    /* margin-left: 180px; */
+    margin-left: 116px;
   }
 
   /* --------------- Footer --------------- */
@@ -648,7 +649,8 @@
   }
 
   .partners--bottom li:nth-child(5) {
-    margin-left: 90px;
+    /* margin-left: 90px; */
+    margin-left: 34px;
   }
 
   .page-content__partners-offer {
@@ -1085,8 +1087,17 @@
     margin-bottom: 35px;
   }
 
+  .partners--bottom li:nth-child(4) {
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+
   .partners--bottom li:nth-child(5) {
     margin-left: 0;
+  }
+
+  .partners--bottom li:nth-child(6) {
+    margin-right: 0;
   }
 
   /* --------------- Social media --------------- */
@@ -1294,6 +1305,15 @@
     margin-bottom: 35px;
   }
 
+  .partners--bottom li:nth-child(5) {
+    margin-left: 28px;
+    margin-bottom: 35px;
+  }
+
+  .partners--bottom li:nth-child(6) {
+    margin-right: 26px;
+  }
+   
   /* --------------- Social media --------------- */
 
   .container--page-content__social-media {

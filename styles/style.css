@@ -1512,7 +1512,8 @@ h3, strong {
 
 .partners--bottom {
   /* margin-left: 243px; */
-  margin-left: 175px;
+  /* margin-left: 175px; */
+  margin-left: 116px;
 }
 
 .partners--bottom li:nth-child(1) {
@@ -1541,6 +1542,11 @@ h3, strong {
 
 .partners--bottom li:nth-child(6) {
   margin-top: 5px;
+  margin-right: 26px;
+}
+
+.partners--bottom li:nth-child(7) {
+  margin-top: 7px;
 }
 
 .page-content__partners-offer {
