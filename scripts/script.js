@@ -102,16 +102,71 @@
 
 /* Выпадающие блоки с информацией в расписании */
 
-/*(function () {
+(function () {
 
-  var scheduleDetails = document.querySelector(".schedule__row--details");
-  var scheduleDetailsLink = document.querySelectorAll(".schedule-details__link");
+  var scheduleDetailsLink = [];
+  var scheduleRowDetails = [];
   
-  scheduleDetailsLink.addEventListener("click", function(event) {
+  for (var i = 1; i < 12; i++) {
+    scheduleDetailsLink.push(document.querySelector(".schedule-details__link-"+i));
+    scheduleRowDetails.push(document.querySelector(".schedule__row--details-"+i));
+  }
+
+  scheduleDetailsLink[0].addEventListener("click", function(event) {
     event.preventDefault();
-    scheduleDetails.classList.toggle("schedule__row--invisible");
+    scheduleRowDetails[0].classList.toggle("schedule__row--invisible");
   });
 
-}());*/
+  scheduleDetailsLink[1].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[1].classList.toggle("schedule__row--invisible");
+  });
+
+  scheduleDetailsLink[2].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[2].classList.toggle("schedule__row--invisible");
+  });
+
+  scheduleDetailsLink[3].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[3].classList.toggle("schedule__row--invisible");
+  });
+
+  scheduleDetailsLink[4].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[4].classList.toggle("schedule__row--invisible");
+  });
+
+  scheduleDetailsLink[5].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[5].classList.toggle("schedule__row--invisible");
+  });
+
+  scheduleDetailsLink[6].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[6].classList.toggle("schedule__row--invisible");
+  });
+
+  scheduleDetailsLink[7].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[7].classList.toggle("schedule__row--invisible");
+  });
+
+  scheduleDetailsLink[8].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[8].classList.toggle("schedule__row--invisible");
+  });
+
+  scheduleDetailsLink[9].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[9].classList.toggle("schedule__row--invisible");
+  });
+
+  scheduleDetailsLink[10].addEventListener("click", function(event) {
+    event.preventDefault();
+    scheduleRowDetails[10].classList.toggle("schedule__row--invisible");
+  });
+
+}()); 
 
 /* END - Выпадающие блоки с информацией в расписании */
