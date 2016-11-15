@@ -96,13 +96,11 @@
   }
 
   .partners--top {
-    margin-left: 0;
+    margin-left: 53px;
   }
 
   .partners--bottom {
-    /* margin-left: 232px; */
-    /* margin-left: 180px; */
-    margin-left: 116px;
+    margin-left: 35px;
   }
 
   /* --------------- Footer --------------- */
@@ -631,7 +629,7 @@
 
   .partners--top/* ,
   .partners--bottom */ {
-    margin-left: 100px;
+    margin-left: 75px;
   }
 
   .partners--top li:nth-child(1) {
@@ -639,17 +637,21 @@
     margin-bottom: 45px;
   }
 
+  .partners--top li:nth-child(4) {
+    margin-left: 95px;
+  }
+
   /* .partners--top, */
   .partners--bottom {
-    margin-left: 150px;
+    margin-left: 85px;
   }
 
   .partners--bottom li:nth-child(1) {
+    margin-left: 60px;
     margin-bottom: 45px;
   }
 
   .partners--bottom li:nth-child(5) {
-    /* margin-left: 90px; */
     margin-left: 34px;
   }
 
@@ -1078,12 +1080,16 @@
     margin-bottom: 35px;
   }
 
+  .partners--top li:nth-child(4) {
+    margin-left: 0;
+  }
+
   .partners--top li:nth-child(6) {
     margin-right: 10px;
   }
 
   .partners--bottom li:nth-child(1) {
-    margin-left: 25px;
+    margin-left: 35px;
     margin-bottom: 35px;
   }
 
@@ -1292,26 +1298,53 @@
     left: 117px;
   }
 
+  .partners--top {
+    margin-bottom: 0;
+  }
+
+  .partners--top li:nth-child(1) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .partners--top li:nth-child(2) {
     margin-left: 18px;
+    margin-right: 0;
   }
 
   .partners--top li:nth-child(4) {
     margin-bottom: 35px;
   }
 
+  .partners--top li:nth-child(5) {
+    margin-right: 10px;
+  }
+
+  .partners--bottom li:nth-child(1) {
+    margin-left: 0;
+  } 
+
+  .partners--bottom li:nth-child(2) {
+    margin-left: 0;
+  }
+
   .partners--bottom li:nth-child(3) {
-    margin-left: 18px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 35px;
   }
 
+  .partners--bottom li:nth-child(4) {
+    margin-left: 0;
+  }
+
   .partners--bottom li:nth-child(5) {
-    margin-left: 28px;
+    margin-left: 0;
     margin-bottom: 35px;
   }
 
   .partners--bottom li:nth-child(6) {
-    margin-right: 26px;
+    margin-right: 0;
   }
    
   /* --------------- Social media --------------- */
