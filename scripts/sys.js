@@ -122,7 +122,7 @@ time();
 /* Счетчик обратного отсчета до мероприятия + правильные окончания у слов "день", "час", "минута" */
 
 function time() {
-    timeend= new Date(2016, 11-1, 24);
+    timeend= new Date(2016, 11-1, 24, 10);
 
     today = new Date();
     today = Math.floor((timeend-today)/1000);
