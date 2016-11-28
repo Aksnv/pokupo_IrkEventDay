@@ -535,6 +535,10 @@ h3, strong {
    margin-top: 34px;
 }
 
+.preview-article p:last-child {
+  margin-bottom: 30px;
+}
+
 .preview-aside {
   position: relative;
   margin-top: 70px;
@@ -575,7 +579,7 @@ h3, strong {
   padding-top: 22px;
 }
 
-.preview-list h3 {
+/* .preview-list h3 {
   font-family: 'proxima_nova_rgregular';
   font-size: 20px;
   font-weight: 400;
@@ -608,6 +612,23 @@ h3, strong {
   height: 67px;
   background-image: url(../images/sprite.png);
   background-position: -392px -424px;
+} */
+
+.preview-list {
+  width: 375px;
+  text-align: left;
+  list-style-type: disc;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.preview-list li {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.preview-list li:last-child {
+  margin-bottom: 0;
 }
 
 /* END - Статья */
