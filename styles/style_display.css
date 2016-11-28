@@ -308,7 +308,8 @@
   .preview-aside::after {
     /* Стили для нового промо-текста из раздела "О мероприятии" */
     /* top: 267px; */
-    top: 119px;
+    /* top: 119px; */
+    top: 147px;
     /* END - Стили для нового промо-текста из раздела "О мероприятии" */
   }
 
@@ -317,9 +318,13 @@
     margin: 0 auto;
   }
   
-  .preview-list ul {
+  /* .preview-list ul {
     width: 475px;
     margin-left: 140px;
+  } */
+
+  .preview-list {
+    width: 300px;
   }
 
   .event-countdown {
@@ -370,7 +375,7 @@
 
   /* Статья */
 
-  .page-content__participation--top::before {
+  /* .page-content__participation--top::before {
     position: absolute;
     top: -110px;
     left: 0;
@@ -379,7 +384,7 @@
     height: 110px;
     background-color: #fea404;
     z-index: -1;
-  } 
+  }  */
 
   /* END - Статья */
 
@@ -727,6 +732,10 @@
     width: 360px;
   }
 
+  .inline-link {
+    font-size: 16px;
+  }
+
   /* ---------------  Header --------------- */
 
   .page-header {
@@ -824,9 +833,9 @@
 
   /* Статья */
 
-  .page-content__preview h2 {
+  /* .page-content__preview h2 {
     font-size: 30px;
-  }
+  } */
 
   .preview-article p {
     width: 300px;
@@ -841,7 +850,8 @@
   .preview-aside::after {
     /* Стили для нового промо-текста из раздела "О мероприятии" */
     /* top: 399px; */
-    top: 185px;
+    /* top: 185px; */
+    top: 234px;
     /* END - Стили для нового промо-текста из раздела "О мероприятии" */
   }
 
@@ -850,14 +860,19 @@
     font-size: 14px;
   }
 
-  .preview-list ul {
+  /* .preview-list ul {
     width: 200px;
     margin-left: 80px;
     margin-bottom: 45px;
   }
-
+  
   .preview-list li {
     margin-bottom: 33px;
+  } */
+
+  .preview-list {
+    width: 250px;
+    margin-left: 40px;
   }
 
   /* END - Статья */
@@ -1225,7 +1240,8 @@
   .preview-aside::after {
     /* Стили для нового промо-текста из раздела "О мероприятии" */
     /* top: 465px; */
-    top: 185px;
+    /* top: 185px; */
+    top: 254px;
     /* END - Стили для нового промо-текста из раздела "О мероприятии" */
   }
 
@@ -1235,10 +1251,10 @@
     width: 265px;
   }
 
-  .preview-list ul {
+  /* .preview-list ul {
     width: 190px;
     margin-left: 100px;
-  }
+  } */
 
   /* END - Статья */
   

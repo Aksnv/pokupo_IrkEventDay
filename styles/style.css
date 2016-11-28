@@ -542,7 +542,8 @@ h3, strong {
 .preview-aside {
   position: relative;
   margin-top: 70px;
-  margin-bottom: 95px;
+  /* margin-bottom: 95px; */
+  margin-bottom: 80px;
 }
 
 .preview-aside::before,
@@ -563,7 +564,7 @@ h3, strong {
 .preview-aside::after {
   left: 387px;
   /* Стили для нового промо-текста из раздела "О мероприятии" */
-  top: 94px;
+  top: 104px;
   /* top: 201px; */
   /* END - Стили для нового промо-текста из раздела "О мероприятии" */
 }
@@ -571,13 +572,14 @@ h3, strong {
 .preview-aside p {
   font-size: 15px;
   line-height: 22px;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
+  padding-bottom: 10px;
   color: #333333;
 }
 
-.preview-aside p:nth-child(3) {
+/* .preview-aside p:nth-child(3) {
   padding-top: 22px;
-}
+} */
 
 /* .preview-list h3 {
   font-family: 'proxima_nova_rgregular';
@@ -615,7 +617,7 @@ h3, strong {
 } */
 
 .preview-list {
-  width: 375px;
+  width: 350px;
   text-align: left;
   list-style-type: disc;
   margin: 0 auto;
@@ -624,7 +626,7 @@ h3, strong {
 
 .preview-list li {
   margin-bottom: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .preview-list li:last-child {
