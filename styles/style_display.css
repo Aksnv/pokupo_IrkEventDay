@@ -73,6 +73,18 @@
     left: 428px;
   }
 
+  /* Слайдер */
+
+  .button-back {
+    left: 60px;
+  }
+
+  .button-forward {
+    right: 60px;
+  }
+
+  /* END - Слайдер */
+
   /* END - Статья */
 
   /* --------------- Participation --------------- */
@@ -326,6 +338,25 @@
   .preview-list {
     width: 300px;
   }
+
+  /* Слайдер */
+
+  .preview-gallery {
+    width: 670px;
+    height: 479px;
+    /* height: 606px;
+    margin: 0 auto; */
+  }
+
+  .button-back {
+    left: 20px;
+  }
+
+  .button-forward {
+    right: 20px;
+  }
+
+  /* END - Слайдер */
 
   .event-countdown {
     margin-bottom: 76px;
@@ -874,6 +905,23 @@
     width: 250px;
     margin-left: 40px;
   }
+
+  /* Слайдер */
+
+  .preview-gallery {
+    width: 300px;
+    height: 232px;
+  }
+
+  .button-back {
+    left: 10px;
+  }
+  
+  .button-forward {
+    right: 10px;
+  } 
+
+  /* END - Слайдер */
 
   /* END - Статья */
 

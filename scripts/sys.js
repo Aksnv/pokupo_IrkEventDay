@@ -404,8 +404,11 @@ $(".button-forward").click(function() {
   $(".button-back").attr("disabled", false);
   for (var i = 1; i <= $(".preview-photo").length; i++) {
     if ($(".preview-photo--" + i).css("display") == "block") {
-      $(".preview-photo--" + i).css("display", "none");
-      $(".preview-photo--" + (i + 1)).css("display", "block");
+      /*$(".preview-photo--" + i).css("display", "none");*/
+      $(".preview-photo--" + i).hide();
+      /*$(".preview-photo--" + (i + 1)).css("display", "block");*/
+      $(".preview-photo--" + (i + 1)).fadeIn(700);
+
       if (i == $(".preview-photo").length - 1) {
         $(".button-forward").attr("disabled", "disabled");
       }
@@ -418,8 +421,10 @@ $(".button-back").click(function() {
   $(".button-forward").attr("disabled", false);
   for (var i = $(".preview-photo").length; i >= 1; i--) {
     if ($(".preview-photo--" + i).css("display") == "block") {
-      $(".preview-photo--" + i).css("display", "none");
-      $(".preview-photo--" + (i - 1)).css("display", "block");
+      /*$(".preview-photo--" + i).css("display", "none");*/
+      $(".preview-photo--" + i).hide();
+      /*$(".preview-photo--" + (i - 1)).css("display", "block");*/
+      $(".preview-photo--" + (i - 1)).fadeIn(700);
       if (i == 2) {
         $(".button-back").attr("disabled", "disabled");
       }
