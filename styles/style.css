@@ -633,6 +633,46 @@ h3, strong {
   margin-bottom: 0;
 }
 
+/* Слайдер */
+
+.preview-slider {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.preview-photo {
+  display: none;
+}
+
+.preview-photo:first-child {
+  display: block;
+}
+
+/* .preview-photo img {
+  width: 700px;
+} */
+
+.preview-photo figcaption {
+  margin-top: 10px;
+}
+
+.button-back,
+.button-forward {
+  position: absolute;
+}
+
+.button-back {
+  top: 50%;
+  left: -50px;
+}
+
+.button-forward {
+  top: 50%;
+  right: -50px;
+}
+
+/* END - Слайдер */
+
 /* END - Статья */
 
 .event-countdown {

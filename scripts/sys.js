@@ -394,3 +394,38 @@ button.addEventListener("click", function(event) {
 }()); 
 
 /* END - Выпадающие блоки с информацией в расписании */
+
+
+/* Слайдер */
+
+$(".button-back").attr("disabled", "disabled");
+
+$(".button-forward").click(function() {
+  $(".button-back").attr("disabled", false);
+  for (var i = 1; i <= $(".preview-photo").length; i++) {
+    if ($(".preview-photo--" + i).css("display") == "block") {
+      $(".preview-photo--" + i).css("display", "none");
+      $(".preview-photo--" + (i + 1)).css("display", "block");
+      if (i == $(".preview-photo").length - 1) {
+        $(".button-forward").attr("disabled", "disabled");
+      }
+      break;
+    }
+  }
+});
+
+$(".button-back").click(function() {
+  $(".button-forward").attr("disabled", false);
+  for (var i = $(".preview-photo").length; i >= 1; i--) {
+    if ($(".preview-photo--" + i).css("display") == "block") {
+      $(".preview-photo--" + i).css("display", "none");
+      $(".preview-photo--" + (i - 1)).css("display", "block");
+      if (i == 2) {
+        $(".button-back").attr("disabled", "disabled");
+      }
+      break;
+    }
+  }
+});
+
+/* END - Слайдер */
