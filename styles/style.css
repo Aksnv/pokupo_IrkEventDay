@@ -906,10 +906,95 @@ h3, strong {
   color: #000000;
 }
 
+.container--results-article__gallery {
+  width: 1024px;
+}
+
 .results-article__gallery {
   height: 860px;
   background-color: #333333;
 }
+
+.results-article__gallery-preview {
+  overflow: hidden;
+  margin-bottom: 4px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #595857;
+}
+
+.gallery-preview__photo {
+  float: left;
+  display: block;
+  width: 120px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.gallery-preview__photo--active {
+  width: 112px;
+  height: 72px;
+  margin-top: 4px;
+  /* border: 4px solid #ffa800; */
+  /* box-shadow: inset 4px 4px 0 #ffa800; */
+  outline: 4px solid #ffa800;
+}
+
+.gallery-preview__photo:nth-child(8) {
+  margin-right: 0;
+}
+
+/* Слайдер */
+
+.results-article__slider {
+  position: relative;
+  clear: both;
+  width: 1024px;
+}
+
+.slider-photo {
+  display: none;
+}
+
+.slider-photo:first-child {
+  display: block;
+}
+
+.slider-photo figcaption {
+  font-style: italic;
+  margin-top: 12px;
+  color: #ffffff;
+}
+
+.slider-button {
+  width: 13px;
+  height: 24px;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.slider-button:disabled {
+  opacity: 0.3;
+}
+
+.slider-button--back,
+.slider-button--forward {
+  position: absolute;
+  top: 313px;
+}
+
+.slider-button--back {
+  left: 20px;
+  background-position: -430px -396px;
+}
+
+.slider-button--forward {
+  right: 20px;
+  background-position: -454px -395px;
+}
+
+/* END - Слайдер */
 
 .container--results-article__footer {
   width: 730px;
@@ -966,65 +1051,10 @@ h3, strong {
   font-style: italic;
 }
 
-/* Слайдер */
-
-.results-slider {
-  position: relative;
-}
-
-.results-gallery {
-  width: 860px;
-  height: 606px;
-  margin: 0 auto;
-}
-
-.results-photo {
-  display: none;
-}
-
-.results-photo:first-child {
-  display: block;
-}
-
-.results-photo figcaption {
-  margin-top: 10px;
-}
-
-.slider-button {
-  width: 32px;
-  height: 62px;
-  background-image: url(../images/sprite.png);
-  background-repeat: no-repeat;
-  border: none;
-}
-
-.slider-button:disabled {
-  opacity: 0.3;
-}
-
-.button-back,
-.button-forward {
-  position: absolute;
-}
-
-.button-back {
-  top: calc(50% - 31px);
-  left: 20px;
-  background-position: -213px -538px;
-}
-
-.button-forward {
-  top: calc(50% - 31px);
-  right: 20px;
-  background-position: -214px -475px;
-}
-
-/* END - Слайдер */
-
 
 /* --------------- Participation --------------- */
 
-.page-content__participation {
+/* .page-content__participation {
   background-image: url(../images/bg_middle.jpg);
   background-repeat: no-repeat;
   background-position: center -4px;
@@ -1040,11 +1070,7 @@ h3, strong {
 .page-content__participation h2 {
   padding-bottom: 21px;
   color: #ffffff;
-
-  /* Изменение стилей для меню при скролле */
-  /* padding-top: 55px; */
   padding-top: 65px;
-  /* END - Изменение стилей для меню при скролле */
 }
 
 .page-content__participation p {
@@ -1155,7 +1181,7 @@ h3, strong {
 
 .event-ticket__purchase a {
   float: left;
-  /* display: block; */
+  display: block;
   width: 309px;
   height: 59px;
   font-family: 'proxima_nova_thextrabold';
@@ -1247,11 +1273,11 @@ h3, strong {
   background-color: #d9d7d3;
   transform: skew(33deg);
   z-index: -2;
-}
+} */
 
 /* --------------- Seminar --------------- */
 
-.container--page-content__seminar {
+/* .container--page-content__seminar {
   width: 940px;
 }
 
@@ -1273,7 +1299,7 @@ h3, strong {
 
 .page-content__seminar-top,
 .page-content__seminar-bottom {
-  /* background-color: #ffa800; */
+  background-color: #ffa800;
   background-color: #ffcb67;
 }
 
@@ -1410,7 +1436,7 @@ h3, strong {
 
 .page-content__seminar-bottom {
   padding-bottom: 67px;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .seminar-bottom__block {
@@ -1424,11 +1450,11 @@ h3, strong {
 
 .seminar-bottom__block p {
   line-height: 21px;
-}
+} */
 
 /* --------------- Lottery --------------- */
 
-.page-content__lottery {
+/* .page-content__lottery {
   padding-top: 267px;
   background-color: #00a651;
 }
@@ -1506,11 +1532,11 @@ h3, strong {
 
 .lottery-list li:last-child::before {
   top: -15px;
-}
+} */
 
 /* --------------- Schedule --------------- */
 
-.page-content__schedule {
+/* .page-content__schedule {
   min-height: 961px;
   padding-bottom: 36px;
 }
@@ -1526,11 +1552,7 @@ h3, strong {
 .page-content__schedule h2 {
   position: relative;
   padding-bottom: 49px;
-
-  /* Изменение стилей для меню при скролле */
-  /* padding-top: 44px; */
   padding-top: 65px;
-  /* END - Изменение стилей для меню при скролле */
 }
 
 .schedule__row--grey {
@@ -1540,10 +1562,6 @@ h3, strong {
 .schedule__row--white {
   background-color: #ffffff;
 }
-
-/* .schedule__row--visible {
-  display: block;
-} */
 
 .schedule__row--invisible {
   display: none; 
@@ -1561,11 +1579,7 @@ h3, strong {
 
 .page-content__schedule h2::after {
   left: 546px;
-
-  /* Изменение стилей для меню при скролле */
-  /* top: 113px; */
   top: 134px;
-  /* END - Изменение стилей для меню при скролле */
 }
 
 .schedule__column {
@@ -1728,7 +1742,7 @@ h3, strong {
 
 .schedule-details__content-report p {
   margin-bottom: 20px;
-}
+} */
 
 /* --------------- Partners --------------- */
 
@@ -1743,20 +1757,18 @@ h3, strong {
 .page-content__partners h2 {
   position: relative;
   padding-bottom: 43px;
-
-  /* Изменение стилей для меню при скролле */
-  /* padding-top: 82px; */
   padding-top: 65px;
-  /* END - Изменение стилей для меню при скролле */
 }
 
 .page-content__partners h2::before {
+  position: absolute;
   left: 437px;
-
-  /* Изменение стилей для меню при скролле */
-  /* top: 30px; */
   top: 13px;
-  /* END - Изменение стилей для меню при скролле */
+  content: '';
+  width: 85px;
+  height: 8px;
+  background-image: url(../images/sprite.png);
+  background-position: -8px -478px;
 }
 
 .page-content__partners ul {
@@ -1891,7 +1903,7 @@ h3, strong {
 .social-media__links {
   position: absolute;
   top: 104px;
-  left: 140px;
+  left: calc(50% - 72px);
   padding: 12px 18px;
   background-color: #00a651;
 }
@@ -1937,7 +1949,7 @@ h3, strong {
 
 /* --------------- Participation --------------- */
 
-.page-content__participation--bottom {
+/* .page-content__participation--bottom {
   min-height: 430px;
   padding-top: 46px;
   background-position: center -155px;
@@ -1950,21 +1962,17 @@ h3, strong {
 
 .event-ticket p:first-of-type {
   display: block;
-}
+} */
 
 /* --------------- Address --------------- */
 
-.page-content__address {
+/* .page-content__address {
   min-height: 620px;
 }
 
 .page-content__address h2 {
   padding-bottom: 21px;
-
-  /* Изменение стилей для меню при скролле */
-  /* padding-top: 63px; */
   padding-top: 65px;
-  /* END - Изменение стилей для меню при скролле */
 }
 
 .page-content__address strong {
@@ -1974,11 +1982,11 @@ h3, strong {
 
 .page-content__address p {
   padding-top: 10px;
-}
+} */
 
 /* Карта */
 
-.event-map {
+/* .event-map {
   width: auto;
   height: 400px;
   margin: 0 auto;
@@ -1987,7 +1995,7 @@ h3, strong {
 
 .no-touch .dg-customization__marker_type_mushroom {
   background-image: url(http://maps.api.2gis.ru/2.0/img/DGCustomization__markerHover.png);
-}
+} */
 
 /* END - Карта */
 
