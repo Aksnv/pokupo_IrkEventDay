@@ -152,8 +152,6 @@ function time() {
     $("#thours").html(thour);
     $("#tminutes").html(tmin);
 
-
-
      $('<span/>').addClass('event-countdown__item')
          .addClass('event-countdown__item--days')
          .addClass('event-countdown__item--days'+declOfNum(today))
@@ -266,7 +264,7 @@ button.addEventListener("click", function(event) {
 
     var pageHeaderCoordinates = pageHeader.getBoundingClientRect();
     /*var pageContentPreviewCoordinates = pageContentPreview.getBoundingClientRect();*/
-    var pageContentPreviewCoordinates = pageContentResults.getBoundingClientRect();
+    var pageContentResultsCoordinates = pageContentResults.getBoundingClientRect();
     /*var pageContentParticipationCoordinates = pageContentParticipation.getBoundingClientRect();
     var pageContentSeminarCoordinates = pageContentSeminar.getBoundingClientRect();
     var pageContentScheduleCoordinates = pageContentSchedule.getBoundingClientRect();*/
@@ -346,7 +344,7 @@ button.addEventListener("click", function(event) {
 
 /* Выпадающие блоки с информацией в расписании */
 
-(function () {
+/*(function () {
 
   var scheduleDetailsLink = [];
   var scheduleRowDetails = [];
@@ -411,7 +409,7 @@ button.addEventListener("click", function(event) {
     scheduleRowDetails[10].classList.toggle("schedule__row--invisible");
   });
 
-}()); 
+}()); */
 
 /* END - Выпадающие блоки с информацией в расписании */
 
