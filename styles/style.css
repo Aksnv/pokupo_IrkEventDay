@@ -802,7 +802,8 @@ h3, strong {
   background-position: -392px -312px;
 }
 
-.results-article__people p {
+.results-article__people p,
+.results-article__themes p {
   font-size: 20px;
   line-height: 26px;
   color: #000000;
@@ -833,9 +834,44 @@ h3, strong {
   margin-left: 72px;
 }
 
+.container--results-article__themes {
+  width: 750px;
+}
+
 .results-article__themes {
   clear: both;
+  background-color: #efece7;
 }
+
+.results-article__themes p {
+  padding-top: 62px;
+  padding-bottom: 37px;
+}
+
+.results-article__themes-list {
+  margin-left: 228px;
+  padding-bottom: 49px;
+}
+
+.results-article__themes-list li {
+  position: relative;
+  line-height: 18px; 
+  text-align: left;
+  padding-bottom: 32px;
+}
+
+.results-article__themes-list li::before {
+  position: absolute;
+  top: -2px;
+  left: -42px;
+  content: '';
+  display: block;
+  width: 29px;
+  height: 26px;
+  background-image: url(../images/sprite.png);
+  background-position: -394px -395px;
+}
+
 
 
 /* .results-article i {
