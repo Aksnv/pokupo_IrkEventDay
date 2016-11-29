@@ -872,7 +872,39 @@ h3, strong {
   background-position: -394px -395px;
 }
 
+.container--results-article__statistics {
+  width: 730px;
+}
 
+.results-article__statistics p {
+  color: #333333;
+}
+
+.results-article__statistics p:first-child {
+  padding-top: 44px;
+  padding-bottom: 22px;
+}
+
+.results-article__statistics p:last-of-type {
+  font-size: 20px;
+  line-height: 22px;
+  padding-top: 37px;
+  padding-bottom: 18px;
+  color: #000000;
+}
+
+.results-article__statistics-list {
+  width: 654px;
+  list-style-type: disc;
+  padding-left: 54px;
+  padding-bottom: 40px;
+}
+
+.results-article__statistics-list li {
+  text-align: left;
+  line-height: 25px;
+  color: #000000;
+}
 
 /* .results-article i {
   display: block;
@@ -912,23 +944,6 @@ h3, strong {
   line-height: 22px;
   padding-bottom: 10px;
   color: #333333;
-}
-
-.results-list {
-  width: 350px;
-  text-align: left;
-  list-style-type: disc;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-
-.results-list li {
-  margin-bottom: 20px;
-  padding-left: 20px;
-}
-
-.results-list li:last-child {
-  margin-bottom: 0;
 }
 
 /* Слайдер */
