@@ -37,19 +37,19 @@
   <!-- <script src="..."></script> -->
 
   <!-- Карта -->
-  <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <!-- <script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   <script type="text/javascript">
       var map;
-
+  
       DG.then(function () {
           map = DG.map('map', {
               center: [52.25105620192095, 104.26772846450807],
               zoom: 17
           });
-
+  
           DG.marker([52.25145620192095, 104.26782846450807]).addTo(map).bindPopup('Иркутская областная государственная универсальная научная библиотека имени И.И. Молчанова-Сибирского');
       });
-  </script>
+  </script> -->
   <!-- END - Карта -->
 
 </head>
@@ -86,13 +86,15 @@
       </div>
       <nav class="page-header__main-menu">
         <ul>
-          <li><a class="main-menu__item main-menu__item--preview" href="#page-content__preview">О мероприятии</a></li>
-          <li><a class="main-menu__item main-menu__item--participation popbutton" href="#page-content__participation--top" data-window="1">Купить билет</a></li>
+          <!-- <li><a class="main-menu__item main-menu__item--preview" href="#page-content__preview">О мероприятии</a></li> -->
+          <li><a class="main-menu__item main-menu__item--results" href="#page-content__results">О мероприятии</a></li>
+          <!-- <li><a class="main-menu__item main-menu__item--participation popbutton" href="#page-content__participation--top" data-window="1">Купить билет</a></li>
           <li><a class="main-menu__item main-menu__item--seminar" href="#page-content__seminar">О семинаре</a></li>
-          <li><a class="main-menu__item main-menu__item--schedule" href="#page-content__schedule">Расписание</a></li>
+          <li><a class="main-menu__item main-menu__item--schedule" href="#page-content__schedule">Расписание</a></li> -->
           <li><a class="main-menu__item main-menu__item--partners" href="#page-content__partners">Организаторы и партнеры</a></li>
           <!-- <li><a href="#">Спонсоры</a></li> -->
-          <li><a class="main-menu__item main-menu__item--address" href="#page-content__address">Контакты</a></li>
+          <!-- <li><a class="main-menu__item main-menu__item--address" href="#page-content__address">Контакты</a></li> -->
+          <li><a class="main-menu__item main-menu__item--social-media" href="#page-content__social-media">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -103,9 +105,10 @@
   <div class="page-content">
 
       <!-- Preview -->
-      <section class="page-content__preview" id="page-content__preview">
+      <!-- <section class="page-content__preview" id="page-content__preview">
         <div class="container container--page-content__preview">
-          <article class="preview-article">
+          <article class="preview-article"> -->
+            
             <!-- Version 1.0 -->
             <!-- <header>
               <h2>Мы тут революцию затеяли. <strong>Вы&nbsp;с&nbsp;нами?</strong></h2>
@@ -145,8 +148,22 @@
             </section>
             <p>Если Вы опытный революционер, то можете выступить со своим докладом,<br> а также поддержать мероприятие морально или материально, став спонсором.</p>
             <p>А можете просто прийти и послушать.</p> -->
+          
+          <!-- </article> -->
 
-            <!-- Version 3.0 - Итоги семинара IED2016 -->
+          <!-- Счетчик -->
+          <!-- <div class="event-countdown">
+            <p>До мероприятия осталось</p>
+            <p id="date__"></p>
+          </div> -->
+        
+        <!-- </div>
+              </section> -->
+
+      <!-- Results -->
+      <section class="page-content__results" id="page-content__results">
+        <div class="container container--page-content__results">
+          <article class="results-article">
             <header>
               <h2>Итоги семинара</h2>
             </header>
@@ -172,12 +189,12 @@
             <p>Средняя оценка всех докладов оказалась высокой - <strong>8,58&nbsp;из&nbsp;10</strong>.</p>
             <p>Завершалось мероприятие круглым столом на тему поднятых проблем и перспектив организации активного сообщества предпринимателей в Иркутске. Семинар вышел из отведённого лимита более чем на час. Было видно, что участников волнует тема кризиса и организации <span class="nowrap">IT-сообщества</span>. Все выступили за сообщество и за проведение подобных мероприятий в дальнейшем, однако роль организаторов на себя никто не взял. Главным образом потому что дорого.</p>
             <p>В целом, участники высказались за увеличение формата семинара до, как минимум, полуконференции с увеличением количества докладов и сокращением их времени, поскольку вопросов было много, но их не все удалось задать.</p>
-            <aside class="preview-aside">
+            <aside class="results-aside">
             <p>Артём Алексеев, участник: &laquo;Не поклонник подобных мероприятий, но мне понравилось. Однако семинар длился долго. Я бы сократил его время, потому как 10 докладов по 30 минут каждый - для мозга утомительно&raquo;.</p>
             <p>Спикер Денис Ёлгин также порекомендовал увеличить формат мероприятия и количество докладчиков.</p>
             </aside>
             <p>В конце приведём самые примечательные факты:</p>
-            <ul class="preview-list">
+            <ul class="results-list">
               <li>самый позитивный докладчик - Андрей Дашинимаев, ИМ &laquo;Yohor&raquo;;</li>
               <li>самая яркая фраза семинара - &laquo;Мужчины - тоже люди&raquo; (В.Петрова);</li>
               <li>самые основательные доклады - у Павла Ступко, Марины Маркиной, Артема Зуенка;</li>
@@ -190,94 +207,86 @@
               <li>1 участник посетовал на высокую цену билета (600 рублей), позже мы познакомим его и остальных со стоимостью организации этого семинара, чтобы продемонстрировать наглядно ничтожность стоимости билета.</li>
             </ul>
 
-            <!-- Слайдер -->
-            
-            <div class="preview-slider">
+            <!-- Слайдер -->    
+            <div class="results-slider">
               <button class="slider-button button-back"></button>
-              <div class="preview-gallery">
-                <figure class="preview-photo preview-photo--1">
+              <div class="results-gallery">
+                <figure class="results-photo results-photo--1">
                   <img src="images/photos/01_IrkEventDay2016_zazda_e-commerce.JPG">
                   <figcaption>Жажда e-commerce на IrkEventDay2016</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--2">
+                <figure class="results-photo results-photo--2">
                   <img src="images/photos/02_IrkEventDay2016_A_Strelov.JPG">
                   <figcaption>Основатель Pokupo.ru - Александр Стрелов докладывает о синергетических организациях</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--3">
+                <figure class="results-photo results-photo--3">
                   <img src="images/photos/03_IrkEventDay2016_D_Salko.JPG">
                   <figcaption>Дмитрий Салко (Диагран Диджитал) и его веб-аналитика</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--4">
+                <figure class="results-photo results-photo--4">
                   <img src="images/photos/04_IrkEventDay2016_E_Emelyanova.JPG">
                   <figcaption>Екатерина Емельянова (Digital Age) и мифы электронной коммерции</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--5">
+                <figure class="results-photo results-photo--5">
                   <img src="images/photos/05_IrkEventDay2016_V_Petrova.JPG">
                   <figcaption>Виктория Петрова (Home&amp;Beauty) и роль социальных сетей в интернет-маркетинге</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--6">
+                <figure class="results-photo results-photo--6">
                   <img src="images/photos/06_IrkEventDay2016_P_Stupko.JPG">
                   <figcaption>Павел Ступко (Промышленные продажи) и b2b-сегмент</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--7">
+                <figure class="results-photo results-photo--7">
                   <img src="images/photos/08_IrkEventDay2016_krugliy_stol.JPG">
                   <figcaption>Владимир Попов (Synergis) и человеческий блокчейн</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--8">
+                <figure class="results-photo results-photo--8">
                   <img src="images/photos/IrkEventDay2016_Denis_Yolgin.JPG">
                   <figcaption>Денис Ёлгин (Прайм-Групп) и комплексный интернет-маркетинг</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--9">
+                <figure class="results-photo results-photo--9">
                   <img src="images/photos/13_IrkEventDay2016_A_Zuenok.JPG">
                   <figcaption>Артем Зуенок (Pokupo.ru) и искусство техподдержки</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--10">
+                <figure class="results-photo results-photo--10">
                   <img src="images/photos/14_IrkEventDay2016_A_Dashinimaev.JPG">
                   <figcaption>Андрей Дашинимаев (Yohor)</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--11">
+                <figure class="results-photo results-photo--11">
                   <img src="images/photos/15_IrkEventDay2016_M_Markina.JPG">
                   <figcaption>Марина Маркина (в центре) и её опыт продвижения в соц.сетях</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--12">
+                <figure class="results-photo results-photo--12">
                   <img src="images/photos/09_IrkEventDay2016_.JPG">
                   <figcaption>Круглый стол решает о создании IT-сообщества Иркутска</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--13">
+                <figure class="results-photo results-photo--13">
                   <img src="images/photos/10_IrkEventDay2016_together.JPG">
                   <figcaption>ИркИвентДэй2016 - вместе эффективней и сильней</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--14">
+                <figure class="results-photo results-photo--14">
                   <img src="images/photos/11_IrkEventDay2016_.JPG">
                   <figcaption>Один из слушателей</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--15">
+                <figure class="results-photo results-photo--15">
                   <img src="images/photos/12_IrkEventDay2016_presents.jpg">
                   <figcaption>Подарки участникам</figcaption>
                 </figure>
-                <figure class="preview-photo preview-photo--16">
+                <figure class="results-photo results-photo--16">
                   <img src="images/photos/07_IrkEventDay2016_Finish.JPG">
                   <figcaption>Микрофон ждёт 2017-го</figcaption>
                 </figure>
               </div>
               <button class="slider-button button-forward"></button>
             </div>
-
             <!-- END - Слайдер -->
 
-            <p id="preview-article_welcome-back">Будем рады видеть всех на <strong>IrkEventDay2017!</strong></p>
+            <p id="results-article_welcome-back">Будем рады видеть всех на <strong>IrkEventDay2017!</strong></p>
           </article>
-
-          <!-- Счетчик -->
-          <!-- <div class="event-countdown">
-            <p>До мероприятия осталось</p>
-            <p id="date__"></p>
-          </div> -->
         </div>
       </section>
 
       <!-- Participation -->
-      <section class="page-content__participation page-content__participation--top" id="page-content__participation--top">
+      <!-- <section class="page-content__participation page-content__participation--top" id="page-content__participation--top">
         <div class="container container--page-content__participation">
           <h2>Принять участие</h2>
           <p>
@@ -298,10 +307,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Seminar -->
-      <section class="page-content__seminar" id="page-content__seminar">
+      <!-- <section class="page-content__seminar" id="page-content__seminar">
         <div class="page-content__seminar-top">
           <div class="container container--page-content__seminar">
             <h2>О семинаре</h2>
@@ -344,10 +353,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Lottery -->
-      <section class="page-content__lottery">
+      <!-- <section class="page-content__lottery">
         <div class="container container--page-content__lottery">
           <section class="lottery-header">
             <p>Кроме того, среди&nbsp;всех&nbsp;участников&nbsp;семинара <strong>Будет проводиться лотерея,</strong> <span>в ходе которой разыграются призы от организаторов, спонсоров и партнёров</span></p>
@@ -360,14 +369,14 @@
             </ul>
           </section>
         </div>
-      </section>
+      </section> -->
 
       <!-- Schedule -->
-      <section class="page-content__schedule" id="page-content__schedule">
+      <!-- <section class="page-content__schedule" id="page-content__schedule">
         <div class="container">
           <h2>Расписание</h2>
         </div>
-
+      
         <div class="schedule__row schedule__row--white">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action schedule__column--registration">
@@ -378,7 +387,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--grey">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action schedule__column--opening">
@@ -389,7 +398,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--white">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -419,7 +428,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--grey">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -453,7 +462,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--white">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -483,7 +492,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--grey">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action schedule__column--coffee-break">
@@ -494,7 +503,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--white">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -531,11 +540,11 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--grey">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
-              <!-- <div class="schedule__column--photo schedule__column--photo-female"></div> -->
+              <div class="schedule__column--photo schedule__column--photo-female"></div>
               <img src="images/speakers/e_emelianova.png" alt="Екатерина Емельянова. Руководитель коммерческого отдела Digital Age (Иркутск)">
             </div>
             <div class="schedule__column schedule__column--center">
@@ -569,7 +578,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--white">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -599,7 +608,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--grey">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action schedule__column--dinner">
@@ -610,7 +619,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--white">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -640,7 +649,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--grey">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -674,7 +683,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--white">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -704,7 +713,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--grey">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left">
@@ -734,7 +743,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--white">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action schedule__column--round-table">
@@ -754,7 +763,7 @@
             </div>
           </div>
         </div>
-
+      
         <div class="schedule__row schedule__row--grey">
           <div class="container--schedule">
             <div class="schedule__column schedule__column--left schedule__column--action schedule__column--closing">
@@ -765,7 +774,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Partners -->
       <section class="page-content__partners" id="page-content__partners">
@@ -798,7 +807,7 @@
       </section>
 
       <!-- Social media -->
-      <section class="page-content__social-media">
+      <section class="page-content__social-media" id="page-content__social-media">
         <div class="container container--page-content__social-media">
           <h2>Следите за обновлениями</h2>
           <p><strong>В наших группах в социальных сетях</strong> мы постоянно держим вас в курсе последних новостей и обновлений.</p>
@@ -818,7 +827,7 @@
       </section>
 
       <!-- Participation -->
-      <section class="page-content__participation page-content__participation--bottom">
+      <!-- <section class="page-content__participation page-content__participation--bottom">
         <div class="container container--page-content__participation">
           <h2>Принять участие</h2>
           <p>
@@ -839,19 +848,19 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Address -->
-      <section class="page-content__address" id="page-content__address">
+      <!-- <section class="page-content__address" id="page-content__address">
         <div class="container container--page-content__address">
           <h2>Как добраться</h2>
           <strong>г. Иркутск, ул.&nbsp;Лермонтова,&nbsp;253,&nbsp;зал&nbsp;203</strong>
           <p>Иркутская областная государственная универсальная научная библиотека имени И.И.&nbsp;Молчанова-Сибирского</p>
         </div>
-        <!-- Карта -->
+        Карта
         <div id="map" class="event-map"></div>
-        <!-- END - Карта -->
-      </section>
+        END - Карта
+      </section> -->
   </div>
 
   <!-- Page footer -->
@@ -875,15 +884,15 @@
   </footer>
 
   <div class="upstairs-block">
-    <a class="upstairs-block__purchase popbutton" href="javascript:;" data-window="1">Купить билет</a>
+    <!-- <a class="upstairs-block__purchase popbutton" href="javascript:;" data-window="1">Купить билет</a> -->
     <a class="upstairs-block__button" href="#"></a>
   </div>
 
   <!-- Всплывающие окна -->
-  <div id="1" class="popwindow box_window_in hidden" data-title="">
+  <!-- <div id="1" class="popwindow box_window_in hidden" data-title=""> -->
     
     <!-- Всплывающее окно "Покупка билета" -->
-    <div id="popup1" class="popup1">
+    <!-- <div id="popup1" class="popup1">
       <div class="bw_close"><a href="https://pokupo.ru/irkeventday#"></a></div>
       <h3 class="popup1_text">Покупка билета</h3>
       <form action="https://pokupo.ru/" class="">
@@ -906,21 +915,21 @@
         <label class="popup1_form_text">Если у вас есть сайт или магазин (по желанию)
           <input class="popup1_form_input popup1_form_input_margin popup1_input_margin_bottom site" type="text" name="sait" placeholder="Название сайта или магазина">
         </label>
-
+    
         <div id="errors" class="float show_popup2"></div>
         <div class="float show_popup2">
           <input type="submit" class="button_on_popup_text button_in_popup popbutton" id="submit_btn" data-window="1" value="Купить">
         </div>
-
+    
         <input class="webinar_id" type="hidden" value="">
         <br>
         <span class="error_submit popup1_red_text hidden">Произошла ошибка. Попробуйте&nbsp;позже.</span>
       </form>
-    </div>
+    </div> -->
     <!-- END - Всплывающее окно "Покупка билета" -->
 
     <!-- Всплывающее окно "Успешная запись на семинар" -->
-    <div id="popup2" class="popup2 hidden">
+    <<!-- div id="popup2" class="popup2 hidden">
       <div class="bw_close"><a href="https://pokupo.ru/irkeventday#"></a></div>
       <p class="popup2_big_text">Поздравляем!</p>
       <p class="popup2_small_text">
@@ -932,10 +941,10 @@
       <p class="popup2_small_text line">Стоимость участия в семинаре</p>
       <p class="popup2_price">480 руб</p>
       <a id="link_pay" href="javascript:;" class="button_on_popup_text button_in_popup2 popbutton" data-window="1">Оплатить участие</a>
-    </div>
+    </div> -->
     <!-- END - Всплывающее окно "Успешная запись на семинар" -->
 
-  </div>
+  <!-- </div> -->
   <!-- END - Всплывающие окна -->
   
   <script src="scripts/jquery.js"></script>
