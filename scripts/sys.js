@@ -239,7 +239,7 @@ button.addEventListener("click", function(event) {
 
 (function () {
 
-  var mainMenu = document.querySelector(".page-header__main-menu");
+  /*var mainMenu = document.querySelector(".page-header__main-menu");*/
 
   /*var pageContentPreviewItem = document.querySelector(".main-menu__item--preview");*/
   var pageContentResultsItem = document.querySelector(".main-menu__item--results");
