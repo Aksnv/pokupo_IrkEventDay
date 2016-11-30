@@ -948,13 +948,26 @@ h3, strong {
   width: 100%;
 }
 
+/* Кроссбраузерная стилизация полосы прокрутки слайдера */
+
 input[type="range"] {
   -webkit-appearance: none;
-  width: 100%;
+  width: 1022px;
   height: 2px;
   margin: 0;
   background-color: #595857;
 }
+
+/* input[type=range]:focus {
+  outline: none;
+} */
+
+/* input[type=range]::-webkit-slider-runnable-track {
+  width: 1022px;
+  height: 2px;
+  margin: 0;
+  background-color: #595857;
+} */
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -964,6 +977,60 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 3px;
   cursor: pointer;
 }
+
+/* input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #595857;
+} */
+
+/* input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  background-color: #595857;
+}  */
+
+input[type="range"]::-moz-range-thumb {
+  width: 72px;
+  height: 4px;
+  background-color: #ffa800;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* input[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent; 
+} 
+
+input[type=range]::-ms-fill-lower {
+  background-color: #595857;
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: #595857;
+}
+
+input[type=range]::-ms-thumb {
+  width: 72px;
+  height: 6px;
+  background-color: #ffa800;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background-color: #595857;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background-color: #595857;
+} */
+
+/* END - Кроссбраузерная стилизация полосы прокрутки слайдера */
 
 /* Слайдер */
 
