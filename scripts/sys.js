@@ -416,6 +416,44 @@ button.addEventListener("click", function(event) {
 
 /* Слайдер */
 
+/*Ползунок прокрутки галлереи*/
+
+for (var i = 9; i < 17; i++) {
+  $(".gallery-preview__photo--" + i).css("display", "none");
+}
+
+$("input[type='range']").mousedown(function() {
+  setInterval(function() {
+    for (var i = 0; i < 16; i++) {
+      if ($("input[type='range']").val() == i) {
+        for (var j = 1; j <= i; j++) {
+          $(".gallery-preview__photo--" + j).css("display", "none");
+        }
+      }
+    }
+  }, 100)
+});
+
+/*END - Ползунок прокрутки галлереи*/
+
+/*Подсветка превью фотографий рамкой при клике и отображение соответствующего фото в галерее*/
+
+function removeClassPhotoActive() {
+  for (var i = 0; i < $(".gallery-preview__photo").length; i++) {
+    $(".gallery-preview__photo")[i].className = "gallery-preview__photo gallery-preview__photo--" + i;
+  }
+}
+
+$(".gallery-preview__photo").click(function() {
+  removeClassPhotoActive();
+  $(this).addClass("gallery-preview__photo--active");
+  return false;
+});
+
+/*END - Подсветка превью фотографий рамкой при клике и отображение соответствующего фото в галерее*/
+
+/*Переключение фотографий кнопками*/
+
 $(".slider-button--back").attr("disabled", "disabled");
 
 $(".slider-button--forward").click(function() {
@@ -451,6 +489,8 @@ $(".slider-button--back").click(function() {
   }
 });
 
+/*END - Переключение фотографий кнопками*/
+
 /* END - Слайдер */
 
 
@@ -465,7 +505,7 @@ $(".upstairs-block__button").click(function () {
 
 /* END - Плавная прокрутка страницы при нажатии кнопки "Наверх" */
 
-/* Плавная прокрутка страницы при нажатии пунктов меню */
+/* Плавная прокрутка страницы при нажатии пунктов меню и ссылок в тексте */
 
 $(".main-menu__item--results").click(function () {
   $("html, body").animate({
@@ -488,4 +528,4 @@ $(".main-menu__item--social-media").click(function () {
   return false;
 });
 
-/* END - Плавная прокрутка страницы при нажатии пунктов меню */
+/* END - Плавная прокрутка страницы при нажатии пунктов меню и ссылок в тексте */
