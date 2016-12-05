@@ -418,44 +418,59 @@ button.addEventListener("click", function(event) {
 
 /*Ползунок прокрутки галлереи*/
 
+/*Запоминаем превью каких фото видны на экране при скролле*/
+/*function definePreviewPhotoVisible() {
+  var visiblePreviews = [];
+  for (var i = 1; i < $(".slider-photo").length + 1; i++) {
+    if ($(".gallery-preview__photo--" + i).css("display") == "block") {
+      visiblePreviews.push(+$(".gallery-preview__photo--" + i)[0].classList[1].substr(24, $(".gallery-preview__photo--" + i)[0].classList[1].length));
+    }
+  }
+  return visiblePreviews;
+}*/
+
 for (var i = 9; i < $(".slider-photo").length + 1; i++) {
   $(".gallery-preview__photo--" + i).css("display", "none");
 }
 
 $("input[type='range']").mousedown(function() {
-  setInterval(function() {
-    /*for (var i = 0; i < 16; i++) {
-      if ($("input[type='range']").val() == i) {
-        for (var j = 1; j <= i; j++) {
-          $(".gallery-preview__photo--" + j).css("display", "none");
 
-          $(".gallery-preview__photo--" + (j + 1)).addClass("gallery-preview__photo--active");
-          $(".gallery-preview__photo--" + j).removeClass("gallery-preview__photo--active");
-        }
-      }
-    }*/
+  setInterval(function() {
+
+    /*Один - Восемь*/
     if ($("input[type='range']").val() <= 8) {
-      for (var i = 1; i < 9; i++) {
+      for (var i = 1; i < $(".slider-photo").length / 2 + 1; i++) {
         $(".gallery-preview__photo--" + i).css("display", "block");
         $(".gallery-preview__photo--" + i).css("marginRight", "10px");
       }
-      for (var j = 9; j < $(".slider-photo").length + 1; j++) {
-        $(".gallery-preview__photo--" + j).css("display", "none");
-      }
       $(".gallery-preview__photo--" + 8).css("marginRight", 0);
+
+      for (var j = 9; j < $(".slider-photo").length + 1; j++) {
+        $(".gallery-preview__photo--" + i).css("display", "none");
+      }
     }
 
-    for (var i = 9; i < $(".slider-photo").length + 1; i++) {
-      console.log($(".slider-photo").length + 1);
-      if ($("input[type='range']").val() == i) {
-        $(".gallery-preview__photo--" + (i - 8)).css("display", "none");
-        $(".gallery-preview__photo--" + i).css("display", "block");
-        $(".gallery-preview__photo--" + (i - 1)).css("marginRight", "10px");
-        $(".gallery-preview__photo--" + i).css("marginRight", 0);
+    /*Девять - Шестнадцать*/
+    if ($("input[type='range']").val() > 8) {
+      for (var m = 9; m < $(".slider-photo").length + 1; m++) {
+        if ($("input[type='range']").val() == m) {
+          for (var i = (m - 7); i < ($(".slider-photo").length / 2 + (m - 7)); i++) {
+            $(".gallery-preview__photo--" + i).css("display", "block");
+            $(".gallery-preview__photo--" + i).css("marginRight", "10px");
+          }
+          $(".gallery-preview__photo--" + m).css("marginRight", 0);
+
+          for (var j = (m + 1); j < $(".slider-photo").length + 1; j++) {
+            $(".gallery-preview__photo--" + i).css("display", "none");
+          }
+
+          for (var k = 1; k <= (m - 8); k++) {
+            $(".gallery-preview__photo--" + k).css("display", "none");
+          }
+        }
       }
     }
-    
-  }, 100)
+  }, 10)
 });
 
 /*END - Ползунок прокрутки галлереи*/
@@ -469,15 +484,27 @@ function removeClassPhotoActive() {
 }
 
 $(".gallery-preview__photo").click(function() {
+
   removeClassPhotoActive();
   $(this).addClass("gallery-preview__photo--active");
 
   var classNumber = +$(this)[0].classList[1].substr(24, $(this)[0].classList[1].length);
-  for (var i = 1; i < $(".slider-photo").length; i++) {
+  if (classNumber == 1) {
+    $(".slider-button--back").attr("disabled", "disabled");
+    $(".slider-button--forward").attr("disabled", false);
+  } else if (classNumber == 16) {
+    $(".slider-button--forward").attr("disabled", "disabled");
+    $(".slider-button--back").attr("disabled", false);
+  } else {
+    $(".slider-button--back").attr("disabled", false);
+    $(".slider-button--forward").attr("disabled", false);
+  }
+
+  for (var i = 1; i < $(".slider-photo").length + 1; i++) {
     $(".slider-photo--" + i).hide();
   }
   $(".slider-photo--" + classNumber).slideDown(1000);
-  $("input[type='range']").val(classNumber);
+  /*$("input[type='range']").val(classNumber);*/
   
   return false;
 });
