@@ -1084,6 +1084,20 @@ input[type=range]:focus::-ms-fill-upper {
 
 /* END - Слайдер */
 
+/* Отзывы */
+
+.results-article__reviews {
+  background-color: #efece7;
+}
+
+.container--results-article__reviews {
+  position: relative;
+  width: 730px;
+}
+
+
+/* END - Отзывы */
+
 .container--results-article__footer {
   width: 730px;
 }
