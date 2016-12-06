@@ -1406,6 +1406,38 @@
     left: 117px;
   } */
 
+  /* --------------- Results --------------- */
+
+  .container--results-article__statistics {
+    width: 300px;
+  }
+
+  .results-article__statistics-list {
+    width: 290px;
+    padding-left: 30px;
+  }
+
+  .results-article__slider {
+    width: 320px;
+  }
+
+  .slider-button--back, 
+  .slider-button--forward {
+    top: 130px;
+  }
+
+  .reviews-slider {
+    width: 240px;
+  }
+
+  .container--results-article__footer {
+    width: 300px;
+  }
+  
+  .results-aside::after {
+    top: 290px;
+  }
+
   /* --------------- Partners --------------- */
 
   .page-content__partners h2::before {
@@ -1478,7 +1510,7 @@
   }
   
   .social-media__links {
-    left: 42px;
+    left: 78px;
   } 
 
   /* Всплывающие окна (popup) */
