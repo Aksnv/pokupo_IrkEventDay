@@ -93,6 +93,50 @@
     left: 427px;
   } */
 
+  /* --------------- Results --------------- */
+  
+  .results-article__header p {
+    font-size: 24px;
+  }
+
+  .container--results-article__themes {
+    width: 750px;
+  }
+
+  .container--results-article__statistics {
+    width: 730px;
+  }
+
+  .results-article__gallery {
+    height: 720px;
+  }
+
+  .results-article__gallery-preview,
+  .results-article__scroll-bar {
+    display: none;
+  }
+
+  .results-article__slider {
+    width: 940px;
+    padding-top: 30px;
+  }
+
+  .container--results-article__reviews {
+    width: 640px;
+  }
+
+  .slider-button--reviews-back {
+    left: -131px;
+  }
+
+  .slider-button--reviews-forward {
+    right: -129px;
+  }
+
+  .container--results-article__footer {
+    width: 730px;
+  }
+
   /* --------------- Partners --------------- */
 
   .page-content__partners h2::before {
