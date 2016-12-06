@@ -419,7 +419,8 @@ button.addEventListener("click", function(event) {
 /*Ползунок прокрутки галлереи*/
 
 /*Запоминаем превью каких фото видны на экране при скролле*/
-/*function definePreviewPhotoVisible() {
+
+function definePreviewPhotoVisible() {
   var visiblePreviews = [];
   for (var i = 1; i < $(".slider-photo").length + 1; i++) {
     if ($(".gallery-preview__photo--" + i).css("display") == "block") {
@@ -427,11 +428,15 @@ button.addEventListener("click", function(event) {
     }
   }
   return visiblePreviews;
-}*/
+}
+
+/*Передвижение превью и ползунка прокрутки при его передвижении мышкой*/
 
 for (var i = 9; i < $(".slider-photo").length + 1; i++) {
   $(".gallery-preview__photo--" + i).css("display", "none");
 }
+
+var startPreviewPhotoVisible = definePreviewPhotoVisible();
 
 $("input[type='range']").mousedown(function() {
 
@@ -470,10 +475,29 @@ $("input[type='range']").mousedown(function() {
         }
       }
     }
-  }, 10)
+
+    definePreviewPhotoVisible();
+
+  }, 10);
 });
 
 /*END - Ползунок прокрутки галлереи*/
+
+/*Отображение превью фотографий в соответствии с текущим состоянием полосы прокрутки */
+
+function viewPreview(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    $(".gallery-preview__photo--" + arr[i]).show();
+  }
+}
+
+function viewPreviewCall() {
+  if (definePreviewPhotoVisible().length == 0) {
+    viewPreview(startPreviewPhotoVisible);
+  } else {
+    viewPreview(definePreviewPhotoVisible());
+  }
+}
 
 /*Подсветка превью фотографий рамкой при клике и отображение соответствующего фото в галерее*/
 
@@ -500,11 +524,21 @@ $(".gallery-preview__photo").click(function() {
     $(".slider-button--forward").attr("disabled", false);
   }
 
-  for (var i = 1; i < $(".slider-photo").length + 1; i++) {
+  /*for (var i = 1; i < $(".slider-photo").length + 1; i++) {
     $(".slider-photo--" + i).hide();
-  }
-  $(".slider-photo--" + classNumber).slideDown(1000);
-  /*$("input[type='range']").val(classNumber);*/
+  }*/
+  $(".slider-photo").hide();
+
+  $(".slider-photo--" + classNumber).fadeIn(1000);
+  $("input[type='range']").val(classNumber);
+
+  /*for (var j = 1; j < $(".gallery-preview__photo").length + 1; j++) {
+    $(".gallery-preview__photo--" + j).hide();
+  }*/
+
+  $(".gallery-preview__photo").hide();
+
+  viewPreviewCall();
   
   return false;
 });
@@ -519,9 +553,7 @@ $(".slider-button--forward").click(function() {
   $(".slider-button--back").attr("disabled", false);
   for (var i = 1; i <= $(".slider-photo").length; i++) {
     if ($(".slider-photo--" + i).css("display") == "block") {
-      /*$(".preview-photo--" + i).css("display", "none");*/
       $(".slider-photo--" + i).hide();
-      /*$(".preview-photo--" + (i + 1)).css("display", "block");*/
       $(".slider-photo--" + (i + 1)).fadeIn(1000);
       $(".gallery-preview__photo--" + (i + 1)).addClass("gallery-preview__photo--active");
       $(".gallery-preview__photo--" + i).removeClass("gallery-preview__photo--active");
@@ -540,15 +572,14 @@ $(".slider-button--forward").click(function() {
       break;
     }
   }
+  return false;
 });
 
 $(".slider-button--back").click(function() {
   $(".slider-button--forward").attr("disabled", false);
   for (var i = $(".slider-photo").length; i >= 1; i--) {
     if ($(".slider-photo--" + i).css("display") == "block") {
-      /*$(".preview-photo--" + i).css("display", "none");*/
       $(".slider-photo--" + i).hide();
-      /*$(".preview-photo--" + (i - 1)).css("display", "block");*/
       $(".slider-photo--" + (i - 1)).fadeIn(1000);
       $(".gallery-preview__photo--" + (i - 1)).addClass("gallery-preview__photo--active");
       $(".gallery-preview__photo--" + i).removeClass("gallery-preview__photo--active");
@@ -561,16 +592,13 @@ $(".slider-button--back").click(function() {
         $(".gallery-preview__photo--" + (i + 6)).css("marginRight", 0);
       }
 
-      /*if (i == $(".slider-photo").length - 1) {
-        $(".slider-button--forward").attr("disabled", "disabled");
-      }*/
-
       if (i == 2) {
         $(".slider-button--back").attr("disabled", "disabled");
       }
       break;
     }
   }
+  return false;
 });
 
 /*END - Переключение фотографий кнопками*/
@@ -599,6 +627,7 @@ $(".slider-button--reviews-forward").click(function() {
       break;
     }
   }
+  return false;
 });
 
 $(".slider-button--reviews-back").click(function() {
@@ -616,6 +645,7 @@ $(".slider-button--reviews-back").click(function() {
       break;
     }
   }
+  return false;
 });
 
 /*Переключение фотографий пагинатором*/
@@ -646,6 +676,7 @@ $(".reviews-slider__paginator-button").click(function() {
   }
   $(this).addClass("reviews-slider__paginator-button--active");
 
+  return false;
 });
 
 /* ***** ***** END - Слайдер для отзывов о семинаре ***** ***** */
