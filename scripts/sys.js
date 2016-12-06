@@ -531,7 +531,7 @@ $(".gallery-preview__photo").click(function() {
   $("input[type='range']").val(classNumber);
 
   var nowPreviewPhotoVisible = definePreviewPhotoVisible();
-  console.log(nowPreviewPhotoVisible);
+  /*console.log(nowPreviewPhotoVisible);*/
 
   $(".gallery-preview__photo").hide();
 

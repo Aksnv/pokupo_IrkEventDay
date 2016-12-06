@@ -54,55 +54,47 @@
   
   /* Статья */
 
-  .page-content__preview p {
+  /* .page-content__preview p {
     width: 860px;
     margin: 0 auto;
   }
-
+  
   .preview-aside p {
     width: 860px;
     margin: 0 auto;
   }
-
+  
   .event-countdown p {
     width: auto;
   }
-
+  
   .preview-aside::before,
   .preview-aside::after {
     left: 428px;
-  }
-
-  /* Слайдер */
-
-  .button-back {
-    left: 60px;
-  }
-
-  .button-forward {
-    right: 60px;
-  }
-
-  /* END - Слайдер */
+  } */
 
   /* END - Статья */
 
   /* --------------- Participation --------------- */
 
-  .container--page-content__participation {
+  /* .container--page-content__participation {
     width: 960px;
-  }
+  } */
 
   /* --------------- Lottery --------------- */
 
-  .container--page-content__lottery {
+  /* .container--page-content__lottery {
     width: 670px;
-  }
+  } */
 
   /* --------------- Schedule --------------- */
+
+  /* .page-content__schedule h2::after {
+    left: 427px;
+  } */
+
   /* --------------- Partners --------------- */
 
-  .page-content__schedule h2::after,
   .page-content__partners h2::before {
     left: 427px;
   }
@@ -296,113 +288,83 @@
 
   /* --------------- Preview --------------- */
   
-  .page-content__preview {
+  /* .page-content__preview {
     min-height: 569px;
     padding-top: 85px;
   }
-
+  
   .page-content__preview h2 {
     padding-top: 61px;
-  }
+  } */
 
   /* Статья */
 
-  .page-content__preview p {
+  /* .page-content__preview p {
     width: 500px;
     margin: 0 auto;
   }
-
+  
   .preview-aside::before,
   .preview-aside::after {
     left: 293px;
   }
-
+  
   .preview-aside::after {
-    /* Стили для нового промо-текста из раздела "О мероприятии" */
-    /* top: 267px; */
-    /* top: 119px; */
     top: 147px;
-    /* END - Стили для нового промо-текста из раздела "О мероприятии" */
   }
-
+  
   .preview-aside p {
     width: 585px;
     margin: 0 auto;
   }
   
-  /* .preview-list ul {
-    width: 475px;
-    margin-left: 140px;
-  } */
-
   .preview-list {
     width: 300px;
   }
-
-  /* Слайдер */
-
-  .preview-gallery {
-    width: 670px;
-    height: 479px;
-    /* height: 606px;
-    margin: 0 auto; */
-  }
-
-  .button-back {
-    left: 20px;
-  }
-
-  .button-forward {
-    right: 20px;
-  }
-
-  /* END - Слайдер */
-
+  
   .event-countdown {
     margin-bottom: 76px;
-    /* Изменение стилей для меню при скролле */
     padding-bottom: 0;
-    /* END - Изменение стилей для меню при скролле */
   }
-
+  
   .event-countdown p {
     width: auto;
   }
-
+  
   .event-countdown p:first-child {
     padding-top: 3px;
     padding-left: 10px;
     padding-bottom: 20px;
-  }
+  } */
 
   /* END - Статья */
 
-  .event-countdown {
+  /* .event-countdown {
     margin-top: 38px;
   }
-
+  
   .event-countdown::before {
     left: 87px;
     transform: skew(-33deg);
   }
-
+  
   .event-countdown::after {
     display: none;
   }
-
+  
   .event-countdown__item--days {
     margin-left: 60px;
-  }
+  } */
 
   /* --------------- Participation --------------- */
 
-  .page-content__participation {
+  /* .page-content__participation {
     background-position: center -8px;
   }
-
+  
   .page-content__participation--top {
     min-height: 640px;
-  }
+  } */
 
   /* Статья */
 
@@ -419,39 +381,39 @@
 
   /* END - Статья */
 
-  .page-content__participation h2 {
+  /* .page-content__participation h2 {
     padding-top: 61px;
   }
-
+  
   .event-ticket,
   .event-ticket__purchase,
   .event-ticket__price {
     width: 300px;
   }
-
+  
   .event-ticket {
     height: 281px;
     margin-top: 97px;
   }
-
+  
   .event-ticket::after {
     height: 300px;
     top: 15px;
     right: 149px;
     transform: rotate(90deg);
   }
-
+  
   .event-ticket__purchase,
   .event-ticket__price {
     float: none;
   }
-
+  
   .event-ticket__price {
     text-align: center;
     padding-left: 0;
     padding-top: 45px;
   }
-
+  
   .event-ticket__purchase::before,
   .event-ticket__purchase::after,
   .event-ticket__price::before,
@@ -459,64 +421,64 @@
     width: 20px;
     height: 20px;
   }
-
+  
   .event-ticket__purchase::before {
     top: -154px;
     left: -12px;
     background-position: -800px -300px;
   }
-
+  
   .event-ticket__purchase::after {
     top: 128px;
     left: -12px;
     background-position: -800px -600px;
   }
-
+  
   .event-ticket__price::before {
     top: -11px;
     right: -8px;
     background-position: -1100px -300px;
   }
-
+  
   .event-ticket__price::after {
     top: 271px;
     right: -8px;
     background-position: -1100px -600px;
   }
-
+  
   .event-ticket__purchase a {
     width: 256px;
     margin-left: 20px;
     margin-top: 42px;
   }
-
+  
   .purchase-bg {
     display: none;
   }
-
+  
   .event-ticket__sale {
     width: 210px;
     top: -35px;
     right: 41px;
   }
-
+  
   .event-ticket__sale p {
     padding-right: 10px;
   }
-
+  
   .event-ticket__sale span {
     display: inline;
   }
-
+  
   .event-ticket__sale span:nth-of-type(1) {
     padding-left: 0;
   }
-
+  
   .event-ticket__sale span:nth-of-type(2),
   .event-ticket__sale span:nth-of-type(3) {
     padding-right: 0;
   }
-
+  
   .event-ticket__sale::before {
     top: -9px;
     left: 38px;
@@ -528,7 +490,7 @@
     transform: skew(-33deg);
     z-index: -1;
   }
-
+  
   .event-ticket__sale::after {
     top: -9px;
     left: -8px;
@@ -536,7 +498,7 @@
     height: 70px;
     transform: skew(33deg);
   }
-
+  
   .event-ticket__sale p::after {
     top: -9px;
     left: -31px;
@@ -544,59 +506,59 @@
     height: 44px;
     background-image: linear-gradient(to top, #9e9d9a 0%, #dcd4c4 30%);
     transform: none;
-  }
+  } */
 
   /* --------------- Seminar --------------- */
 
-  .seminar-top__block--top {
+  /* .seminar-top__block--top {
     margin-bottom: 130px;
     padding: 0 30px;
   }
-
+  
   .seminar-top__block--left,
   .seminar-top__block--right {
     float: none;
     margin: 0 auto;
   }
-
+  
   .seminar-top__block--left {
     padding-bottom: 130px;
   }
-
+  
   .seminar-top__block--left::before {
     left: 185px;
   }
-
+  
   .seminar-top__block--right {
     width: 400px;
   }
-
+  
   .seminar-top__block--right::before {
     left: 150px;
   }
-
+  
   .seminar-top__block--left p,
   .seminar-top__block--right p {
     padding: 0 15px;
   }
-
+  
   .seminar-top__block--right p {
     padding-bottom: 47px;
   }
-
+  
   .page-content__seminar-middle h3 {
     padding-bottom: 90px;
   }
-
+  
   .seminar-middle__wrapper {
     padding-left: 115px;
   }
-
+  
   .seminar-middle__block {
     width: 50%;
     padding-bottom: 65px;
   }
-
+  
   .seminar-middle__block--1,
   .seminar-middle__block--2,
   .seminar-middle__block--3,
@@ -604,49 +566,49 @@
     padding-left: 0;
     padding-right: 40px;
   }
-
+  
   .seminar-middle__block--1::before,
   .seminar-middle__block--2::before,
   .seminar-middle__block--3::before,
   .seminar-middle__block--4::before {
     left: -20px;
-  }
+  } */
 
   /* --------------- Lottery --------------- */
 
-  .lottery-list ul {
+  /* .lottery-list ul {
     margin-left: 180px;
-  }
+  } */
 
   /* --------------- Schedule --------------- */
 
-  .container--schedule {
+  /* .container--schedule {
     width: 670px;
   }
-
+  
   .page-content__schedule h2::after {
     left: 291px;
   }
-
+  
   .schedule__column--action {
     padding-left: 118px;
   }
-
+  
   .schedule__column--center {
     width: 425px;
     padding: 29px 0;
     vertical-align: middle;
   }
-
+  
   .schedule__column--center em {
     font-size: 16px;
     padding-top: 10px;
   }
-
+  
   .schedule-details__content {
     padding-left: 120px;
     padding-right: 124px;
-  }
+  } */
 
   /* --------------- Partners --------------- */
 
@@ -656,15 +618,13 @@
 
   .page-content__partners h2 {
     padding-top: 71px;
-    /* padding-bottom: 26px; */
   }
 
   .page-content__partners h2::before {
     left: 291px;
   }
 
-  .partners--top/* ,
-  .partners--bottom */ {
+  .partners--top {
     margin-left: 75px;
   }
 
@@ -677,7 +637,6 @@
     margin-left: 95px;
   }
 
-  /* .partners--top, */
   .partners--bottom {
     margin-left: 85px;
   }
@@ -708,39 +667,39 @@
 
   /* --------------- Participation --------------- */
 
-  .page-content__participation--bottom {
+  /* .page-content__participation--bottom {
     min-height: 640px;
     padding-top: 33px;
   }
-
+  
   .page-content__participation--bottom h2,
   .page-content__participation--bottom p:first-of-type {
     display: block;
   }
-
+  
   .page-content__participation--bottom h2 {
     padding-top: 28px;
-  }
+  } */
 
   /* --------------- Address --------------- */
 
-  .container--page-content__address {
+  /* .container--page-content__address {
     width: 320px;
   }
-
+  
   .page-content__address {
     min-height: 660px;
   }
-
+  
   .page-content__address h2 {
     padding-top: 43px;
   }
-
+  
   .page-content__address strong {
     display: block;
     width: 320px;
     line-height: 23px;
-  }
+  } */
 
   /* --------------- Footer --------------- */
 
@@ -845,215 +804,173 @@
 
   /* --------------- Preview --------------- */
 
-  .page-content__preview {
+  /* .page-content__preview {
     min-height: 639px;
   }
-
+  
   .container--page-content__preview {
     width: 300px;
   }
-
+  
   .page-content__preview h2 {
     padding-top: 51px;
   }
-
+  
   .page-content__preview p:nth-child(2),
   .page-content__preview p:nth-child(3) {
     width: auto;
-  }
+  } */
 
   /* Статья */
 
-  /* .page-content__preview h2 {
-    font-size: 30px;
-  } */
-
-  .preview-article p {
+  /* .preview-article p {
     width: 300px;
     font-size: 16px;
   }
-
+  
   #preview-article_welcome-back {
     margin-top: 30px;
   }
-
+  
   .preview-aside::before,
   .preview-aside::after {
     left: 108px;
   }
-
+  
   .preview-aside::after {
-    /* Стили для нового промо-текста из раздела "О мероприятии" */
-    /* top: 399px; */
-    /* top: 185px; */
     top: 234px;
-    /* END - Стили для нового промо-текста из раздела "О мероприятии" */
   }
-
+  
   .preview-aside p {
     width: 290px;
     font-size: 14px;
   }
-
-  /* .preview-list ul {
-    width: 200px;
-    margin-left: 80px;
-    margin-bottom: 45px;
-  }
   
-  .preview-list li {
-    margin-bottom: 33px;
-  } */
-
   .preview-list {
     width: 250px;
     margin-left: 40px;
-  }
-
-  /* Слайдер */
-
-  .preview-gallery {
-    width: 300px;
-    height: 232px;
-  }
-
-  .button-back {
-    left: 10px;
-  }
-  
-  .button-forward {
-    right: 10px;
-  } 
-
-  /* END - Слайдер */
+  } */
 
   /* END - Статья */
 
-  .event-countdown {
+  /* .event-countdown {
     width: 300px;
     margin-top: 30px;
   }
-
+  
   .event-countdown p:first-child {
     padding-left: 10px;
   }
-
+  
   .event-countdown::before {
     left: 42px;
   }
-
+  
   .event-countdown__item--days {
     margin-left: 14px;
-  }
+  } */
 
   /* --------------- Participation --------------- */
 
   /* Статья */
 
-  .page-content__participation--top::before {
+  /* .page-content__participation--top::before {
     top: -110px;
-  }
+  } */
 
   /* END - Статья */
 
   /* --------------- Seminar --------------- */
 
-  .seminar-top__block--top p {
+  /* .seminar-top__block--top p {
     padding-bottom: 10px;
   }
-
+  
   .seminar-top__block--top strong {
     line-height: 25px;
   }
-
+  
   .seminar-top__block--left,
   .seminar-top__block--right {
     width: 360px;
   }
-
+  
   .seminar-top__block--left::before {
     left: 165px;
   }
-
+  
   .seminar-top__block--right::before {
     left: 130px;
   }
-
+  
   .page-content__seminar-middle h3 {
     padding-bottom: 75px;
   }
-
+  
   .seminar-middle__wrapper {
     padding-left: 88px;
   }
-
+  
   .seminar-middle__block {
     float: none;
     width: 100%;
     padding-bottom: 75px;
   }
-
+  
   .seminar-middle__block:last-child {
     padding-bottom: 50px;
   }
   
-  /* .seminar-middle__block--1, 
-  .seminar-middle__block--2, 
-  .seminar-middle__block--3, 
-  .seminar-middle__block--4 {
-    padding-right: 40px;
-  }   */
-
   .page-content__seminar-bottom {
     padding-bottom: 40px;
   }
-
+  
   .seminar-bottom__block {
     padding: 0 45px;
   }
-
+  
   .seminar-bottom__block h3 {
     padding-top: 40px;
-  }
+  } */
 
   /* --------------- Lottery --------------- */
 
-  .lottery-header::before {
+  /* .lottery-header::before {
     left: 105px;
   }
-
+  
   .lottery-list {
     padding-bottom: 33px;
   }
-
+  
   .lottery-list ul {
     width: 200px;
     margin-left: 115px;
     margin-bottom: 45px;
   }
-
+  
   .lottery-list li:last-child::before {
     top: -28px;
-  }
+  } */
 
   /* --------------- Schedule --------------- */
 
-  .container--schedule {
+  /* .container--schedule {
     width: 300px;
   }
-
+  
   .page-content__schedule {
     padding-bottom: 0;
   }
-
+  
   .page-content__schedule h2 {
     padding-bottom: 56px;
   }
-
+  
   .page-content__schedule h2::after {
     left: 137px;
   }
-
+  
   .schedule__column {
     display: table;
   }
@@ -1061,68 +978,68 @@
   .schedule__column p {
     width: 300px;
   } 
-
+  
   .schedule__column--left {
     margin: 0 auto;
   }
-
+  
   .schedule__column--action,
   .schedule__column--center,
   .schedule__column--right {
     width: 300px;
     text-align: center;
   }
-
+  
   .schedule__column--action {
     padding-top: 70px;
     padding-left: 0;
     padding-bottom: 10px;
   }
-
+  
   .schedule__column--registration::before {
     left: 130px;
   }
-
+  
   .schedule__column--opening::before {
     left: 140px;
   }
-
+  
   .schedule__column--coffee-break::before {
     left: 135px;
   }
-
+  
   .schedule__column--dinner::before {
     left: 125px;
   }
-
+  
   .schedule__column--round-table::before {
     left: 130px;
   }
-
+  
   .schedule__column--closing::before {
     left: 135px;
   }
-
+  
   .schedule__column--photo,
   .schedule__column img {
     margin: 18px 0;
   }
-
+  
   .schedule__column--center + .schedule__column--right {
     position: absolute;
     top: 133px;
     left: 0;
   }
-
+  
   .schedule__column--right p {
     padding-bottom: 20px;
   }
-
+  
   .schedule-details__content {
     width: 300px;
     padding-left: 10px;
     padding-right: 10px;
-  }
+  } */
 
   /* --------------- Partners --------------- */
 
@@ -1193,9 +1110,9 @@
 
   /* --------------- Address --------------- */
 
-  .page-content__address strong {
+  /* .page-content__address strong {
     width: auto;
-  }
+  } */
 
   /* --------------- Footer --------------- */
 
@@ -1205,34 +1122,34 @@
 
   /* Всплывающие окна (popup) */
 
-  .popup1,
+  /* .popup1,
   .popup2 {
     max-width: 340px;
   }
-
+  
   .popup1 {
     padding: 20px 20px;
   }
-
+  
   .popup2 {
     padding: 40px 20px;
   }
-
+  
   .popup1_form_text {
     margin-left: 0;
   }
-
+  
   input.popup1_form_input {
     width: 280px;
   }
-
+  
   .popup1_red_text {
     float: left;
   }
-
+  
   .popup2_small_text {
     width: 230px;
-  }
+  } */
 
   /* END - Всплывающие окна (popup) */
   
@@ -1279,89 +1196,83 @@
 
   /* Статья */
 
-  .preview-article {
+  /* .preview-article {
     width: 300px;
     margin: 0 auto;
   }
-
+  
   .preview-aside::before,
   .preview-aside::after {
     left: 108px;
   }
-
+  
   .preview-aside::after {
-    /* Стили для нового промо-текста из раздела "О мероприятии" */
-    /* top: 465px; */
-    /* top: 185px; */
     top: 254px;
-    /* END - Стили для нового промо-текста из раздела "О мероприятии" */
   }
-
+  
   .preview-aside p,
   .preview-aside p:nth-child(2),
   .preview-aside p:nth-child(3) {
     width: 265px;
-  }
-
-  /* .preview-list ul {
-    width: 190px;
-    margin-left: 100px;
   } */
 
   /* END - Статья */
   
   /* --------------- Seminar --------------- */
 
-  .seminar-top__block--left, 
+  /* .seminar-top__block--left, 
   .seminar-top__block--right {
     width: 300px;
   }
-
+  
   .seminar-top__block--left::before {
     left: 135px;
   }
-
+  
   .seminar-top__block--right::before {
     left: 100px;
   }
-
+  
   .seminar-middle__wrapper {
     padding-left: 58px;
   }
-
+  
   .seminar-middle__block--1, 
   .seminar-middle__block--2, 
   .seminar-middle__block--3, 
   .seminar-middle__block--4  {
     padding-right: 30px;
-  }
+  } */
 
   /* --------------- Lottery --------------- */
   
-  .lottery-header::before {
+  /* .lottery-header::before {
     left: 85px;
   }
-
+  
   .lottery-header p {
     padding-left: 5px;
     padding-right: 5px;
   }
-
+  
   .lottery-header strong,
   .lottery-header span {
     padding-left: 0;
     padding-right: 0;
   }
-
+  
   .lottery-list ul {
     width: 190px;
-    /* margin-left: 125px; */
-  }
+  } */
 
   /* --------------- Schedule --------------- */
+
+  /* .page-content__schedule h2::after {
+    left: 117px;
+  } */
+
   /* --------------- Partners --------------- */
 
-  .page-content__schedule h2::after,
   .page-content__partners h2::before {
     left: 117px;
   }
@@ -1437,15 +1348,15 @@
 
   /* Всплывающие окна (popup) */
 
-  .popup1,
+  /* .popup1,
   .popup2 {
     max-width: 320px;
     min-width: 320px;
   }
-
+  
   input.popup1_form_input {
     width: 260px;
-  }
+  } */
 
   /* END - Всплывающие окна (popup) */
 
