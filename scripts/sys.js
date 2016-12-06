@@ -414,9 +414,9 @@ button.addEventListener("click", function(event) {
 /* END - Выпадающие блоки с информацией в расписании */
 
 
-/* ***** ***** Слайдер ***** ***** */
+/* ***** ***** END - Слайдер фотогаллереи ***** ***** */
 
-/*Ползунок прокрутки галлереи*/
+/* ***** Ползунок прокрутки галлереи ***** */
 
 /*Запоминаем превью каких фото видны на экране при скролле*/
 
@@ -430,7 +430,23 @@ function definePreviewPhotoVisible() {
   return visiblePreviews;
 }
 
-/*Передвижение превью и ползунка прокрутки при его передвижении мышкой*/
+/*Отображение превью фотографий в соответствии с текущим состоянием полосы прокрутки */
+
+function viewPreview(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    $(".gallery-preview__photo--" + arr[i]).show();
+  }
+}
+
+function viewPreviewCall() {
+  if (definePreviewPhotoVisible().length == 0) {
+    viewPreview(startPreviewPhotoVisible);
+  } else {
+    viewPreview(nowPreviewPhotoVisible);
+  }
+}
+
+/*Прокручивание превью фото и ползунка прокрутки при его передвижении мышкой*/
 
 for (var i = 9; i < $(".slider-photo").length + 1; i++) {
   $(".gallery-preview__photo--" + i).css("display", "none");
@@ -481,25 +497,10 @@ $("input[type='range']").mousedown(function() {
   }, 10);
 });
 
-/*END - Ползунок прокрутки галлереи*/
+/* ***** END - Ползунок прокрутки галлереи ***** */
 
-/*Отображение превью фотографий в соответствии с текущим состоянием полосы прокрутки */
 
-function viewPreview(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    $(".gallery-preview__photo--" + arr[i]).show();
-  }
-}
-
-function viewPreviewCall() {
-  if (definePreviewPhotoVisible().length == 0) {
-    viewPreview(startPreviewPhotoVisible);
-  } else {
-    viewPreview(definePreviewPhotoVisible());
-  }
-}
-
-/*Подсветка превью фотографий рамкой при клике и отображение соответствующего фото в галерее*/
+/* ***** Подсветка превью фотографий рамкой при клике и отображение соответствующего фото в галерее ***** */
 
 function removeClassPhotoActive() {
   for (var i = 0; i < $(".gallery-preview__photo").length; i++) {
@@ -524,17 +525,13 @@ $(".gallery-preview__photo").click(function() {
     $(".slider-button--forward").attr("disabled", false);
   }
 
-  /*for (var i = 1; i < $(".slider-photo").length + 1; i++) {
-    $(".slider-photo--" + i).hide();
-  }*/
   $(".slider-photo").hide();
 
   $(".slider-photo--" + classNumber).fadeIn(1000);
   $("input[type='range']").val(classNumber);
 
-  /*for (var j = 1; j < $(".gallery-preview__photo").length + 1; j++) {
-    $(".gallery-preview__photo--" + j).hide();
-  }*/
+  var nowPreviewPhotoVisible = definePreviewPhotoVisible();
+  console.log(nowPreviewPhotoVisible);
 
   $(".gallery-preview__photo").hide();
 
@@ -543,9 +540,9 @@ $(".gallery-preview__photo").click(function() {
   return false;
 });
 
-/*END - Подсветка превью фотографий рамкой при клике и отображение соответствующего фото в галерее*/
+/* ***** END - Подсветка превью фотографий рамкой при клике и отображение соответствующего фото в галерее ***** */
 
-/*Переключение фотографий кнопками*/
+/* ***** Переключение фотографий кнопками ***** */
 
 $(".slider-button--back").attr("disabled", "disabled");
 
@@ -601,12 +598,12 @@ $(".slider-button--back").click(function() {
   return false;
 });
 
-/*END - Переключение фотографий кнопками*/
+/* ***** END - Переключение фотографий кнопками ***** */
 
-/* ***** ***** END - Слайдер ***** ***** */
+/* ***** ***** END - Слайдер фотогаллереи ***** ***** */
 
 
-/* ***** ***** Слайдер для отзывов о семинаре ***** ***** */
+/* ***** ***** Слайдер отзывов о семинаре ***** ***** */
 
 /*Переключение фотографий кнопками*/
 
@@ -679,7 +676,7 @@ $(".reviews-slider__paginator-button").click(function() {
   return false;
 });
 
-/* ***** ***** END - Слайдер для отзывов о семинаре ***** ***** */
+/* ***** ***** END - Слайдер отзывов о семинаре ***** ***** */
 
 
 /* Плавная прокрутка страницы при нажатии кнопки "Наверх" */
