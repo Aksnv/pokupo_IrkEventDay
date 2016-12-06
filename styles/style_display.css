@@ -654,6 +654,48 @@
     padding-right: 124px;
   } */
 
+  /* --------------- Results --------------- */
+
+  .results-article__people-list li:first-child,
+  .results-article__people-list li:last-child {
+    margin: 0 auto;
+  }
+
+  .results-article__people-list li {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .results-article__gallery {
+    height: 540px;
+  }
+
+  .results-article__slider {
+    width: 670px;
+  }
+
+  .slider-button--back, 
+  .slider-button--forward {
+    top: 220px;
+  }
+
+  .container--results-article__reviews {
+    width: 640px;
+  }
+
+  .reviews-slider {
+    width: 520px;
+    margin: 0 auto;
+  }
+
+  .slider-button--reviews-back {
+    left: 5px;
+  }
+
+  .slider-button--reviews-forward {
+    right: 6px;
+  }
+
   /* --------------- Partners --------------- */
 
   .container--page-content__partners {
