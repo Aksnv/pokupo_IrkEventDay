@@ -263,7 +263,8 @@
     top: 0;
     left: -43px;
     width: 750px;
-    height: 1080px;
+    /* height: 1080px; */
+    height: 800px;
     background-color: #3d3d3d;
     z-index: 1;
   }
@@ -315,13 +316,15 @@
   }
   
   .page-header__menu-hamburger--active ~ .page-header__event-header {
-    margin-bottom: 85px;
+    /* margin-bottom: 85px; */
+    margin-bottom: 0;
   }
   
   .page-header__menu-hamburger--active ~ .page-header__social-media {
     position: absolute;
-    top: 941px;
-    left: 183px;
+    /* top: 941px; */
+    top: 618px;
+    left: 185px;
     z-index: 1;
   }
 
@@ -1137,6 +1140,10 @@
     font-size: 20px;
   }
 
+  .results-article__people-list li {
+    padding-bottom: 40px;
+  }
+
   .results-article__themes-list {
     margin-left: 50px;
   }
@@ -1170,6 +1177,10 @@
   .slider-button--reviews-back, 
   .slider-button--reviews-forward {
     top: 537px;
+  }
+
+  .reviews-slider__paginator {
+    margin-top: 85px;
   }
 
   .results-aside::after {
@@ -1408,17 +1419,38 @@
 
   /* --------------- Results --------------- */
 
+  .results-article__header p {
+    font-size: 18px;
+  }
+
+  .results-article__themes-list {
+    width: 225px;
+    margin-left: 80px;
+  }
+
   .container--results-article__statistics {
-    width: 300px;
+    width: 320px;
+  }
+
+  .results-article__statistics p {
+    width: 270px;
+    margin: auto;
   }
 
   .results-article__statistics-list {
-    width: 290px;
-    padding-left: 30px;
+    width: 270px;
+    margin: auto;
+    padding-left: 20px;
   }
 
   .results-article__slider {
     width: 320px;
+  }
+
+  .slider-photo figcaption {
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 12px;
   }
 
   .slider-button--back, 
@@ -1430,12 +1462,25 @@
     width: 240px;
   }
 
+  .slider-button--reviews-back {
+    left: 10px;
+  }
+
+  .slider-button--reviews-forward {
+    right: 5px;
+  }
+
   .container--results-article__footer {
-    width: 300px;
+    width: 320px;
+  }
+
+  .results-article__footer p {
+    width: 270px;
+    margin: auto;
   }
   
   .results-aside::after {
-    top: 290px;
+    top: 340px;
   }
 
   /* --------------- Partners --------------- */
