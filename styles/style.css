@@ -2082,10 +2082,11 @@ p.reviews-slider__list {
   width: 500px;
   height: 132px;
   margin: 0 auto;
-  background-image: linear-gradient(to top, #f59019, #ffa800);
-  -webkit-background-clip: text;
+  /* background-image: linear-gradient(to top, #f59019, #ffa800);
+  -webkit-background-clip: text; */
   border: 2px solid #ffa800;
-  color: transparent;
+  /* color: transparent; */
+  color: #ffa800;
 }
 
 .social-media__hashtag h3 {
