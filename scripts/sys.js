@@ -522,7 +522,7 @@ $(".slider-button--forward").click(function() {
       /*$(".preview-photo--" + i).css("display", "none");*/
       $(".slider-photo--" + i).hide();
       /*$(".preview-photo--" + (i + 1)).css("display", "block");*/
-      $(".slider-photo--" + (i + 1)).slideDown(1000);
+      $(".slider-photo--" + (i + 1)).fadeIn(1000);
       $(".gallery-preview__photo--" + (i + 1)).addClass("gallery-preview__photo--active");
       $(".gallery-preview__photo--" + i).removeClass("gallery-preview__photo--active");
       $("input[type='range']").val(i + 1);
@@ -549,7 +549,7 @@ $(".slider-button--back").click(function() {
       /*$(".preview-photo--" + i).css("display", "none");*/
       $(".slider-photo--" + i).hide();
       /*$(".preview-photo--" + (i - 1)).css("display", "block");*/
-      $(".slider-photo--" + (i - 1)).slideDown(1000);
+      $(".slider-photo--" + (i - 1)).fadeIn(1000);
       $(".gallery-preview__photo--" + (i - 1)).addClass("gallery-preview__photo--active");
       $(".gallery-preview__photo--" + i).removeClass("gallery-preview__photo--active");
       $("input[type='range']").val(i - 1);
@@ -578,9 +578,82 @@ $(".slider-button--back").click(function() {
 /* ***** ***** END - Слайдер ***** ***** */
 
 
+/* ***** ***** Слайдер для отзывов о семинаре ***** ***** */
+
+/*Переключение фотографий кнопками*/
+
+$(".slider-button--reviews-back").attr("disabled", "disabled");
+
+$(".slider-button--reviews-forward").click(function() {
+  $(".slider-button--reviews-back").attr("disabled", false);
+  for (var i = 1; i <= $(".reviews-slider__article").length; i++) {
+    if ($(".reviews-slider__article--" + i).css("display") == "block") {
+      $(".reviews-slider__article--" + i).hide();
+      $(".reviews-slider__article--" + (i + 1)).fadeIn(1000);
+      $(".reviews-slider__paginator-button--" + (i + 1)).addClass("reviews-slider__paginator-button--active");
+      $(".reviews-slider__paginator-button--" + i).removeClass("reviews-slider__paginator-button--active");
+
+      if (i == $(".reviews-slider__article").length - 1) {
+        $(".slider-button--reviews-forward").attr("disabled", "disabled");
+      }
+      break;
+    }
+  }
+});
+
+$(".slider-button--reviews-back").click(function() {
+  $(".slider-button--reviews-forward").attr("disabled", false);
+  for (var i = $(".reviews-slider__article").length; i >= 1; i--) {
+    if ($(".reviews-slider__article--" + i).css("display") == "block") {
+      $(".reviews-slider__article--" + i).hide();
+      $(".reviews-slider__article--" + (i - 1)).fadeIn(1000);
+      $(".reviews-slider__paginator-button--" + (i - 1)).addClass("reviews-slider__paginator-button--active");
+      $(".reviews-slider__paginator-button--" + i).removeClass("reviews-slider__paginator-button--active");
+
+      if (i == 2) {
+        $(".slider-button--reviews-back").attr("disabled", "disabled");
+      }
+      break;
+    }
+  }
+});
+
+/*Переключение фотографий пагинатором*/
+
+$(".reviews-slider__paginator-button").click(function() {
+
+  for (var j = 1; j < $(".reviews-slider__article").length + 1; j++) {
+    $(".reviews-slider__article--" + j).hide();
+  }
+
+  for (var i = 1; i < $(".reviews-slider__paginator-button").length + 1; i++) {
+    $(".reviews-slider__paginator-button--" + i).removeClass("reviews-slider__paginator-button--active");
+
+    if ($(this).hasClass("reviews-slider__paginator-button--" + i)) {
+      $(".reviews-slider__article--" + i).fadeIn(1000);
+
+      if (i == 1) {
+        $(".slider-button--reviews-back").attr("disabled", "disabled");
+        $(".slider-button--reviews-forward").attr("disabled", false);
+      } else if (i == 6) {
+        $(".slider-button--reviews-back").attr("disabled", false);
+        $(".slider-button--reviews-forward").attr("disabled", "disabled");
+      } else {
+        $(".slider-button--reviews-back").attr("disabled", false);
+        $(".slider-button--reviews-forward").attr("disabled", false);
+      }
+    }
+  }
+  $(this).addClass("reviews-slider__paginator-button--active");
+
+});
+
+/* ***** ***** END - Слайдер для отзывов о семинаре ***** ***** */
+
+
 /* Плавная прокрутка страницы при нажатии кнопки "Наверх" */
 
-$(".upstairs-block__button").click(function () {
+$(".upstairs-block__button").click(function() {
   $("html, body").animate({
     scrollTop: 0
   }, 1000);
@@ -591,21 +664,21 @@ $(".upstairs-block__button").click(function () {
 
 /* Плавная прокрутка страницы при нажатии пунктов меню и ссылок в тексте */
 
-$(".main-menu__item--results").click(function () {
+$(".main-menu__item--results").click(function() {
   $("html, body").animate({
     scrollTop: $("#page-content__results").offset().top
   }, 1000);
   return false;
 });
 
-$(".main-menu__item--partners").click(function () {
+$(".main-menu__item--partners").click(function() {
   $("html, body").animate({
     scrollTop: $("#page-content__partners").offset().top
   }, 1000);
   return false;
 });
 
-$(".main-menu__item--social-media").click(function () {
+$(".main-menu__item--social-media").click(function() {
   $("html, body").animate({
     scrollTop: $("#page-content__social-media").offset().top
   }, 1000);
